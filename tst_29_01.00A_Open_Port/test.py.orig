@@ -1,0 +1,274 @@
+# -*- coding: utf-8 -*-
+import shutil
+import sys
+import os
+
+def main():
+    
+    step_counter = 29
+    
+    source(findFile("scripts", "BasicFunctionality/startup.py"))
+    shared = Startup()
+    shared.setConfigLisReleaseDelay(6)
+    
+    #shared = Startup("ATTACH_TO_RUNNING_STATION")
+    
+    #"29. Run 2 samples via Open Port mode (note down the accession numbers) and go to the In Process list once sampling has started.
+    #"            
+    #Confirm the sample is displayed in the In Process list, and it is listed as Open under the "Mode" column. There is a message on the status sidebar that reads “Open-mode sample taken by [I] at [t].”,  where [I] is the analyzer name, and [t] is the time.            
+    #NOTE: Confirm for Machanical ONLY -1 cadence for 1st sample, then 1 cadence gap cycle occurs between runs with no sampling, then another 1 cadence sample is run. This is an Analyzer SW Integration test if this test does not pass  open an Analyzer bug - and Note down this portion failed.        11/18/13 VI - NOT VS TEST    
+    #STAT Drawer            
+    shared.qcoverview.clickTab()
+    shared.qcoverview.clickDigiCountButton()
+    shared.newdigicountcontroldialog.simulateDigiCountScan("Low", 38, 381)
+    shared.spritecanvas.selectAnalyzerSimulator()
+
+    shared.spritecanvas.runSampleInOpenMode(38,381)
+    low_accession_number = getattr(shared.spritecanvas,"accession_numbers")[-1]
+    snooze(1.0)
+
+
+    #19. Run another sample in a open mode (note down the accession number) and go to the In Process list 
+    #once sampling has started.             
+    #Confirm the sample is displayed in the In Process list, and it is listed as Open under the "Mode" column. 
+    #There is a message on the status sidebar that reads “Open-mode sample taken by [I] at [t].”,  where [I] 
+    #is the analyzer name, and [t] is the time.    
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    test.log("Click on the InProcess Tab")
+    shared.inprocess.clickTab()
+    
+    test.log("Get total number of samples before we start another run.")
+    total_samples = shared.inprocess.getTotalNumberOfSamples()
+    
+    test.log("Run a sample in an open mode")
+    test.log("Note down the accession number")
+    shared.spritecanvas.bringToFront()
+    shared.spritecanvas.runSampleInOpenMode(956,54)
+    
+    #Wait for the sample to process.
+    #And Populate Table
+    shared.selectBloodhoundViewingStation()
+    shared.inprocess.populateTableDataWithAllRowsEqualToReadyforRelease()
+    
+    test.log("Confirm that the accession number is in the first row of the Process list") 
+    test.verify(shared.inprocess.table_data[0]['Accession #'] == shared.spritecanvas.accession_numbers[0], \
+        "Confirm that the accession number " + shared.spritecanvas.accession_numbers[0] + 
+            " is in the first row of the Process list. " + shared.inprocess.table_data[0]['Accession #'])
+    
+    test.log("Confirm that Mode Column is Open")
+    test.verify(shared.inprocess.table_data[0]['Mode'] == "Open", "Confirm that the Mode Column is Open")
+    
+    test.log("Confirm there is a message on the status sidebar that reads 'Open-mode sample taken by [I] at [t]'")
+    test.log("where [I] is the analyzer name, and [t] is the time.")
+    test.log("Get second row of the sidebar text")
+    shared.inprocess.confirmSideBarText(2,'.*Open-mode sample taken by Bloodhound\\s\\d at \\d+\:\\d+.*')
+    
+    #20. Run 3 samples in STAT drawer twice
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    shared.spritecanvas.resetAccessionNumbers()
+    shared.spritecanvas.runSamplesInStatDrawer()
+    shared.spritecanvas.runSamplesInStatDrawer()
+    
+    test.log("Bring Viewing Station To The Front")
+    waitForObject(":Bloodhound™ Viewing Station v1.2.0_JPanel").getTopLevelAncestor().toFront()
+    
+    #Confirm samples run without errors and results are available in the In Process and Results Queue list
+    shared.inprocess.confirmSTATSamples(shared.spritecanvas,6)
+    shared.results.confirmSTATSamples(shared.spritecanvas,6)
+    
+    #Confirm status of runs are displayed correctly in the In Process sidebar    
+    shared.inprocess.clickTab()
+    shared.inprocess.clickOnFirstRowOfTable()
+    shared.inprocess.confirmSideBarText(2,'.*Sample output by Bloodhound\\s+\\d+\\s\(STAT position \\d+\) at \\d+\:\d+.*')
+    
+    #Confirm results detail are displayed correctly in Results sidebar
+    shared.results.clickTab()
+    shared.results.clickOnFirstRowOfTable()
+    test.log("For now just getting the accession number from the sidebar for Results")
+    test.log("Confirming that the sidebar Accession Number is the same as the first row Accession Number.")
+    shared.results.confirmSideBarAccessionNumber(shared.results.table_data[0]["Accession #"])
+                                   
+    #21. Double-click on one of the STAT samples in the Results Queue list for review.
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    shared.results.doubleClickReleasedSampleRow()
+    
+    
+    #Confirm the Review page displays.
+    shared.results.confirmReviewPage()
+    
+    #22. TODO: Logout and close the Viewing Station. Relaunch and log in to the Viewing Station again.
+    test.log("Step #" + str(step_counter)); step_counter += 1 
+    #Perform ad-hoc testing on the Print dialog under the Results main tab. 
+    #Click on all the buttons that appears on the Print Report dialog and confirm functionalities.
+    
+    #23. TODO: Run one of the samples in prior runs on a different Analyzer that is connected to the same lab group. 
+    #Head back to the original Control Viewing Station, and click on the Results main tab.            
+    #Confirm the samples are displayed from the previous run. The most recent records are displayed at the top.
+    #Do not select any records.
+    #Confirm that until a row is selected "Print", "Export Raw", "Export Current" buttons are grayed out.
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    test.log("We are putting Steps #22 and #23 on hold at this time.")
+    
+    #24. Highlight the sample that has multiple runs on multiple Analyzers and click on the "Export Raw" button
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    test.log("First re-run the original rack of 10 in the Second Analyzer.")
+    test.log("Select The Analyzer Simulator")
+    
+    shared.spritecanvas.bringToFront()
+    shared.spritecanvas.selectAnalyzerSimulator()
+
+    test.log("Move the Rack into the second analyzer belt")
+    shared.spritecanvas.moveObject(819,177,297,576)
+    test.log("Run the sample")
+    shared.spritecanvas.runSampleRackOnSecondAnalyzer()
+
+    test.log("Wait for second analyzer rack of 10 samples to finish")
+    shared.spritecanvas.waitForSecondAnalyzerRackToFinish()
+    
+    test.log("Bring Viewing Station To The Front")
+    waitForObject(":Bloodhound™ Viewing Station v1.2.0_JPanel").getTopLevelAncestor().toFront()
+    
+    test.log("Get Results Table Data")
+    shared.results.populateTableData()
+    test.log("Click on the First Multiple Run Row Found.")
+    test.log("For now these all have the status 'Awaiting Review'")
+    shared.results.clickOnTableRow("Awaiting Review")
+    
+    test.log("Click on the Export Raw Button")
+    shared.results.clickExportRawButton()
+    test.log("Confirm that the export button appears")
+    test.verify(object.exists(":Bloodhound™ Viewing Station v1.2.0.Export_JButton"),"Confirm that the export button appears")
+    test.log("Dismiss the Export Raw Files Save Dialog")
+    shared.results.clickExportRawCancelButton()
+    
+    #Confirm "Export Raw", "Archive", "Print", and "Export Current" are enabled.
+    shared.results.confirmArchiveButton("enabled")
+    shared.results.confirmPrintButton("enabled")
+    shared.results.confirmExportCurrentButton("enabled")
+
+    #"Confirm Export All Runs to File dialog displays the following:
+    shared.results.clickExportRawButton()
+    #-""Save As"" text field with “export.txt”
+    shared.results.confirmSaveAs()
+    #- Folder selector combobox labeled “Where”
+    shared.results.confirmComboboxWhere()
+    #-Name and Date columns in the File View table
+    shared.results.confirmNameAndDateColumns()
+    #-""Cancel"" and ""Export"" buttons"
+    shared.results.confirmCancelButton()
+    shared.results.confirmExportButton()
+    
+    #25. Click on the "Cancel" button.            
+    #Confirm nothing is exported and dialog closes.
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    shared.results.clickExportRawCancelButton()
+    
+    test.log("Note: For the following tests we are comparing spreadsheet output")
+    test.log("TODO: The ideal comparison here should be between the current row(s) and the")
+    test.log("Exported spreadsheet.")
+    
+    #26. Press on "Export Raw" again. 
+    #Make the File View to show Desktop by navigating to 
+    #Users >… > Desktop under the "Where" combobox. Click the "Export" button.            
+    #Confirm a file is generated on the Bloodhound desktop 
+    #(use a thumb drive to transfer the file to your machine. Machine needs to have Excel).
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    test.log("Export the File")
+    shared.results.exportRaw("4712","export_raw_26")
+    
+    #27. Right-click on the file and select Open with Excel.
+    #Confirm the file opens in Excel and only displays the selected record.
+    #Run a quick scan on all column names and values from the Results details (focus on principal elements like Status, Accession #, date, etc…).
+    #Confirm there is one column for each demographic, one column for each parameter,
+    #one column for each group of messages, Reportables, Contacts, WBC, RBC, and PLT.
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    shared.results.openExcelAndSaveFile()
+    shared.results.confirmExport("export_raw_26")
+    
+    #28. Go back to the Control Viewing Station, highlight all the rows with multiple runs in the Results Queue list.
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    shared.results.populateTableData()
+    shared.results.hightlightAllRowsWithMultipleRuns()
+     
+    #Click on "Export Raw" button. Save the file to the Desktop.
+    #Run a quick scan of the results by matching them to the Review page for each sample
+    #(note that the ordering in the exported results matches what is highlighted the Results Queue list).
+    
+    test.log("TODO Not currently checkinging ordering of Accession Numbers or Date Timestamps")
+    test.log("All other data is being checked with a spreadsheet compare")
+    
+    shared.results.exportRaw("highlighted_rows","export_raw_28")
+    shared.results.openExcelAndSaveFile()
+    shared.results.confirmExport("export_raw_28")    
+    
+    #29. Select one of the samples with multiple runs in the Results Queue list and click on the "Print" button.
+    test.log("Step #" + str(step_counter)); step_counter += 1
+    test.log("Get Results Table Data")
+    shared.results.populateTableData()
+    test.log("Click on the First Multiple Run Row Found.")
+    test.log("For now these all have the status 'Awaiting Review'")
+    shared.results.clickOnRowByMedicalRecord("4712")
+    shared.results.clickPrintButton()
+    
+    #Confirm Print Report dialog opens, with appropriate values that match actual results.
+    #"Confirm Print Report dialog displays:
+    #-Format combobox
+    shared.results.printdialog.confirmFormatComboBox()
+    #-Printer combobox
+    shared.results.printdialog.confirmPrinterComboBox()
+    #-Number of Copies text field
+    shared.results.printdialog.confirmNumberOfCopiesTextField()
+    #-Checkbox labeled ""Collated""
+    shared.results.printdialog.confirmCollatedCheckbox()
+    #-Paper Source combobox
+    shared.results.printdialog.confirmPaperSourceComboBox()
+    #-First Page, Previous Page, Next Page, Last Page buttons
+    shared.results.printdialog.confirmFirstPageButton("disabled")
+    shared.results.printdialog.confirmPreviousPageButton("disabled")
+    shared.results.printdialog.confirmNextPageButton()
+    shared.results.printdialog.confirmLastPageButton()
+    #-""Cancel"" button
+    shared.results.printdialog.confirmCancelButton()
+    #-""Print"" button
+    shared.results.printdialog.confirmPrintButton()
+    
+    test.log("Click on the Print Cancel Button")
+    
+    #Confirm each run result is displayed on its own page.
+    test.log("For now just going to check 2 runs. More runs later")
+    shared.results.printdialog.confirmTotalPages(2)
+    
+    #30. Page through the Print Report by pressing the arrow buttons. Select "Lab-only (Raw)".
+    test.log("Step #" + str(step_counter)); step_counter += 1     
+    shared.results.printdialog.moveDialogToTopCorner()
+    test.vp("ResultsPrintDialogPage1")
+    shared.results.printdialog.clickNextPageButton()
+    test.vp("ResultsPrintDialogPage2")
+    
+    #Select a different format
+    test.log("Select the Lab-only (Latest) item")
+    shared.results.printdialog.selectAFormatComboItem("Lab-only (Latest)")
+ 
+    #then click the "Cancel" button.
+    shared.results.printdialog.clickPrintCancelButton()
+     
+    #Reopen the Print Report dialog again.
+    shared.results.clickPrintButton()
+    
+    #Confirm the Print Report dialog allows paging with proper page displayed,
+    shared.results.printdialog.moveDialogToTopCorner()
+    test.vp("ResultsPrintDialogPage1")
+    shared.results.printdialog.clickNextPageButton()
+    test.vp("ResultsPrintDialogPage2")    
+    
+    #"Lab-only (Raw)" Format is selected by default.
+    shared.results.printdialog.confirmLabOnlyRawItem() 
+    
+    #It can be closed and reopened successfully.
+    shared.results.printdialog.clickPrintCancelButton()
+    shared.results.clickPrintButton()
+    shared.results.printdialog.confirmFormatComboBox()
+    shared.results.printdialog.clickPrintCancelButton()
+
+    #At the End Put QC back to it's default Overview Tab
+    #overview.clickTab()

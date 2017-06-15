@@ -1,0 +1,617 @@
+TC01.02A / VP0179 - New Build Test QC			
+Test Case Summary:			
+This test case confirms the functionality of the QC section for the New Build			
+Functional Specs: None			
+Per CTF			
+Pre-Requisites:			
+"1. Safety training and PPE for working with human blood samples. Wear the PPE: gloves, lab coat and eye covering.
+2. A control Viewing Station (cVS) connected to a working analyzer.
+3. More than one analyzer in the same labgroup.
+
+NOTE: If needed, see additional doc on how to change the configuration so that separate analyzers are in the same labgroup.
+
+4. Familiarity with how to process samples through the analyzer.
+5. DigiCount™  QC samples: Low, Normal and High (all from the same Lot).
+6. DigiCount™  QC Low, Normal and High labels.
+7. DigiCount™  QC Low, Normal and High assay sheets with 2D barcodes.
+8. Tubes of normal blood samples.
+9. Labels for normal blood tubes.
+10. Empty tubes .
+"			
+"11. Piece of folded paper (about 8 inches in length). This will be used to block the Low Magnification sensor.
+12. If the hood of the Analyzer is closed, you will need to open it for these tests. If you have never run this test before, please talk to someone who can help you.
+13. Confirm the QC DigiCount™ configuration values match the recorded defaults in the defaults.xlsx file (in Eclipse, under Viewing Station).
+
+OPTIONAL - if tester is running on the simulator and wishes to have large quantities of data in Archives, copy and paste the below two lines into VS bloodhound.properties files and Save:
+
+demo.qc.archivesamples=true
+demo.qc.simulatorsamples=true
+"			
+Steps	P/F/NA	Notes	
+QC > DigiCount™			
+1. Go to the QC > Overview tab (NOT the QC > DigiCount™ tab)			
+2. Under the "New control on <analyzer>" header in the toolbar, click the "DigiCount™" button			
+Register the DigiCount™ Low Control			
+3. In the "New DigiCount™ Control" dialog, scan the 2D barcode from the DigiCount™ Low assay sheet			03/10/14 JJ - This whole section has been rewritten to match the rewrites of the Normal and High sections.
+Confirm the lot number from the assay sheet appears in the "Lot" entry field			
+Confirm that the value in the "Level" combobox matches the Level value displayed at the header of the Assay sheet, in this case "Low"			
+Confirm that the value in the "Analyzer" combobox matches the Analyzer that you are creating the control on			
+Confirm that the value in the "Expires" date fields matches the value displayed next to the Lot value on the Assay sheet			
+Confirm that the "Active" checkbox is NOT checked			
+Confirm that all the data from the assay sheet is inserted with a single 2D scan			"(C) Including expiration date and manufacturer mean and range for all parameters.
+03/10/14 JJ - Issues address in update tests."
+4. Click the "New" button			
+Confirm that the "Historical SD" column already has entries for all the rows			"(C) This is only visible in the dialog, so you want to check it before you hit New.
+03/10/14 JJ - Issues address in update tests."
+5. In the "Activate/Edit DigiCount™ Controls" dialog, scan the barcodes from the DigiCount™ Low assay sheet to fill in the values			"(R) Is this test based on an old version of the VS? There are no longer two dialogs involved in the process of registering a new DigiCount control, and there should be only a single barcode now to scan.
+03/10/14 JJ - Issues address in update tests."
+Confirm that the Manufacturer / Mean and Manufacturer / Range column of the dialog are filled in for all the rows except the %UNCLASS and #UNCLASS rows			
+Confirm that the values in the Manufacturer / Mean column of the dialog match the values that are displayed in the "Manufacturer" column of the assay sheet			03/10/13 KK Word changed from Target to Manufacturer.
+Confirm that the values in the Range column of the dialog are two values that are separated by a dash			
+"Confirm that the 1st value in the Range column is the Manufacturer / Mean minus the Range value from the Assay sheet
+NOTE: For example, if the Mean is 2.35 and the Range value on the Assay sheet is 0.3 then the first value in the Range cell would be 2.05.
+NOTE: You don't need to confirm that every Range value is correct, spot check a few throughout the list of parameters"			
+"Confirm that the 2nd value in the Range column is the Manufacturer / Mean plus the Range value from the Assay sheet
+NOTE: For example, if the Mean is 2.35 and the Range value on the Assay sheet is 0.3 then the 2nd value in the Range cell would be 2.65.
+NOTE: You don't need to confirm that every Range value is correct, spot check a few throughout the list of parameters"			
+4. Click the "New" button			
+Confirm the Activate/Edit DigiCount™ Controls dialog closes			
+Confirm the DigiCount™ Low sample is registered			
+Confirm the barcode is now displayed in the Control in the toolbar			
+Confirm that upon leaving the "Activate/Edit DigiCount™ Controls" dialog you are now in the QC > DigiCount™ page NOT the QC > Overview page			
+Register the DigiCount™ Normal Control			
+5. Under the "New control on <analyzer>" header in the toolbar, click the "DigiCount™" button			03/10/14 JJ - This whole section has been rewritten to match the rewrites of the Low and High sections.
+6. In the "New DigiCount™ Control" dialog, scan the 2D barcode from the DigiCount™ Normal assay sheet			
+Confirm the lot number from the assay sheet appears in the "Lot" entry field			
+Confirm that the value in the "Level" combobox matches the Level value displayed at the header of the Assay sheet, in this case "Normal"			
+Confirm that the value in the "Analyzer" combobox matches the Analyzer that you are creating the control on			
+Confirm that the value in the "Expires" date fields matches the value displayed next to the Lot value on the Assay sheet			
+Confirm that the "Active" checkbox is NOT checked			
+Confirm that all the data from the assay sheet is inserted with a single 2D scan			
+Confirm that the "Historical SD" column already has entries for all the rows			
+Confirm that the Manufacturer / Mean and Manufacturer / Range column of the dialog are filled in for all the rows except the %UNCLASS and #UNCLASS rows			
+Confirm that the values in the Manufacturer / Mean column of the dialog match the values that are displayed in the "Manufacturer" column of the assay sheet			03/10/13 KK Word changed from Target to Manufacturer.
+Confirm that the values in the Range column of the dialog are two values that are separated by a dash			
+"Confirm that the 1st value in the Range column is the Manufacturer / Mean minus the Range value from the Assay sheet
+NOTE: For example, if the Mean is 2.35 and the Range value on the Assay sheet is 0.3 then the first value in the Range cell would be 2.05.
+NOTE: You don't need to confirm that every Range value is correct, spot check a few throughout the list of parameters"			
+"Confirm that the 2nd value in the Range column is the Manufacturer / Mean plus the Range value from the Assay sheet
+NOTE: For example, if the Mean is 2.35 and the Range value on the Assay sheet is 0.3 then the 2nd value in the Range cell would be 2.65.
+NOTE: You don't need to confirm that every Range value is correct, spot check a few throughout the list of parameters"			
+7. Click the "New" button			
+Confirm the Activate/Edit DigiCount™ Controls dialog closes			
+Confirm the DigiCount™ Normal sample is registered			
+Confirm the barcode is now displayed in the Control in the toolbar			
+Confirm that upon leaving the "Activate/Edit DigiCount™ Controls" dialog you are now in the QC > DigiCount™ page NOT the QC > Overview page			
+Register the DigiCount™ High Control			
+8. Under the "New control on <analyzer>" header in the toolbar, click the "DigiCount™" button			03/10/14 JJ - This whole section has been rewritten to match the rewrites of the Low and Normal sections.
+9. In the "New DigiCount™ Control" dialog, scan the 2D barcode from the DigiCount™ High assay sheet			03/13/14 KK- Cahnged Normal to High as that would be the apropriate control for this step
+Confirm the lot number from the assay sheet appears in the "Lot" entry field			
+Confirm that the value in the "Level" combobox matches the Level value displayed at the header of the Assay sheet, in this case "High"			03/13/14 KK- Changed Normal to High as that would be the apropriate control for this step
+Confirm that the value in the "Analyzer" combobox matches the Analyzer that you are creating the control on			
+Confirm that the value in the "Expires" date fields matches the value displayed next to the Lot value on the Assay sheet			
+Confirm that the "Active" checkbox is NOT checked			
+Confirm that all the data from the assay sheet is inserted with a single 2D scan			
+Confirm that the "Historical SD" column already has entries for all the rows			
+Confirm that the Manufacturer / Mean and Manufacturer / Range column of the dialog are filled in for all the rows except the %UNCLASS and #UNCLASS rows			
+Confirm that the values in the Manufacturer / Mean column of the dialog match the values that are displayed in the "Target" column of the assay sheet			
+Confirm that the values in the Range column of the dialog are two values that are separated by a dash			
+"Confirm that the 1st value in the Range column is the Manufacturer / Mean minus the Range value from the Assay sheet
+NOTE: For example, if the Mean is 2.35 and the Range value on the Assay sheet is 0.3 then the first value in the Range cell would be 2.05.
+NOTE: You don't need to confirm that every Range value is correct, spot check a few throughout the list of parameters"			
+"Confirm that the 2nd value in the Range column is the Manufacturer / Mean plus the Range value from the Assay sheet
+NOTE: For example, if the Mean is 2.35 and the Range value on the Assay sheet is 0.3 then the 2nd value in the Range cell would be 2.65.
+NOTE: You don't need to confirm that every Range value is correct, spot check a few throughout the list of parameters"			
+10. Click the "New" button			
+Confirm the Activate/Edit DigiCount™ Controls dialog closes			
+Confirm the DigiCount™ Normal sample is registered			
+Confirm the barcode is now displayed in the Control in the toolbar			
+Confirm that upon leaving the "Activate/Edit DigiCount™ Controls" dialog you are now in the QC > DigiCount™ page NOT the QC > Overview page			
+Process the DigiCount™ Controls - Rack mode			
+11. Put the DigiCount™ barcode labels on the corresponding DigiCount™ Low, Normal and High control tubes and put them in a rack			
+"12. Put new barcode labels on 2 fresh blood samples and put them in the rack after the DigiCount™ samples.
+NOTE: These blood samples will be used later for Reproducibility and Whole Blood tests"			
+13. Run the rack through the analyzer			
+14. Go to the In Process screen and watch the progress of all the samples as they move through the system			
+Confirm that when the DigiCount™ Low, Normal and High controls finish processing that they are removed from the In Process screen			
+"Confirm that the fresh blood samples complete processing without error
+NOTE: If the 2 blood samples have problems then run newer fresher samples through"			"(R) This isn't really a “confirm” here, since a processing error would not be a bug. It's more like another step of “If there is an error and rerun fails, run the sample again or try a different sample.”
+03/10/14 JJ - Updated but leaving as a confirm."
+15. Go to the QC > DigiCount™ > Table subtab			
+16. In the Control combobox, select each of the new Low, Normal and High Controls			
+Confirm Measured column has been populated for the DigiCount™ Low sample			
+Confirm Measured column has been populated for the DigiCount™ Normal sample			
+Confirm Measured column has been populated for the DigiCount™ High sample			
+Process the DigiCount™ Controls in STAT mode			
+"17. Put the DigiCount™ Low, Normal and High tubes in the STAT rack and close the drawer to start them processing in the analyzer
+
+NOTE: If the tester does not have access to STAT or Open Port then they should run the controls through the analyzer in the rack again to generate at least 3 total runs before going on to the ""Review Results - Table subtab"" section"			
+18. Go to the In Process screen and watch the progress of the DigiCount™ samples			
+Confirm all the samples complete processing without error			"(R) See above.
+03/10/14 JJ - Leaving as is, see above."
+Process the DigiCount™ Controls in Open Port mode			
+"19. Take the DigiCount™ Low sample and use the Open Port to run it through the analyzer
+NOTE: You will need to follow the process for running a sample with the Open Port"			
+20. Go to the In Process screen and watch the progress of the sample as it moves through the system and completes processing			
+Confirm the sample completes processing without error			"(R) See above.
+03/10/14 JJ - Leaving as is, see above."
+21. Take the DigiCount™ Normal sample and use the Open Port to run it through the analyzer			
+22. Go to the In Process screen and watch the progress of the sample as it moves through the system and completes processing			
+Confirm the sample completes processing without error			"(R) See above.
+03/10/14 JJ - Leaving as is, see above."
+23. Take the DigiCount™ High sample and use the Open Port to run it through the analyzer			
+24. Go to the In Process screen and watch the progress of the sample as it moves through the system and completes processing			
+Confirm the sample completes processing without error			"(R) See above.
+03/10/14 JJ - Leaving as is, see above."
+Review Results - Table subtab			
+25. Go to the QC > DigiCount™ > Table subtab			
+26. Click the Control combobox and select the Low control that was just processed			
+Confirm the results are reported in the DigiCount™ Table			
+27. Click the Control combobox and select the Normal control that was just processed			
+Confirm the results are reported in the DigiCount™ Table			
+28. Click the Control combobox and select the High control that was just processed			
+Confirm the results are reported in the DigiCount™ Table			
+Review Results - Low, Normal, High and All graph subtabs			
+29. Go to the QC > DigiCount™ > Low subtab			
+30. Click the Control combobox and select the Low control that was just processed			
+Confirm the results are reported in the DigiCount™ Low graph			
+31. Go to the QC > DigiCount™ > Normal subtab			
+32. Click the Control  combobox and select the Normal control			
+Confirm the results are reported in the DigiCount™ Normal graph			
+33. Go to the QC > DigiCount™ > High subtab			
+34. Click the Control  combobox. Select the High control			
+Confirm the results are reported in the DigiCount™ High graph			
+35. Go to the QC > DigiCount™ > All subtab			
+36. Click the Control combobox. Select the control that was just run (barcode value without an L, N or H suffix)			
+Confirm the results are reported in the DigiCount™ All graph			
+Activate DigiCount™ Low Control			
+37. Go to the QC > DigiCount™ > Table subtab			
+38. Click the Control  combobox. Select the Low control that you just created			
+39. Click the "Activate/Edit" button			
+Confirm that the "Activate/Edit DigiCount™ Controls" dialog opens			
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Expires" line is the new "Usage" line with the number of runs, in this case, "3 runs"			
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Usage" line is the new "Start" line and that it is blank			03/10/14 JJ - Updated.
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Start" line is the new "End" line and it is blank			
+40. Click on the "Active" checkbox			
+Confirm a check mark is displayed in the "Active" checkbox			
+"Confirm the following message is displayed:
+<Lot#L> will be inactive and this lot will be activated
+Where <Lot#> is the barcode of the other control
+
+NOTE: If there is no active Control, the message displayed is:
+This lot will be activated"			
+41. Click the "Save" button			
+Confirm the Activate/Edit DigiCount™ Controls dialog closes			
+Confirm the Low DigiCount™ sample is now active as indicated in the message below the Control combobox			
+Activate DigiCount™ Normal Control			
+42. Click the Control  combobox. Select the Normal control that you just created			
+43. Click the "Activate/Edit" button			
+Confirm that the "Activate/Edit DigiCount™ Controls" dialog opens			
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Expires" line is the new "Usage" line with the number of runs, in this case, "3 runs"			
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Usage" line is the new "Start" line and that it is blank			03/10/14 JJ - Updated.
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Start" line is the new "End" line which should be blank			
+44. Click on the "Active" checkbox			
+Confirm a check mark is displayed in the "Active" checkbox			
+"Confirm the following message is displayed:
+<Lot#L> will be inactive and this lot will be activated
+Where <Lot#> is the barcode of the other control
+
+NOTE: If there is no active Control, the message displayed is:
+This lot will be activated"			
+45. Click the "Save" button			
+Confirm the Activate/Edit DigiCount™ Controls dialog closes			
+Confirm the Normal DigiCount™ sample is now active as indicated in the message below the Control combobox			
+Activate DigiCount™ High Control			
+46. Click the Control  combobox. Select the High control that you just created			
+47. Click the "Activate/Edit" button			
+Confirm that the "Activate/Edit DigiCount™ Controls" dialog opens			
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Expires" line is the new "Usage" line with the number of runs, in this case, "3 runs"			
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Usage" line is the new "Start" line and that it is blank			03/10/14 JJ - Updated.
+Confirm that in the "Activate/Edit DigiCount™ Controls" dialog under the "Start" line is the new "End" line which should be blank			
+48. Click on the "Active" checkbox			
+Confirm a check mark is displayed in the "Active" checkbox			
+"Confirm the following message is displayed:
+<Lot#L> will be inactive and this lot will be activated
+Where <Lot#> is the barcode of the other control
+
+NOTE: If there is no active Control, the message displayed is:
+This lot will be activated"			
+49. Click the "Save" button			
+Confirm the Activate/Edit DigiCount™ Controls dialog closes			
+Confirm the High DigiCount™ sample is now active as indicated in the message below the Control combobox			
+Process the DigiCount Controls again (Rack mode)			
+50. Run  the 3 now active DigiCount™ samples through the analyzer again			
+Confirm that the 3 controls complete processing without errors			
+51. Go to QC > DigiCount > Table and select the active Low control in the Control Selector combobox			"(R) Are you on the Low subtab or the Table subtab? Also, selecting a lot on one page does not automatically select it on the other (so the first confirm here is incorrect)
+03/10/14 JJ - Updated."
+Confirm results are displayed in the Table			
+Confirm that lots in combobox are displayed hierarchically by day, week, month, or year if there are enough entries			
+52. Go to QC > DigiCount > Low and select the active Low control in the Control Selector combobox			
+Confirm results are displayed in the Low Graph			
+53. Go to QC > DigiCount > Table and select the active Normal control in the Control Selector combobox			
+Confirm results are displayed in the Table			
+Confirm that lots in combobox are displayed hierarchically by day, week, month, or year if there are enough entries			
+54. Go to QC > DigiCount > Normal and select the active Normal control in the Control Selector combobox			
+Confirm results are displayed in the Normal Graph			
+55. Go to QC > DigiCount > Table and select the active High control in the Control Selector combobox			
+Confirm results are displayed in the Table			
+Confirm that lots in combobox are displayed hierarchically by day, week, month, or year if there are enough entries			
+56. Go to QC > DigiCount > High and select the active High control in the Control Selector combobox			
+Confirm results are displayed in the High Graph			
+Process DigiCount Control as normal blood			
+58. Take a different DigiCount™ Normal tube (not the one you have been testing with), put a non-DigiCount™ barcode label on it and run it through the analyzer			
+59. View the progress of the sample in the In Process screen and when the process is complete, go to the Results Review page and compare the results to other normal blood samples			
+Confirm that the results are close to the normal blood results			"(R) No, there's absolutely no reason why this would be true. The “normal” blood could have any number of odd things going on, and the DigiCount sample might produce bogus results (or just fail) when not run with the Streck profile because all the morphology is off.
+03/10/14 JJ - OK, removing test."
+QC > Population subtab			
+57. Go to QC > Population			
+Confirm only a graph page is displayed			
+58. Move the horizontal scrollbar at the bottom of the page to the right until you find diamond shape points			
+Confirm all parameter graphs start with 10 unconnected diamond shaped bootstrap points			
+59. For each parameter, mouse over each diamond point			
+Confirm that the tooltip stipulates "Bootstrap 1 of 10", "Bootstrap 2 of 10", etc… up to "Bootstrap 10 of 10			
+60. Click the "+" button at the bottom of the page under the graph			
+Confirm the scale of the graph increases in size			
+61. Click the "-" button at the bottom of the page under the graph			
+Confirm the scale of the graph decreases in size			
+62. Double-click any point on the graph			
+Confirm the Exclude dialog is displayed for that point			
+63. Click the "Cancel" button in the Exclude dialog			
+Confirm the Exclude dialog closes			
+QC > Reproducibility subtab			
+64. Go to the QC > Overview subtab and under the "New control on <analyzer>" header in the toolbar, click the "Reproducibility" button			
+Confirm that the "New Reproducibility Test" dialog is displayed			
+Confirm that the "Analyzer" field contains the analyzer that you are testing on			
+Confirm that the "Barcode" field is empty			
+Confirm that the "Repeat Count" field with a default value of "20"			
+Confirm that the "Isolate sample" checkbox has a check in it			
+Confirm that the "Run Profile" combobox has a default value of "Default"			
+Confirm that the "Include retic slide" checkbox does NOT have a check in it			"(R) There's also an “include retic slide” option now.
+03/10/14 JJ - Confirm added."
+Confirm that there are "Cancel" and "New" buttons			
+65.  Scan the barcode of one of the blood samples that was run through the analyzer at the beginning of this test that was processed without any problems			
+66. Change the value in the "Repeat Count" field to some value less than "20" but greater than "5", it can be any value but is should be something small, for the purposes of this test we'll use "5".			
+67. Click the "New" button			
+"Confirm that the ""Barcode Matches Active Control"" dialog is displayed with the following message:
+Barcode ''<barcode>"" is an active sample in the In Process screen. Registering this barcode will cause any new runs of that sample to appear as a Reproducibility test. Are you sure you want to continue?"			
+68. Click the "OK" button			
+Confirm that the "Barcode Matches Active Control" dialog closes			
+Confirm that the "New Reproducibility Test" closes			
+Confirm that you are now in the QC > Reproducibility subtab			
+Confirm that the barcode specified in the dialog is now displayed in the Control Selector combobox			
+Confirm that the "Awaiting first run" message is displayed to the right of the Control Selector combobox			
+Confirm that the "Pending" message is displayed below the Control Selector combobox			
+Confirm that the "0 Failures" message is displayed below the Control Selector combobox, under the "Pending" message			
+69. Click on the Control Selector combobox			
+Confirm the barcode is displayed in bold and has a checkmark to the left of the value			
+"Process Reproducibility sample
+For the next set of Reproducibility tests, read and understand ALL the steps below before starting. This is the part of the test that requires that the hood of the analyzer be up (see Pre-Requisite section) and using a piece of paper to produce failures"			
+70. Take the blood tube with the Reproducibility barcode, put it on a rack and run it through the analyzer			
+71. Go to the In Process screen, while running the next steps, watch the progress of each of the Reproducibility runs			
+Confirm that the details of each run are listed in the sidebar to the right in the format; "Results 1 of 5", "Results 2 of 5", etc… up to "Results 5 of 5"			
+72. When run #2 reaches the Low Magnification station, hold a piece of paper between the sensor and the slide until it fails			
+Confirm an error message is displayed on the cVS			
+"Confirm after the failure, under the ""Individual run status"" in the sidebar, a new 2nd re-run entry is added for Results 2 of 5
+NOTE: This second run may occur later"			"(R) We don't actually make any requirements about when the analyzer does the rerun, just that it should do it before moving on to the next sample. So, for example, it would be fine for it to start runs 3, 4, 5 before doing the rerun of 2.
+03/10/14 JJ - Confirm note added."
+73. Allow run #3 to be processed			
+74. When run #4 gets to the Low Magnification station, hold a piece of paper between the sensor and the slide until it fails			
+Confirm an error message is displayed on the cVS			
+"Confirm after the failure, under the ""Individual run status"" in the sidebar, a new 2nd re-run entry is added for Results 4 of 5
+NOTE: This second run may occur later"			"(R) See above.
+03/10/14 JJ - Confirm note added."
+75. When the re-run of run #2 reaches the Low Magnification station, don't block it, allow it to complete processing			
+76. When run #4 reaches the Low Magnification station, hold a piece of paper between the sensor and the slide until it fails			
+Confirm an error message is displayed on the cVS			
+"Confirm under the ""Individual run status"" in the sidebar, no new entry is added for Results 4 of 5
+Note: in case of a failure, the analyzer automatically re-runs the sample. If the same run fails twice, the analyzer should not start another re-run"			
+77. Allow run #5 to be processed			
+78. As the runs are being processed, go to QC > Reproducibility and view the table for the test that was just run			
+Confirm that, when each run is complete, a column is added to the table, to the right of the Target column. Each run is sorted by date, run time and mode. All runs are merged under the date header			
+"Confirm the columns for runs #2 and #4 are blank since the  re-runs have not yet been completed
+Note: The blank column for run #4 is only added when run #5 is complete and the column for that run is added"			
+Confirm the values for one of the runs, look approximately correct (no or few cells with a red or yellow background)			"(R) This isn't really a “confirm”, since it's not a bug if the results are bad – it just means that something's wrong with your sample.
+03/10/14 JJ - Removing this confirm"
+79. Go back to the In Process screen and wait for all runs to complete			
+"Confirm the Reproducibility tube is returned to the rack
+Note: until all Reproducibility runs have been completed AND the reruns have started, the Analyzer should not put the tube back in the rack"			"(R) Not true. The tube is returned once all the first runs have completed, and all the reruns have started. So, reruns of 2 and 4 might still be in processing when the tube is returned.
+03/10/14 JJ - Confirm updated."
+Confirm the Reproducibility record is removed from the In Process screen			
+80. Go to QC > Reproducibility			
+"Confirm columns for runs #1, #2, #3 and #5 contain values
+Note: the columns for each run are created following the numerical run order (run#1 to #5). Check the run time to tag each run"			"(R) No, the columns should be in numerical run order; if they aren't then it's a bug. What will be out of order is the completion times: run 2 will have a later completion time because it was rerun.
+03/10/14 JJ - Confirm updated."
+Confirm the 4th column from the right (since the 4th run failed 2 times) is blank			"(R) The time on this column should match the time the run failed (the time displayed in the error message), not when it would have completed.
+03/10/14 JJ - Confirm updated."
+One-Off: Immortal Reproducibility			
+81. Go to QC main page and press the Reproducibility button to create a reproducibility lot. 			
+82. Enter in a new barcode and set the repeat count to 10 (leave the rest of the settings as default).			
+83. Press the New button to register the lot, run the lot on the Analyzer, and after 3 slides are produced, press the Cancel button in the Reproducibility QC toolbar. 			
+84. Click to the In Process main tab, highlight the lot, and quickly observe that the reproducibility lot is cancelled from the sidebar status. 			
+85. Quickly observe that the Delete Sample button is grayed out. 			
+86. Verify that the reproducibility lot will eventually be released, once the user manually acknowledges all of the errors and it does not linger in the In Process Samples List once it is cancelled during processing; verify that the QC Reproducibility and see that 3 successful runs are filled in table.			
+Confirm that cancelling a reproducbility lot while it is processing does not cause the Delete button to be disabled and it gets released to the QC record and eventually remove from the In Process Samples List. 			
+QC > Whole Blood subtab			
+87. Under the "New control on <analyzer>" header in the toolbar, click the "Whole Blood" button			
+Confirm that the "New Whole Blood Control" dialog is displayed			
+Confirm that the "Barcode" field is empty			
+Confirm that the "Run Profile" combobox has a default value of "Default"			
+Confirm that the "Include retic slide" checkbox does NOT have a check in it			"(R) There's also an “include retic slide” option now.
+03/10/14 JJ - Confirm added."
+Confirm that there are "Cancel" and "New" buttons			
+88. Scan the barcode of the other blood sample that was run through the analyzer previously			
+89. Click the "New" button			
+"Confirm that the ""Barcode Matches Active Control"" dialog is displayed with the following message:
+Barcode ''<barcode>"" is an active sample in the In Process screen. Registering this barcode will cause any new runs of that sample to appear as a Whole Blood control. Are you sure you want to continue?"			
+90. Click the "Cancel" button			
+Confirm that the "Barcode Matches Active Control" dialog closes			
+Confirm that the focus is back on the "New Whole Blood Control" dialog			
+91. Click the "Cancel" button			
+Confirm the "New Whole Blood Control" dialog closes			
+Confirm the  scanned barcode is NOT displayed in the Control combobox			
+92. Go to the In Process screen and highlight the record that triggered the Barcode Matches Active Control dialog in the previous test			
+93. Click the "Delete Sample" button in the toolbar			
+94. In the Delete Sample dialog,  enter your Username and Password and click the "Delete" button			
+Confirm the sample is no longer displayed			
+95. Go to the QC > Overview subtab and under the "New control on <analyzer>" header in the toolbar, click the "Whole Blood" button			
+96. Scan the barcode that triggered the Barcode Matches Active Control dialog previously and click on the "New" button			
+Confirm that the "New Whole Blood Control" dialog closes			
+Confirm that the barcode is displayed in the Control Selector combobox			
+Confirm that the message "Started: [date/time]" is displayed to the right of the Control Selector combobox with [date/time] being the time the control was created			
+"Confirm that below the ""Started:"" message is “Active until: [date/time]” where 
+[date/time] is the ""Started"" date / time plus 24 hours"			
+Confirm that the "Active" message is displayed below the Control Selector combobox			
+Confirm that below the "Active" message is “No runs on [Analyzer]” where [Analyzer] is the Analyzer name			
+97. Click the Control Selector combobox			
+Confirm the barcode is displayed in bold and has a checkmark to the left			
+Process Whole Blood sample - Rack mode			
+98. Put the sample on a rack and run it through the analyzer			
+99. Go to the In Process screen and review the progress of the sample until it completes processing			
+Confirm the Whole Blood record is removed from the In Process screen			
+100. Go to the QC > Whole Blood subtab, in the Analyzer Selector combobox select the appropriate Analyzer and in the Control Selector combobox select the control that was just run			
+Confirm that it defaults to the Table subtab			
+Confirm that the table contains a new column for the run and the column header is today's date			
+Confirm that the column contains a sub-column with the Analyzer the run was processed on at the top			
+Confirm that below the analyzer name is the time the run was completed			"(R) When it was completed, not when it started.
+3/10/14 JJ - Updated."
+Confirm that below the run time is mode used to process the sample, in this case the mode will be "Rack"			
+Process Whole Blood sample - Rack mode on a different analyzer in the same Labgroup			
+101. Go to a different analyzer in the same labgroup and run the same Whole Blood control			
+102. Go to the In Process screen and review the progress of the control			
+Confirm that the sample is treated as a Whole Blood control, not a normal blood sample			
+Confirm that when the sample completes processing, the Whole Blood record is removed from the In Process screen			
+103. Go to the QC > Whole Blood > Table subtab, in the Analyzer Selector combobox select the appropriate Analyzer and in the Control Selector combobox select the control that was just run			
+Confirm that the table contains, under the same date column header, a new column for the just completed run			
+Confirm that the new column is to the left of the 1st column run earlier			
+Confirm that at the top of the new column is the different Analyzer that the run was processed on			
+Confirm that below the analyzer name is the time the run was processed			
+Confirm that below the run time is mode used to process the sample; in this case the mode will be "Rack"			
+Process Whole Blood sample - STAT mode			
+104. Go back to the 1st analyzer and run the same Whole Blood control in the STAT rack			
+105. Go to the In Process screen and review the progress of the control			
+Confirm that the sample is treated as a Whole Blood control, not a normal blood sample			
+Confirm that when the sample completes processing, the Whole Blood record is removed from the In Process screen			
+106. Go to the QC > Whole Blood > Table subtab, in the Analyzer Selector combobox select the appropriate Analyzer and in the Control Selector combobox select the control that was just run			
+Confirm that the table contains, under the same date column header, a new column for the run			
+Confirm that the new column is to the left of the other runs			
+Confirm that at the top of the new column is the Analyzer that the run was processed on			
+Confirm that below the analyzer name is the time the run was processed			
+Confirm that below the run time is mode used to process the sample; Rack, Open Port or STAT, in this case the mode will be "STAT"			
+Process Whole Blood sample - Open Port mode			
+107. Run the Whole Blood sample through the analyzer using the Open Port			
+108. Go to the In Process screen and review the progress of the control			
+Confirm that the sample is treated as a Whole Blood control, not a normal blood sample			
+Confirm that when the sample completes processing, the Whole Blood record is removed from the In Process screen			
+109. Go to the QC > Whole Blood > Table subtab, in the Analyzer Selector combobox select the appropriate Analyzer and in the Control Selector combobox select the control that was just run			
+Confirm that the table contains, under the same date column header, a new column for the run			
+Confirm that the new column is to the left of the other runs			
+Confirm that at the top of the new column is the Analyzer that the run was processed on			
+Confirm that below the analyzer name is the time the run was processed			
+Confirm that below the run time is mode used to process the sample; in this case the mode will be "Open"			
+QC > Whole Blood - Graph Subtab			
+"110. Go to the QC > Whole Blood > Graph, in the Analyzer Selector combobox select the appropriate Analyzer
+NOTE: If the ""Separate by Mode"" checkbox is checked, click on it to disable it for this test"			
+Confirm all the runs are displayed on the graph			
+Confirm that the "+" and "-" buttons under the graph are active			
+Confirm that there is a different colored square next to each analyzer listed			
+Confirm that to the right of each colored square for each analyzer is a checkbox that is checked default			
+Confirm that to the right of each checkbox is each analyzer name			
+Confirm that to the right of the analyzer names are 2 radio buttons with the names "Absolute" and "Percent" with "Absolute" selected by default			
+Confirm that to the right of the  "Absolute" and "Percent" radio buttons is the "Separate by Mode" checkbox with the checkbox unchecked by default			
+111. Click on the "Separate by Mode" checkbox to check it			
+Confirm that for each analyzer listed below the graph an additional line is displayed below it			
+Confirm that the top line displays the analyzer name with “Rack and STAT” to the right of it			"(R) This should now be called “Rack and STAT”, not “Closed”
+03/10/14 JJ - Confirm updated."
+Confirm that the line below displays the analyzer name with "Open" to the right of it which represents the "Open Port" runs			
+Confirm that all of the analyzer lines still have colored boxes and checkboxes next to them			
+Confirm that the analyzer lines colored boxes are a slightly different shade from the one above it			
+112. Click on all the "<Analyzer name> Closed" checkboxes to disable them			
+Confirm only the points for the Open Port run are displayed in the graph			
+113. Click on the "<Analyzer name> Closed" checkboxes to enable them again and click on the "<Analyzer name> Open" checkboxes to disable them			
+Confirm that only the points for the Rack and STAT runs are displayed in the graph			
+114. Click on the "<Analyzer name> Closed" checkboxes to disable them			
+Confirm that no points are displayed in the graph			
+115. Click on the "Separate by Mode" checkbox to disable it			
+Confirm the data for each Analyzer is displayed again (no longer by Analyzer/Mode)			
+116. Click on the checkboxes for all the analyzers to disable them			
+Confirm the graph is blank (data and points have been removed)			
+117. Click on the checkbox for both Analyzer to enable them			
+Confirm data and points are once again displayed			
+118. Click the "Percent" radio button			
+Confirm the "Percent" radio button becomes active and the "Absolute" radio button becomes inactive			
+Confirm the values in the row headers change from absolute to percentages			"(C) Presumably meaning the values on the y axis labels?
+03/10/14 JJ - Updated."
+119. Click the "Absolute" radio button			
+Confirm the "Absolute" radio button becomes active and the "Percent" radio button becomes inactive			
+Confirm the values in the row headers change from percentages to absolute			03/10/14 JJ - Updated.
+QC > Overview subtab			
+120. Go to QC > Overview subtab			
+Confirm the Overview table is displayed			
+Confirm the table has the following column main headers; -"Analyzer", -"DigiCount™", "Population". "Reproducibility" and "Whole Blood"			
+Confirm that under the "DigiCount™" main header are 3 column with the headers; "Low", "Normal" and "High"			
+Confirm that if any of the cells in a row are red than the row header is red			
+Confirm that if none of the cells in a row are red and one of them is yellow than the row header is yellow			
+Confirm that if none of the cells in a row are red or yellow and one of them is green than the row header is green			
+Confirm that if none of the cells in a row are red, yellow or green (that all of them are gray, meaning there is no data for that analyzer) than the row header will be gray			
+Confirm that if one of the cells in a row displays the "Lockout" icon than the row header will have the "Lockout" icon			
+Confirm that if none of the cells in a row displays the "Lockout" icon and one of the cells displays the "Attention" icon  than the row header will have the "Attention" icon			
+Confirm that if none of the cells in a row displays the "Lockout" or "Attention" icon than the row header will have no icon in it			
+QC > Overview / DigiCount Cells			
+121. Write down the number of Failure(s) and Warning(s) displayed in the cells for DigiCount™ Low, Normal, High, Population, Reproducibility and Whole Blood			
+122. Click the DigiCount™ Low cell in the Overview table for one of the analyzers			
+Confirm QC > DigiCount™ > Table page is displayed for that control			
+Confirm Control combobox displays the active DigiCount Low Control			
+123. Count the cells with a red background (Failures)			
+Confirm Failure number on the Table page match the number on the Overview page			
+124. Count the cells with a yellow background (Warnings)			
+Confirm Warning number on the Table page match the number on the Overview page			
+Confirm Failure and Warning numbers are displayed in the toolbar under Fail and Warn respectively. The numbers match the Overview page.			
+125. Count the cells with a red and yellow background in the most recent run only			
+Confirm that if there is at least 1 red cell in the run than the cell in the Overview table is also red			
+Confirm that if there if NO cells in the run are red and at least 1 cell is yellow than the cell in the Overview table is also yellow			
+Confirm that if there if NO cells in the run are red or yellow than the cell in the Overview table is green			
+126. Click the QC > Overview subtab			
+127. Click the DigiCount™ Normal cell in the Overview table for one of the analyzers			
+Confirm QC > DigiCount™ > Table page is displayed for that control			
+Confirm Control combobox displays the active DigiCount Normal Control			
+Count how many cells have a red background (Failures)			
+Confirm Failure number on the Table page match the number on the Overview page			
+Count how many cells have a yellow background (Warnings)			
+Confirm Warning number on the Table page match the number on the Overview page			
+Confirm Failure and Warning numbers are displayed in the toolbar under Fail and Warn respectively. The numbers match the Overview page.			
+128. Count the cells with a red and yellow background in the most recent run only			
+Confirm that if there is at least 1 red cell in the run than the cell in the Overview table is also red			
+Confirm that if there if NONE cell in the run are red and at least 1 cell is yellow than the cell in the Overview table is also yellow			
+Confirm that if there if NONE cell in the run are red or yellow than the cell in the Overview table is green			
+129. Click the Overview side tab			
+130. Click the DigiCount™ High cell in the Overview table for one of the analyzers			
+Confirm QC > DigiCount™ > Table page is displayed for that control			
+Confirm Control combobox displays the active DigiCount High Control			
+Count how many cells have a red background (Failures)			
+Confirm Failure number on the Table page match the number on the Overview page			
+Count how many cells have a yellow background (Warnings)			
+Confirm Warning number on the Table page match the number on the Overview page			
+Confirm Failure and Warning numbers are displayed in the toolbar under Fail and Warn respectively. The numbers match the Overview page.			
+131. Count the cells with a red and yellow background in the most recent run only			
+Confirm that if there is at least 1 red cell in the run than the cell in the Overview table is also red			
+Confirm that if there if NONE cell in the run are red and at least 1 cell is yellow than the cell in the Overview table is also yellow			
+Confirm that if there if NONE cell in the run are red or yellow than the cell in the Overview table is green			
+QC > Overview / Population Cells			
+132. Click the Overview side tab			
+133. Click the Population cell in the Overview table for one of the analyzers			
+Confirm the QC > Population page is displayed for that control that has errors			
+Confirm Failure(s) and Warning(s) numbers values match the numbers on the Overview page			
+Confirm Failure and Warning numbers are displayed in the toolbar under Fail and Warn respectively. The numbers match the Overview page.			
+134. Count the red and yellow points in the most recent run only			
+Confirm that if there is at least 1 red cell in the run than the cell in the Overview table is also red			
+Confirm that if NO cells in the run are red and at least 1 cell is yellow than the cell in the Overview table is also yellow			
+Confirm that if NO cells in the run are red or yellow than the cell in the Overview table is green			
+QC > Overview / Reproducibility			
+135. Click the Overview side tab			
+136. Click the Reproducibility cell in the Overview table for one of the analyzers			
+Confirm QC > Reproducibility page is displayed for the control that has errors			
+Confirm Failure number(s) values match the numbers on the Overview page			"(C) Here counting failed parameters – cells in the Parameter (far left) column that are highlighted in red (not in the table of results).
+03/10/14 JJ - Taking this confirm out, it is detailed in the next test below."
+Confirm Failure numbers are displayed in the toolbar and match the Overview page			
+137. Count the number of cells in the Parameter column that have a red background			
+Confirm that if there is at least 1 red cell than the cell in the Overview table is also red			
+Confirm that if NO cells are red than the cell in the Overview table is green			
+QC > Overview / Whole Blood			
+138. Click the Overview side tab			
+139. Click the Whole Blood cell in the Overview table for one of the analyzers			
+Confirm QC > Whole Blood page is displayed for that control			
+Confirm Failure(s) and Warning(s) numbers values match the numbers on the Overview page			"(R) Isn't this the same as the next confirm? Or are you saying to count the failures and warnings only in the columns for that one analyzer, and confirm that they match what was on the Overview page?
+03/10/14 JJ - Removing next confirm."
+Confirm Failure and Warning numbers are displayed in the toolbar under Fail and Warn respectively. The numbers match the Overview page.			
+QC > Overview / Changing Failure and Warning numbers			
+140. Click the Overview side tab			
+141. Click any DigiCount™ cell			
+Confirm QC > DigiCount™ > Table page is displayed for that control			
+142. Double-click a cell with a red background			
+Confirm Exclude window opens			
+143. Check the Exclude Result checkbox. Enter a comment then press the "Save" button			
+144. Double-click a cell with a yellow background			
+Confirm Exclude window opens			
+145. Check the Exclude Result checkbox. Enter a comment then press the "Save" button			
+Confirm Fail and Warn values have been decreased by 1			
+146. Click the Overview side tab			
+Confirm for the selected DigiCount™ cell the Failure(s) number decreased by 1			
+Confirm for the selected DigiCount™ cell the Warning(s) number decreased by 1			
+147. Click the Overview side tab			
+148. Click the same DigiCount™ cell			
+Confirm QC > DigiCount™ page is displayed for that control			
+149. Double-click the "Failure" cell excluded previously to bring up the Exclude dialog			
+150. Uncheck the Exclude Result checkbox. Enter a comment then press the "Save" button			
+Confirm the cell background is back to red			
+151. Double-click the "Warning" cell excluded previously to bring up the Exclude dialog			
+152. Uncheck the Exclude Result checkbox. Enter a comment then press the "Save" button			
+Confirm the cell background is back to yellow			
+Confirm for the selected DigiCount™ cell the Warning(s) number increased by 1			
+153. Click the Overview side tab			
+Confirm for the selected DigiCount™ cell the Failure(s) number increased by 1			
+Confirm for the selected DigiCount™ cell the Warning(s) number increased by 1			
+Reproducibility Negative test			
+154. Put a new barcode label on an empty tube			
+155. Under the "New control on <analyzer>" header in the toolbar, click on the "Reproducibility" button in the toolbar to bring up the "New Reproducibility Test" dialog			
+156. Scan the barcode, change the value in the "Repeat Count" field to "2", leave all the other options in the dialog as the defaults and click the "New" button			
+157. Put the empty tube in a rack in the 1st position			
+158. Put a new barcode label on a normal blood tube, put it in the 2nd position and run the rack through the analyzer			
+159. Go to the In Process screen. Review the progress of the Reproducibility sample			
+Confirm the tube is NOT put back in the rack after the 1st sample is taken for the 1st run			
+Confirm the tube is NOT put back in the rack after the 2nd sample is taken for the 2nd run			
+Confirm, since the 1st slide for the 1st run has no blood on it, the Low Magnification station reports an error			
+Confirm the analyzer takes another sample from the empty tube and begins processing it as a rerun for the failed 1st run			
+160. View the In Process screen as the 2nd slide (for the 2nd run) gets to the Low Magnification station			
+Confirm, since the slide has no blood on it, the Low Magnification station reports an error			
+Confirm the analyzer takes another sample from the empty tube and begins processing it as a rerun for the failed 2nd sample of the 2nd run			
+Confirm, since a rerun sample for both failed runs has been taken, the tube IS put back in the rack			
+Confirm that at this point 4 slides are being processed			
+Confirm that the 2nd tube with the normal blood sample is picked up and begins processing			
+161. Review the progress of the normal blood sample			
+"Confirm the normal blood sample is processed as a normal sample
+NOTE: If there are problems make sure they are the usual types of problems that can occur with a normal blood sample"			
+Confirm that, once the normal blood sample has been drawn and the tube is returned to the rack, it moves to the 2nd position on the belt			
+162. Review the In Process screen			
+"Confirm that are a total of 5 slides being processed
+NOTE: If there is a problem with the normal blood tube that causes another slide to be processed it should not be considered an error, the main point of this test is to verify that when 4 slides will be run for the failed Reproducibility runs"			
+163. Go to QC > Reproducibility and review the table for the latest run			
+Confirm there are 2 empty columns for the failed runs			
+Confirm the runs are Excluded and may be re-included which will display values reported as 0			"(R) There was a bug that did this, but it's been fixed since at least September. At present you can re-include the run, but it's still all blank.
+03/10/14 JJ - Removing this confirm."
+Whole Blood  Negative test			
+164. Put a new barcode label on an empty tube			
+165. Under the "New control on <analyzer>" header in the toolbar, click on the "Whole Blood" button in the toolbar to bring up the "New Whole Blood Control" dialog			
+166. When the "New Whole Blood Control" dialog is displayed, scan the barcode and click on the "New" button			
+167. Put the empty tube in a rack in the 1st position			
+168. Put a new barcode label on a normal blood tube			
+169. Put the normal blood tube in the 2nd position and run the rack through the analyzer			
+Confirm after the 1st slide begins processing the empty tube is returned to the rack			
+Confirm that, once the 2nd tube with the normal blood sample has been drawn and the tube is returned to the rack, it moves to the 2nd position on the belt			
+170. Go to the In Process screen and review the progress of the samples			
+Confirm that, since the 1st slide has no blood on it, when it gets to the Low Magnification station it reports an error			
+Confirm the analyzer picks up the empty tube again and takes another sample to rerun the failed sample			
+Confirm the tube is put back in the rack			
+171. Review the In Process screen			
+Confirm a total of 3 slides are moving through the analyzer			
+Confirm that, after the 2nd blood sample completes processing but BEFORE the rerun of the Whole Blood control is finished, the rack moves down to the end of the belt			
+172. Go to QC > Whole Blood and review the table for the latest run			
+Confirm that no data is displayed since both runs failed			"(R) No, empty columns for failures appear only in Reproducibility.
+03/10/14 JJ - Updated."
+"Reproducibility limit test
+The following test is usually run 1 out of 3 times. Contact Development to confirm when this test needs to be done. The ""Repeat Count"" value of at least ""31"" is part of the Clinical Protocol."			
+"173. Put a new barcode label on a normal blood tube, click the ""Reproducibility"" button in the toolbar to bring up the ""New Reproducibility Test"" dialog
+NOTE: Select a tube that contains a high volume of blood and has record of having normal results return from previous runs"			
+"174. Scan the barcode, change the value in the ""Repeat Count"" field to at least ""31"" and click the ""New"" button to close the ""New Reproducibility Test"" dialog
+NOTE: This value can be set to a number larger than ""31"""			
+175. Put a new barcode label on another normal blood tube, put it in the 2nd position and run the rack through the analyzer			
+176. Review the In Process screen			
+Confirm that the analyzer does not pick up the 2nd blood tube until all 31 (or more) Reproducibility samples complete processing			
+Confirm that if any slides in the Reproducibility run fail that a 2nd slide is re-run for that failure			
+Confirm that if any sample in the Reproducibility run fails a 2nd time that it is NOT re-run			
+Confirm that only after all runs of the Reproducibility test are completed (along with any reruns that are started due to failures) that the Reproducibility tube is returned to the rack and the next blood tube in the rack is selected			"(R) It will also go on to the next tube if there were failures and they have all started (but not completed) their reruns.
+03/10/14 JJ - Updated."
+177. Go to QC > Reproducibility and review the table for the latest run			
+Confirm there are 31 (or more) columns, 1 for each sample in the run			
+Confirm that any runs that failed twice will have an empty column			
+178. Go to the Results tab and review the table for the latest run			
+Confirm that the blood sample processed after the Reproducibility test completed processing

@@ -1,0 +1,831 @@
+:     Name_TableHeaderItemProxy	{caption='     Name' container=':Bloodhound™ Viewing Station v1.2.3_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:0_0_TableItemProxy	{column='0' container=':Table_QCTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:0_1_TableItemProxy	{column='1' container=':Analyzers_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:0_2_TableItemProxy	{column='2' container=':Report_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:0_2_TableItemProxy_2	{column='2' container=':Analyzers_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:1_2_TableItemProxy	{column='2' container=':Report_JTable_2' row='1' type='com.froglogic.squish.awt.TableItemProxy'}
+:2_0_TableItemProxy	{column='0' container=':Results_JTable' row='2' type='com.froglogic.squish.awt.TableItemProxy'}
+:Accession #_TableHeaderItemProxy	{caption='Accession #' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:All_JPanel	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='87' visible='true'}
+:All_JPanel_2	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='2' visible='true'}
+:All_JPanel_3	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='91' visible='true'}
+:All_JPanel_4	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='120' visible='true'}
+:All_JPanel_5	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='205' visible='true'}
+:All_JPanel_6	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='92' visible='true'}
+:All_JPanel_7	{basetype='javax.swing.JPanel' container=':DigiCount™.All_TabProxy' occurrence='121' visible='true'}
+:Analyzer Simulator_JFrame	{caption='Analyzer Simulator' type='javax.swing.JFrame' visible='true'}
+:Analyzer Simulator_SpriteCanvas	{type='fake.sprites.SpriteCanvas' visible='true' window=':Analyzer Simulator_JFrame'}
+:Analyzer_TableHeaderItemProxy	{caption='Analyzer' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Analyzers.(Drawer open on Bloodhound 1)_JLabel	{basetype='javax.swing.JLabel' caption='(Drawer open on Bloodhound 1)' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' visible='true'}
+:Analyzers.(Drawer open on Bloodhound 1)_JTable	{aboveWidget=':Analyzers.(Drawer open on Bloodhound 1)_JLabel' basetype='javax.swing.JTable' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' visible='true'}
+:Analyzers.Cleaning Solution_JButton	{basetype='javax.swing.JButton' caption='Cleaning Solution' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' visible='true'}
+:Analyzers.Delete_JButton	{basetype='javax.swing.JButton' caption='Delete' container=':Configuration.Analyzers_TabProxy' visible='true'}
+:Analyzers.OK_JButton	{basetype='javax.swing.JButton' caption='OK' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' visible='true'}
+:Analyzers.Replace Item_JButton	{basetype='javax.swing.JButton' caption='Replace Item' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' visible='true'}
+:Analyzers.Revert Item_JButton	{basetype='javax.swing.JButton' caption='Revert Item' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' visible='true'}
+:Analyzers.This Viewing Station's name_JLabel	{caption='This Viewing Station\\'s name' container=':Configuration.Analyzers_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Analyzers.This Viewing Station's name_PlaceholderOverlay	{container=':Configuration.Analyzers_TabProxy' leftWidget=':Analyzers.This Viewing Station\\'s name_JLabel' type='util.PlaceholderOverlay' visible='true'}
+:Analyzers_JLabel	{caption='' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' tooltiptext='<html>Slide Printing<br/>Empty</html>' type='javax.swing.JLabel' visible='true'}
+:Analyzers_JLabel_2	{caption='' container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' tooltiptext='<html>2nd Stainer<br/>SL00002<br/>Ordered tests: CBC, Diff.</html>' type='javax.swing.JLabel' visible='true'}
+:Analyzers_JPanel	{container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' occurrence='1' type='javax.swing.JPanel' visible='true'}
+:Analyzers_JPanel_2	{container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' occurrence='4' type='javax.swing.JPanel' visible='true'}
+:Analyzers_JTable	{basetype='javax.swing.JTable' container=':Configuration.Analyzers_TabProxy' visible='true'}
+:Archives./_JLabel	{caption='/' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Archives./_JLabel_2	{caption='/' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Archives./_JLabel_3	{caption='/' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:Archives./_JLabel_4	{caption='/' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:Archives./_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives./_JLabel' visible='true'}
+:Archives./_JTextField_2	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives./_JLabel_2' visible='true'}
+:Archives./_JTextField_3	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives./_JLabel_3' visible='true'}
+:Archives./_JTextField_4	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives./_JLabel_4' visible='true'}
+:Archives.1 sample_JLabel	{caption='1 sample' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Archives.4 samples_JLabel	{caption?='*sample*' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Archives.Close_JButton	{caption='Close' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JButton' visible='true'}
+:Archives.End:_JLabel	{caption='End:' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Archives.End:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives.End:_JLabel' visible='true'}
+:Archives.Export Current_JButton	{caption='Export Current' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JButton' visible='true'}
+:Archives.Export Raw_JButton	{caption='Export Raw' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JButton' visible='true'}
+:Archives.Export_JButton	{caption='Export' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JButton' visible='true'}
+:Archives.Print_JButton	{caption='Print' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JButton' visible='true'}
+:Archives.Search Archives_JButton	{basetype='javax.swing.JButton' caption='Search Archives' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' visible='true'}
+:Archives.Search Archives_JTable	{aboveWidget=':Archives.Search Archives_JButton' basetype='javax.swing.JTable' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' visible='true'}
+:Archives.Search_JLabel	{caption='Search' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Archives.Search_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives.Search_JLabel' visible='true'}
+:Archives.Search_PlaceholderOverlay	{container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives.Search_JLabel' type='util.PlaceholderOverlay' visible='true'}
+:Archives.Start:_JLabel	{caption='Start:' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Archives.Start:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' leftWidget=':Archives.Start:_JLabel' visible='true'}
+:Archives.View Results_JButton	{caption='View Results' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='javax.swing.JButton' visible='true'}
+:Archives.WBC_TabProxy	{caption='WBC' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Archives_JTable	{basetype='javax.swing.JTable' container=':Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy' occurrence='1' visible='true'}
+:Bloodhound 1	{caption?='Bloodhound 1*' container=':Table_JTableHeader_2' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Bloodhound 1.Calibration Runs_TabProxy	{caption='Calibration Runs' container=':Maintenance.Bloodhound 1_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Bloodhound 1.Calibration_TabProxy	{caption='Calibration' container=':Maintenance.Bloodhound 1_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Bloodhound 1.Consumable History_TabProxy	{caption='Consumable History' container=':Maintenance.Bloodhound 1_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Bloodhound 1.Event Logs_TabProxy	{caption='Event Logs' container=':Maintenance.Bloodhound 1_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Bloodhound 1.Usage History_TabProxy	{caption='Usage History' container=':Maintenance.Bloodhound 1_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Bloodhound 2	{caption?='Bloodhound 2*' container=':Table_JTableHeader_2' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Bloodhound™ Viewing Station v1.2.3. / _JLabel	{caption=' / ' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3. / _JLabel_2	{caption=' / ' occurrence='1' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3. / _JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3. / _JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3. / _JTextField_2	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3. / _JLabel_2' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.+_JButton	{caption='+' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.1 of 2_JLabel	{caption?='1 of *' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.3 runs_JLabel	{caption?='* runs' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.3/5/14 6:26 AM_JLabel	{caption='3/5/14 6:26 AM' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.5 runs_JLabel	{caption='5 runs' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.6 of 6_JLabel	{caption='6 of 6' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Accession\nNumber_JLabel	{caption='Accession\nNumber' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Accession\nNumber_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Accession\nNumber_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Accession #:_JLabel	{caption?='Accession*' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Accession #:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Accession #:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Acknowledge_JButton	{basetype='javax.swing.JButton' caption='Acknowledge' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Active_JCheckBox	{caption='Active' type='javax.swing.JCheckBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy	{caption='Analyzers' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Archive_JButton	{basetype='javax.swing.JButton' caption='Archive' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Archives_TabProxy	{caption='Archives' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Barcode Read Failure_JLabel	{caption='Barcode Read Failure' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Barcode:_JLabel	{basetype='javax.swing.JLabel' caption='Barcode:' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Barcode:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Barcode:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Bloodhound 1_JLabel	{caption='Bloodhound 1' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Bootstrap_JButton	{basetype='javax.swing.JButton' caption='Bootstrap' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.CBC_JCheckBox	{caption='CBC' type='javax.swing.JCheckBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Cancel_JButton	{basetype='javax.swing.JButton' caption='Cancel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Check_JButton	{caption='Check' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Clear_JButton	{caption='Clear' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Clear_JButton_2	{caption='Clear' occurrence='1' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Close Sample_JButton	{basetype='javax.swing.JButton' caption='Close Sample' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Collated_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Collated' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy	{caption='Configuration' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Copy_JButton	{caption='Copy' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Copy_JButton_2	{caption='Copy' occurrence='1' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Copy_JButton_3	{caption='Copy' occurrence='2' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Create_JButton	{caption='Create' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Delete_JButton	{basetype='javax.swing.JButton' caption='Delete' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Diff_JCheckBox	{caption?='Diff*' type='javax.swing.JCheckBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Dilution factor: ×_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Dilution factor: ×' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Dilution factor: ×_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Dilution factor: ×_JCheckBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Dilution:  1 :_JLabel	{caption='Dilution:  1 :' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Dilution:  1 :_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Dilution:  1 :_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Dilution: 1:_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Dilution: 1:' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Dilution: 1:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Dilution: 1:_JCheckBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Edit_JButton	{caption='Edit' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.End:_JLabel	{caption='End:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.End:_JLabel_2	{caption='' leftWidget=':Bloodhound™ Viewing Station v1.2.3.End:_JLabel' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Exclude Population Batch_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Exclude Population Batch' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Export_JButton	{caption='Export' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Files of type:_JComboBox	{leftWidget=':Bloodhound™ Viewing Station v1.2.3.Files of type:_JLabel' type='javax.swing.JComboBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Files of type:_JLabel	{caption='Files of type:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Format:_JComboBox	{basetype='javax.swing.JComboBox' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Format:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Format:_JLabel	{caption='Format:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Help_TabProxy	{caption='Help' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Hide_JButton	{caption='Hide' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Hide_JButton_2	{basetype='javax.swing.JButton' caption='Hide' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Ilvolvsky, Vadim_JLabel	{caption='Ilvolvsky, Vadim' occurrence='3' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Ilvolvsky, Vadim_JLabel_2	{caption='Ilvolvsky, Vadim' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Ilvolvsky, Vadim_JTextArea	{aboveWidget=':Bloodhound™ Viewing Station v1.2.3.Ilvolvsky, Vadim_JLabel_2' basetype='javax.swing.JTextArea' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy	{caption='In Process' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Include retic slide_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Include retic slide' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Include retic_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Include retic' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Isolate sample_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Isolate sample' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Log In_JButton	{caption='Log In' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Log Out_JButton	{caption='Log Out' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Lot_JLabel	{caption?='Maintenance*' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Low_JLabel	{caption='Low' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Maintenance_TabProxy	{caption='Maintenance' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Name:_JLabel	{caption='Name:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.New_JButton	{caption='New' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.New_JButton_2	{basetype='javax.swing.JButton' caption='New' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Normal_JRadioButton	{caption='Normal' type='javax.swing.JRadioButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Normal_JRadioButton_2	{caption='Normal' occurrence='1' type='javax.swing.JRadioButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.OK_JButton	{basetype='javax.swing.JButton' caption='OK' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Overwrite_JButton	{caption='Overwrite' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Paired_JRadioButton	{caption='Paired' type='javax.swing.JRadioButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Paired_JRadioButton_2	{caption='Paired' occurrence='1' type='javax.swing.JRadioButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Paper Source:_JComboBox	{basetype='javax.swing.JComboBox' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Paper Source:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Paper Source:_JLabel	{caption='Paper Source:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Password:_JLabel	{basetype='javax.swing.JLabel' caption='Password:' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Password:_JPasswordField	{basetype='javax.swing.JPasswordField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Password:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Position:_JLabel	{caption='Position:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Position:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Position:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Print_JButton	{caption='Print' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Printer:_JComboBox	{basetype='javax.swing.JComboBox' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Printer:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Printer:_JLabel	{caption='Printer:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Proceed_JButton	{basetype='javax.swing.JButton' caption='Proceed' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.QC_TabProxy	{caption='QC' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.QC_TabProxy_2	{caption='QC' occurrence='1' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Rack:_JLabel	{caption='Rack:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Rack:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Rack:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Recognize sample by location_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Recognize Sample by Location' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Release_JButton	{caption='Release' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Release_JButton_2	{basetype='javax.swing.JButton' caption='Release' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Repeat Count:_Box	{basetype='javax.swing.Box' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Repeat Count:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Repeat Count:_JLabel	{basetype='javax.swing.JLabel' caption='Repeat Count:' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Replace_JButton	{basetype='javax.swing.JButton' caption='Replace' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Result_TabProxy	{caption='Result' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Results_TabProxy	{caption='Results' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2	{caption='Results' occurrence='6' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Retic_JRadioButton	{caption='Retic' type='javax.swing.JRadioButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Retic_JRadioButton_2	{caption='Retic' occurrence='1' type='javax.swing.JRadioButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Reviewable:_JLabel	{caption='Reviewable:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Reviewable:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Reviewable:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Run Now_JButton	{caption='Run Now' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Run_JButton	{basetype='javax.swing.JButton' caption='Run' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Safely remove “Untitled” after export_JCheckBox	{caption?='Safely remove*' type='javax.swing.JCheckBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Save As:_JLabel	{caption='Save As:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Save As:_JTable	{aboveWidget=':Bloodhound™ Viewing Station v1.2.3.Save As:_JLabel' type='javax.swing.JTable' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Save As:_JTextField	{leftWidget=':Bloodhound™ Viewing Station v1.2.3.Save As:_JLabel' type='javax.swing.JTextField' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Save_JButton	{basetype='javax.swing.JButton' caption='Save' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Set dilution factor_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Set dilution factor' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Special Order:_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Special Order:' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Special Sample with the “DigiCount™” profile, normal process._JLabel	{caption='Special Sample with the “DigiCount™” profile, normal process.' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Special sample with 2 repetitions of the “Prime Stainer” profile._JLabel	{caption?='*ample*' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Stained:_JLabel	{caption='Stained:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Stained:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Stained:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Start:_JLabel	{caption='Start:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Start:_JLabel_2	{caption='' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Start:_JLabel' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.StartDate_JLabel	{caption?='*/*' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.The device may now be safely removed._JLabel	{caption='The device may now be safely removed.' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Unstained:_JLabel	{caption='Unstained:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Unstained:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Unstained:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Username:_JLabel	{basetype='javax.swing.JLabel' caption='Username:' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Username:_JTextField	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Username:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Where:_JComboBox	{leftWidget=':Bloodhound™ Viewing Station v1.2.3.Where:_JLabel' type='javax.swing.JComboBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.Where:_JLabel	{caption='Where:' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.←_JButton	{caption='←' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.↑_JButton	{caption='↑' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.→_JButton	{caption='→' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.↓_JButton	{caption='↓' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.↓_JScrollBar	{basetype='javax.swing.JScrollBar' leftWidget=':Bloodhound™ Viewing Station v1.2.3.↓_JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.↩_JButton	{caption='↩' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.↪_JButton	{caption='↪' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.⇤_JButton	{caption='⇤' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3.⇥_JButton	{caption='⇥' type='javax.swing.JButton' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_FileDialog	{type='view.dialogs.FileDialog' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JComboBox	{basetype='javax.swing.JComboBox' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JComboBox_2	{basetype='javax.swing.JComboBox' occurrence='1' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JComponent	{basetype='javax.swing.JComponent' occurrence='6' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JFrame	{caption='Bloodhound™ Viewing Station v1.2.3' type='javax.swing.JFrame' visible='true'}
+:Bloodhound™ Viewing Station v1.2.3_JFrame_2	{caption='Bloodhound™ Viewing Station v1.2.3' type='javax.swing.JFrame' visible='false'}
+:Bloodhound™ Viewing Station v1.2.3_JList	{type='javax.swing.JList' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel	{basetype='javax.swing.JPanel' occurrence='3' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel_2	{type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel_3	{basetype='javax.swing.JPanel' occurrence='8' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel_4	{occurrence='1' type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel_5	{occurrence='2' type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel_6	{basetype='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JPanel_7	{occurrence='4' type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JScrollBar	{basetype='javax.swing.JScrollBar' occurrence='5' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JTabbedPane	{type='javax.swing.JTabbedPane' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JTable	{type='javax.swing.JTable' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JTableHeader	{type='javax.swing.table.JTableHeader' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JTextArea	{basetype='javax.swing.JTextArea' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JTextField	{basetype='javax.swing.JTextField' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JTextField_2	{basetype='javax.swing.JTextField' occurrence='2' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_JViewport	{type='javax.swing.JViewport' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Bloodhound™ Viewing Station v1.2.3_PlaceholderOverlay	{type='util.PlaceholderOverlay' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Calibration Runs.Apply and close_JButton	{caption='Apply and close' container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration Runs.Discard_JButton	{caption='Discard' container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration Runs.Exclude_JButton	{caption='Exclude' container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration Runs.Export_JButton	{caption='Export' container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration Runs.Print_JButton	{caption='Print' container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration Runs.Print_JTableHeader	{aboveWidget=':Calibration Runs.Print_JButton' container=':Bloodhound 1.Calibration Runs_TabProxy' occurrence='1' type='javax.swing.table.JTableHeader' visible='true'}
+:Calibration Runs.Print_JViewport_2	{aboveWidget=':Calibration Runs.Print_JButton' container=':Bloodhound 1.Calibration Runs_TabProxy' occurrence='2' type='javax.swing.JViewport' visible='true'}
+:Calibration Runs.Print_QCTable	{aboveWidget=':Calibration Runs.Print_JButton' basetype='view.qc.QCTable' container=':Bloodhound 1.Calibration Runs_TabProxy' visible='true'}
+:Calibration Runs.Print_QCTable_2	{aboveWidget=':Calibration Runs.Print_JButton' basetype='view.qc.QCTable' container=':Bloodhound 1.Calibration Runs_TabProxy' occurrence='1' visible='true'}
+:Calibration Runs.Set up run..._JButton	{caption='Set up run...' container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration Runs_JComboBox	{container=':Bloodhound 1.Calibration Runs_TabProxy' type='javax.swing.JComboBox' visible='true'}
+:Calibration.Print_JButton	{caption='Print' container=':Bloodhound 1.Calibration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration.Revert_JButton	{caption='Revert' container=':Bloodhound 1.Calibration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration.Save_JButton	{caption='Save' container=':Bloodhound 1.Calibration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration.Save_JTable	{aboveWidget=':Calibration.Save_JButton' basetype='javax.swing.JTable' container=':Bloodhound 1.Calibration_TabProxy' visible='true'}
+:Calibration.↩_JButton	{caption='↩' container=':Bloodhound 1.Calibration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration.↪_JButton	{caption='↪' container=':Bloodhound 1.Calibration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Calibration_JTable	{basetype='javax.swing.JTable' container=':Bloodhound 1.Calibration_TabProxy' occurrence='1' visible='true'}
+:Completed aspiration	{caption?='Completed aspiration*' type='javax.swing.JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Configuration.Analyzers_TabProxy	{caption='Analyzers' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.General_TabProxy	{caption='General' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.LIS_TabProxy	{caption='LIS' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.Parameters_TabProxy	{caption='Parameters' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.QC_TabProxy	{caption='QC' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.Rules_TabProxy	{caption='Rules' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.Save_JButton	{caption='Save' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Configuration.Users_TabProxy	{caption='Users' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Configuration.↩_JButton	{caption='↩' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='javax.swing.JButton' visible='true'}
+:Configuration.↩_JTabbedPane	{aboveWidget=':Configuration.↩_JButton' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' type='javax.swing.JTabbedPane' visible='true'}
+:Configuration_JComponent	{basetype='javax.swing.JComponent' container=':Bloodhound™ Viewing Station v1.2.3.Configuration_TabProxy' visible='true'}
+:Consumable History./_JLabel	{caption='/' container=':Bloodhound 1.Consumable History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Consumable History./_JLabel_2	{caption='/' container=':Bloodhound 1.Consumable History_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Consumable History./_JLabel_3	{caption='/' container=':Bloodhound 1.Consumable History_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:Consumable History./_JLabel_4	{caption='/' container=':Bloodhound 1.Consumable History_TabProxy' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:Consumable History./_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Consumable History_TabProxy' leftWidget=':Consumable History./_JLabel' visible='true'}
+:Consumable History./_JTextField_2	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Consumable History_TabProxy' leftWidget=':Consumable History./_JLabel_2' visible='true'}
+:Consumable History./_JTextField_3	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Consumable History_TabProxy' leftWidget=':Consumable History./_JLabel_3' visible='true'}
+:Consumable History./_JTextField_4	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Consumable History_TabProxy' leftWidget=':Consumable History./_JLabel_4' visible='true'}
+:Consumable History.End:_JLabel	{caption='End:' container=':Bloodhound 1.Consumable History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Consumable History.End:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Consumable History_TabProxy' leftWidget=':Consumable History.End:_JLabel' visible='true'}
+:Consumable History.Export DigiClean™ Solution_JButton	{basetype='javax.swing.JButton' caption='Export DigiClean™ Solution' container=':Bloodhound 1.Consumable History_TabProxy' visible='true'}
+:Consumable History.Export DigiMAC3™ Stain Pack_JButton	{basetype='javax.swing.JButton' caption='Export DigiMAC3™ Stain Pack' container=':Bloodhound 1.Consumable History_TabProxy' visible='true'}
+:Consumable History.Export DigiWash™ Solution_JButton	{basetype='javax.swing.JButton' caption='Export DigiWash™ Solution' container=':Bloodhound 1.Consumable History_TabProxy' visible='true'}
+:Consumable History.New Special Sample..._ConsumableHistoryPanel	{aboveWidget=':Maintenance.New Special Sample..._JButton' container=':Bloodhound 1.Consumable History_TabProxy' type='view.tabs.maintenance.consumable.ConsumableHistoryPanel' visible='true'}
+:Consumable History.Print_JButton	{basetype='javax.swing.JButton' caption='Print' container=':Bloodhound 1.Consumable History_TabProxy' visible='true'}
+:Consumable History.Search_JButton	{basetype='javax.swing.JButton' caption='Search' container=':Bloodhound 1.Consumable History_TabProxy' visible='true'}
+:Consumable History.Start:_JLabel	{caption='Start:' container=':Bloodhound 1.Consumable History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Consumable History.Start:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Consumable History_TabProxy' leftWidget=':Consumable History.Start:_JLabel' visible='true'}
+:Consumable History_JLabel	{caption='' container=':Bloodhound 1.Consumable History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Consumable History_JTable	{aboveWidget=':Consumable History_JLabel' basetype='javax.swing.JTable' container=':Bloodhound 1.Consumable History_TabProxy' occurrence='2' visible='true'}
+:Consumable History_JTable_2	{aboveWidget=':Consumable History_JLabel' basetype='javax.swing.JTable' container=':Bloodhound 1.Consumable History_TabProxy' visible='true'}
+:Consumable History_JTable_3	{aboveWidget=':Consumable History_JLabel' basetype='javax.swing.JTable' container=':Bloodhound 1.Consumable History_TabProxy' occurrence='1' visible='true'}
+:Consumable History_JTable_4	{aboveWidget=':Consumable History_JLabel' basetype='javax.swing.JTable' container=':Bloodhound 1.Consumable History_TabProxy' occurrence='3' visible='true'}
+:Create Work Order Accession Number Edit Box	{basetype='javax.swing.JTextField' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Accession\nNumber_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}
+:Date_TableHeaderItemProxy	{caption='Date' container=':Bloodhound™ Viewing Station v1.2.3_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Date_TableHeaderItemProxy_2	{caption='Date' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:DigiCount™ Controls.% of lab range:_JComboBox	{basetype='javax.swing.JComboBox' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.% of lab range:_JLabel_2' visible='true'}
+:DigiCount™ Controls.% of lab range:_JLabel	{caption='% of lab range:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.% of lab range:_JLabel_2	{caption='' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.% of lab range:_JLabel' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.%RMSD_JCheckBox	{basetype='javax.swing.JCheckBox' caption='%RMSD' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.) after _JLabel	{caption=') after ' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.) after _JLabel_2	{caption=') after ' container=':QC.DigiCount™ Controls_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.) after _JLabel_3	{caption=') after ' container=':QC.DigiCount™ Controls_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.) after _JTextField	{basetype='javax.swing.JTextField' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.) after _JLabel' visible='true'}
+:DigiCount™ Controls.) after _JTextField_2	{basetype='javax.swing.JTextField' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.) after _JLabel_2' visible='true'}
+:DigiCount™ Controls.) after _JTextField_3	{basetype='javax.swing.JTextField' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.) after _JLabel_3' visible='true'}
+:DigiCount™ Controls.+_JButton	{caption='+' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JButton' visible='true'}
+:DigiCount™ Controls.-_JButton	{caption='-' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JButton' visible='true'}
+:DigiCount™ Controls.Analyzer:_JComboBox	{container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Analyzer:_JLabel' type='javax.swing.JComboBox' visible='true'}
+:DigiCount™ Controls.Analyzer:_JLabel	{caption='Analyzer:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.CV_JCheckBox	{basetype='javax.swing.JCheckBox' caption='CV' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.Calculate_JButton	{caption='Calculate' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JButton' visible='true'}
+:DigiCount™ Controls.Control run overdue (_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Control run overdue (' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.Failed results:_JComboBox	{basetype='javax.swing.JComboBox' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Failed results:_JLabel' visible='true'}
+:DigiCount™ Controls.Failed results:_JLabel	{caption='Failed results:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Flagging Ranges:_JLabel	{caption='Flagging Ranges:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Flagging Warnings:_JLabel	{caption='Flagging Warnings:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Historical SD Specification:_JLabel	{caption?='* Specification:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Historical SD Specification:_JTable	{aboveWidget=':DigiCount™ Controls.Historical SD Specification:_JLabel' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JTable' visible='true'}
+:DigiCount™ Controls.Hold results for approval_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Hold results for approval' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.Lab observed specification range size:_JLabel	{caption='Lab observed specification range size:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Lab observed specification range size:_JTextField	{basetype='javax.swing.JTextField' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Lab observed specification range size:_JLabel' visible='true'}
+:DigiCount™ Controls.Lab target range type:_JComboBox	{container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Lab target range type:_JLabel' type='javax.swing.JComboBox' visible='true'}
+:DigiCount™ Controls.Lab target range type:_JLabel	{caption='Lab target range type:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Level:_JComboBox	{container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Level:_JLabel' type='javax.swing.JComboBox' visible='true'}
+:DigiCount™ Controls.Level:_JLabel	{caption='Level:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Mean_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Mean' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.On failure:_JLabel	{caption='On failure:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Outside lab range:_JComboBox	{basetype='javax.swing.JComboBox' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Outside lab range:_JLabel' visible='true'}
+:DigiCount™ Controls.Outside lab range:_JLabel	{caption='Outside lab range:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Outside manufacturer's range:_JComboBox	{basetype='javax.swing.JComboBox' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Outside manufacturer\\'s range:_JLabel' visible='true'}
+:DigiCount™ Controls.Outside manufacturer's range:_JLabel	{caption='Outside manufacturer\\'s range:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Outside_JLabel	{caption='Outside' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.Outside_JTextField	{basetype='javax.swing.JTextField' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Outside_JLabel' visible='true'}
+:DigiCount™ Controls.Ready to activate (_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Ready to activate (' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.Retrospective %RMSD check:_JComboBox	{basetype='javax.swing.JComboBox' container=':QC.DigiCount™ Controls_TabProxy' leftWidget=':DigiCount™ Controls.Retrospective %RMSD check:_JLabel' visible='true'}
+:DigiCount™ Controls.Retrospective %RMSD check:_JLabel	{caption='Retrospective %RMSD check:' container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JLabel' visible='true'}
+:DigiCount™ Controls.SD_JCheckBox	{basetype='javax.swing.JCheckBox' caption='SD' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.Time to run control (_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Time to run control (' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls.n_JCheckBox	{basetype='javax.swing.JCheckBox' caption='n' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls_JTable	{basetype='javax.swing.JTable' container=':QC.DigiCount™ Controls_TabProxy' visible='true'}
+:DigiCount™ Controls_JTable_2	{container=':QC.DigiCount™ Controls_TabProxy' type='javax.swing.JTable' visible='true'}
+:DigiCount™.All_TabProxy	{caption='All' container=':QC.DigiCount™_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:DigiCount™.Fail 5; Warn 26_JTabbedPane	{aboveWidget=':QC.Fail 5; Warn 26_JLabel' container=':QC.DigiCount™_TabProxy' type='javax.swing.JTabbedPane' visible='true'}
+:DigiCount™.High_TabProxy	{caption='High' container=':QC.DigiCount™_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:DigiCount™.Low_TabProxy	{caption='Low' container=':QC.DigiCount™_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:DigiCount™.Normal_TabProxy	{caption='Normal' container=':QC.DigiCount™_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:DigiCount™.Print_JTabbedPane	{container=':QC.DigiCount™_TabProxy' type='javax.swing.JTabbedPane' visible='true'}
+:DigiCount™.Table_TabProxy	{caption='Table' container=':QC.DigiCount™_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Event Logs./_JLabel	{caption='/' container=':Bloodhound 1.Event Logs_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Event Logs./_JLabel_2	{caption='/' container=':Bloodhound 1.Event Logs_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Event Logs./_JLabel_3	{caption='/' container=':Bloodhound 1.Event Logs_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:Event Logs./_JLabel_4	{caption='/' container=':Bloodhound 1.Event Logs_TabProxy' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:Event Logs./_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Event Logs_TabProxy' leftWidget=':Event Logs./_JLabel' visible='true'}
+:Event Logs./_JTextField_2	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Event Logs_TabProxy' leftWidget=':Event Logs./_JLabel_2' visible='true'}
+:Event Logs./_JTextField_3	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Event Logs_TabProxy' leftWidget=':Event Logs./_JLabel_3' visible='true'}
+:Event Logs./_JTextField_4	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Event Logs_TabProxy' leftWidget=':Event Logs./_JLabel_4' visible='true'}
+:Event Logs.End:_JLabel	{caption='End:' container=':Bloodhound 1.Event Logs_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Event Logs.End:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Event Logs_TabProxy' leftWidget=':Event Logs.End:_JLabel' visible='true'}
+:Event Logs.Export_JButton	{basetype='javax.swing.JButton' caption='Export' container=':Bloodhound 1.Event Logs_TabProxy' visible='true'}
+:Event Logs.Print_JButton	{basetype='javax.swing.JButton' caption='Print' container=':Bloodhound 1.Event Logs_TabProxy' visible='true'}
+:Event Logs.Search_JButton	{basetype='javax.swing.JButton' caption='Search' container=':Bloodhound 1.Event Logs_TabProxy' visible='true'}
+:Event Logs.Start:_JLabel	{caption='Start:' container=':Bloodhound 1.Event Logs_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Event Logs.Start:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Event Logs_TabProxy' leftWidget=':Event Logs.Start:_JLabel' visible='true'}
+:Event Logs_JTable	{basetype='javax.swing.JTable' container=':Bloodhound 1.Event Logs_TabProxy' visible='true'}
+:Exit Viewing Station_JButton	{caption='Exit Viewing Station' type='javax.swing.JButton' visible='true' window=':_JFrame'}
+:Fail*.0_0_TableItemProxy	{column='0' container=':Overview.Fail*_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Fail*.0_1_TableItemProxy	{column='1' container=':Overview.Fail*_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Fail*.0_2_TableItemProxy	{column='2' container=':Overview.Fail*_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Fail*.row_0_TableRowProxy	{caption='row_0' container=':Overview.Fail*_JTable' type='com.froglogic.squish.awt.TableRowProxy'}
+:General. _Box	{basetype='javax.swing.Box' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel' visible='true'}
+:General. _JComboBox	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_2' visible='true'}
+:General. _JComboBox_2	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_3' visible='true'}
+:General. _JComboBox_3	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_4' visible='true'}
+:General. _JComboBox_4	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_5' visible='true'}
+:General. _JComboBox_5	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_6' visible='true'}
+:General. _JComboBox_6	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_7' visible='true'}
+:General. _JComboBox_7	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_8' visible='true'}
+:General. _JComboBox_8	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_9' visible='true'}
+:General. _JLabel	{caption=' ' container=':Configuration.General_TabProxy' occurrence='9' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_2	{caption=' ' container=':Configuration.General_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_3	{caption=' ' container=':Configuration.General_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_4	{caption=' ' container=':Configuration.General_TabProxy' occurrence='17' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_5	{caption=' ' container=':Configuration.General_TabProxy' occurrence='29' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_6	{caption=' ' container=':Configuration.General_TabProxy' occurrence='30' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_7	{caption=' ' container=':Configuration.General_TabProxy' occurrence='16' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_8	{caption=' ' container=':Configuration.General_TabProxy' occurrence='27' type='javax.swing.JLabel' visible='true'}
+:General. _JLabel_9	{caption=' ' container=':Configuration.General_TabProxy' occurrence='28' type='javax.swing.JLabel' visible='true'}
+:General.1,234.56_JRadioButton	{basetype='javax.swing.JRadioButton' caption='1,234.56' container=':Configuration.General_TabProxy' visible='true'}
+:General.1.234,56_JRadioButton	{basetype='javax.swing.JRadioButton' caption='1.234,56' container=':Configuration.General_TabProxy' visible='true'}
+:General.24 Hour_JRadioButton	{basetype='javax.swing.JRadioButton' caption='24 Hour' container=':Configuration.General_TabProxy' visible='true'}
+:General.AM/PM_JRadioButton	{basetype='javax.swing.JRadioButton' caption='AM/PM' container=':Configuration.General_TabProxy' visible='true'}
+:General.All Samples_JRadioButton	{basetype='javax.swing.JRadioButton' caption='All Samples' container=':Configuration.General_TabProxy' visible='true'}
+:General.All_JRadioButton	{basetype='javax.swing.JRadioButton' caption='All' container=':Configuration.General_TabProxy' visible='true'}
+:General.DigiCount™ QC Report_JLabel	{caption='DigiCount™ QC Report' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.DigiCount™ QC Report_JRadioButton	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.DigiCount™ QC Report_JLabel' visible='true'}
+:General.DigiCount™ QC Report_JRadioButton_2	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.DigiCount™ QC Report_JRadioButton' visible='true'}
+:General.DigiCount™ QC Report_JRadioButton_3	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.DigiCount™ QC Report_JRadioButton_2' visible='true'}
+:General.Enable_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Enable' container=':Configuration.General_TabProxy' visible='true'}
+:General.Enable_JCheckBox_2	{basetype='javax.swing.JCheckBox' caption='Enable' container=':Configuration.General_TabProxy' occurrence='1' visible='true'}
+:General.Enable_JCheckBox_3	{basetype='javax.swing.JCheckBox' caption='Enable' container=':Configuration.General_TabProxy' occurrence='2' visible='true'}
+:General.Enable_JCheckBox_4	{basetype='javax.swing.JCheckBox' caption='Enable' container=':Configuration.General_TabProxy' occurrence='3' visible='true'}
+:General.Enable_JCheckBox_5	{basetype='javax.swing.JCheckBox' caption='Enable' container=':Configuration.General_TabProxy' occurrence='4' visible='true'}
+:General.Enable_JCheckBox_6	{basetype='javax.swing.JCheckBox' caption='Enable' container=':Configuration.General_TabProxy' occurrence='5' visible='true'}
+:General.Lab Report_JLabel	{caption='Lab Report' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.Lab Report_JRadioButton	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.Lab Report_JLabel' visible='true'}
+:General.Lab Report_JRadioButton_2	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.Lab Report_JRadioButton' visible='true'}
+:General.Lab Report_JRadioButton_3	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.Lab Report_JRadioButton_2' visible='true'}
+:General.Only Flagged Samples_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Only Flagged Samples' container=':Configuration.General_TabProxy' visible='true'}
+:General.Patient Report_JLabel	{caption='Patient Report' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.Patient Report_JRadioButton	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.Patient Report_JLabel' visible='true'}
+:General.Patient Report_JRadioButton_2	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.Patient Report_JRadioButton' visible='true'}
+:General.Patient Report_JRadioButton_3	{basetype='javax.swing.JRadioButton' caption='' container=':Configuration.General_TabProxy' leftWidget=':General.Patient Report_JRadioButton_2' visible='true'}
+:General.Print Reports_JLabel	{caption='Print Reports' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.Region_JLabel	{caption='Region' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.Results_JLabel	{caption='Results' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.Slides_JLabel	{caption='Slides' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.System_JLabel	{caption='System' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General.Upgrade Differential Level_JLabel	{caption='Upgrade Differential Level' container=':Configuration.General_TabProxy' type='javax.swing.JLabel' visible='true'}
+:General_JComboBox	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' occurrence='5' visible='true'}
+:General_JComboBox_2	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' occurrence='6' visible='true'}
+:General_JComboBox_3	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' occurrence='7' visible='true'}
+:General_JComboBox_4	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' occurrence='8' visible='true'}
+:General_JTextField	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='1' visible='true'}
+:General_JTextField_2	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' visible='true'}
+:General_JTextField_3	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='2' visible='true'}
+:General_JTextField_4	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='3' visible='true'}
+:General_JTextField_5	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='4' visible='true'}
+:General_JTextField_6	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='5' visible='true'}
+:General_JTextField_7	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='6' visible='true'}
+:General_JTextField_8	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='7' visible='true'}
+:General_JTextField_9	{basetype='javax.swing.JTextField' container=':Configuration.General_TabProxy' occurrence='8' visible='true'}
+:Graph.+_JButton	{caption='+' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JButton' visible='true'}
+:Graph.-_JButton	{caption='-' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JButton' visible='true'}
+:Graph.Absolute_JRadioButton	{caption='Absolute' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JRadioButton' visible='true'}
+:Graph.Bloodhound 1 Closed_JCheckBox	{caption='Bloodhound 1 Closed' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Graph.Bloodhound 1_JCheckBox	{caption='Bloodhound 1' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Graph.Bloodhound 1_JComponent	{basetype='javax.swing.JComponent' container=':Whole Blood.Graph_TabProxy' leftWidget=':Graph.Bloodhound 1_JCheckBox' visible='true'}
+:Graph.Bloodhound 2_JCheckBox	{caption='Bloodhound 2' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Graph.Bloodhound JCheckBox	{caption='Bloodhound 1 Open' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Graph.Percent_JRadioButton	{caption='Percent' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JRadioButton' visible='true'}
+:Graph.Separate by Mode_JCheckBox	{caption='Separate by Mode' container=':Whole Blood.Graph_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Graph_Box	{basetype='javax.swing.Box' container=':Whole Blood.Graph_TabProxy' occurrence='1' visible='true'}
+:Graph_Graph	{container=':Whole Blood.Graph_TabProxy' type='view.qc.Graph' visible='true'}
+:Graph_Graph_2	{container=':Whole Blood.Graph_TabProxy' occurrence='4' type='view.qc.Graph' visible='true'}
+:Graph_Graph_3	{container=':Whole Blood.Graph_TabProxy' occurrence='2' type='view.qc.Graph' visible='true'}
+:Graph_Graph_5	{container=':Whole Blood.Graph_TabProxy' occurrence='1' type='view.qc.Graph' visible='true'}
+:Graph_JButton	{caption='' container=':Whole Blood.Graph_TabProxy' occurrence='3' type='javax.swing.JButton' visible='true'}
+:Graph_JComponent	{basetype='javax.swing.JComponent' container=':Whole Blood.Graph_TabProxy' occurrence='114' visible='true'}
+:Graph_JComponent_2	{basetype='javax.swing.JComponent' container=':Whole Blood.Graph_TabProxy' occurrence='115' visible='true'}
+:Graph_JPanel	{container=':Whole Blood.Graph_TabProxy' occurrence='4' type='javax.swing.JPanel' visible='true'}
+:Graph_JPanel_2	{container=':Whole Blood.Graph_TabProxy' occurrence='3' type='javax.swing.JPanel' visible='true'}
+:Graph_JPanel_3	{basetype='javax.swing.JPanel' container=':Whole Blood.Graph_TabProxy' occurrence='65' visible='true'}
+:Graph_JPanel_4	{container=':Whole Blood.Graph_TabProxy' occurrence='1' type='javax.swing.JPanel' visible='true'}
+:Graph_JPanel_5	{container=':Whole Blood.Graph_TabProxy' occurrence='5' type='javax.swing.JPanel' visible='true'}
+:Graph_JPanel_6	{basetype='javax.swing.JPanel' container=':Whole Blood.Graph_TabProxy' occurrence='2' visible='true'}
+:Graph_JPanel_7	{basetype='javax.swing.JPanel' container=':Whole Blood.Graph_TabProxy' occurrence='96' visible='true'}
+:High_Graph	{container=':DigiCount™.High_TabProxy' occurrence='2' type='view.qc.Graph' visible='true'}
+:High_Graph_2	{container=':DigiCount™.High_TabProxy' occurrence='1' type='view.qc.Graph' visible='true'}
+:High_JPanel	{basetype='javax.swing.JPanel' container=':DigiCount™.High_TabProxy' occurrence='31' visible='true'}
+:High_JPanel_2	{basetype='javax.swing.JPanel' container=':DigiCount™.High_TabProxy' occurrence='2' visible='true'}
+:High_JPanel_3	{basetype='javax.swing.JPanel' container=':DigiCount™.High_TabProxy' occurrence='35' visible='true'}
+:High_JPanel_4	{basetype='javax.swing.JPanel' container=':DigiCount™.High_TabProxy' occurrence='64' visible='true'}
+:High_JPanel_5	{basetype='javax.swing.JPanel' container=':DigiCount™.High_TabProxy' occurrence='36' visible='true'}
+:High_JPanel_6	{basetype='javax.swing.JPanel' container=':DigiCount™.High_TabProxy' occurrence='65' visible='true'}
+:High_JViewport	{container=':DigiCount™.High_TabProxy' type='javax.swing.JViewport' visible='true'}
+:High_JViewport_2	{container=':DigiCount™.High_TabProxy' occurrence='2' type='javax.swing.JViewport' visible='true'}
+:In Process.4711_JLabel	{caption='4711' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JLabel' visible='true'}
+:In Process.Create Work Order_JButton	{caption='Create Work Order' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JButton' visible='true'}
+:In Process.Delete Sample_JButton	{caption='Delete Sample' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JButton' visible='true'}
+:In Process.Edit Patient_JButton	{caption='Edit Patient' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JButton' visible='true'}
+:In Process.Filter by Analyzer_JComboBox	{aboveWidget=':In Process.Filter by Analyzer_JLabel' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JComboBox' visible='true'}
+:In Process.Filter by Analyzer_JLabel	{caption='Filter by Analyzer' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JLabel' visible='true'}
+:In Process.Individual run status:_JLabel	{caption='Individual run status:' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JLabel' visible='true'}
+:In Process.Search:_JLabel	{caption='Search:' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JLabel' visible='true'}
+:In Process.Search:_PlaceholderOverlay	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' leftWidget=':In Process.Search:_JLabel' type='util.PlaceholderOverlay' visible='true'}
+:In Process.Search:_SearchTextField	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' leftWidget=':In Process.Search:_JLabel' type='view.tabs.inprocess.SearchTextField' visible='true'}
+:In Process.Selected 1 out of 12 samples_JLabel	{caption?='Selected*' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JLabel' visible='true'}
+:In Process.Show All_JButton	{caption='Show All' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.JButton' visible='true'}
+:In Process.Show All_JTable	{aboveWidget=':In Process.Show All_JButton' basetype='javax.swing.JTable' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' visible='true'}
+:In Process_JComponent	{basetype='javax.swing.JComponent' container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' visible='true'}
+:In Process_JLabel	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' occurrence='18' type='javax.swing.JLabel' visible='true'}
+:In Process_JTableHeader	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='javax.swing.table.JTableHeader' visible='true'}
+:In Process_WrappingDetailsLine	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='util.WrappingDetailsLine' visible='true'}
+:In Process_WrappingDetailsLine_2	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' occurrence='4' type='util.WrappingDetailsLine' visible='true'}
+:In Process_WrappingDetailsLine_3	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' occurrence='5' type='util.WrappingDetailsLine' visible='true'}
+:In Process_WrappingDetailsLine_4	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' occurrence='3' type='util.WrappingDetailsLine' visible='true'}
+:In Process_WrappingDetailsList	{container=':Bloodhound™ Viewing Station v1.2.3.In Process_TabProxy' type='util.WrappingDetailsList' visible='true'}
+:LIS Simulator.Active Orders_JLabel	{caption='Active Orders' type='javax.swing.JLabel' visible='true' window=':LIS Simulator_JFrame'}
+:LIS Simulator.Active Orders_JTable	{aboveWidget=':LIS Simulator.Active Orders_JLabel' type='javax.swing.JTable' visible='true' window=':LIS Simulator_JFrame'}
+:LIS Simulator.CBC_JCheckBox	{caption='CBC' type='javax.swing.JCheckBox' visible='true' window=':LIS Simulator_JFrame'}
+:LIS Simulator_JFrame	{caption='LIS Simulator' type='javax.swing.JFrame' visible='true'}
+:LIS Simulator_JPanel	{type='javax.swing.JPanel' visible='true' window=':LIS Simulator_JFrame'}
+:LIS. _JCheckBox	{basetype='javax.swing.JCheckBox' caption='' container=':Configuration.LIS_TabProxy' leftWidget=':LIS. _JLabel' visible='true'}
+:LIS. _JComboBox	{basetype='javax.swing.JComboBox' container=':Configuration.LIS_TabProxy' leftWidget=':LIS. _JLabel_2' visible='true'}
+:LIS. _JComboBox_2	{basetype='javax.swing.JComboBox' container=':Configuration.LIS_TabProxy' leftWidget=':LIS. _JLabel_3' visible='true'}
+:LIS. _JComboBox_3	{basetype='javax.swing.JComboBox' container=':Configuration.LIS_TabProxy' leftWidget=':LIS. _JLabel_4' visible='true'}
+:LIS. _JLabel	{caption=' ' container=':Configuration.LIS_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:LIS. _JLabel_2	{caption=' ' container=':Configuration.LIS_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:LIS. _JLabel_3	{caption=' ' container=':Configuration.LIS_TabProxy' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:LIS. _JLabel_4	{caption=' ' container=':Configuration.LIS_TabProxy' occurrence='11' type='javax.swing.JLabel' visible='true'}
+:LIS.ASTM_JRadioButton	{basetype='javax.swing.JRadioButton' caption='ASTM' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Debug_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Debug' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Enabled_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Enabled' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Enabled_JCheckBox_2	{basetype='javax.swing.JCheckBox' caption='Enabled' container=':Configuration.LIS_TabProxy' occurrence='1' visible='true'}
+:LIS.Enabled_JCheckBox_3	{basetype='javax.swing.JCheckBox' caption='Enabled' container=':Configuration.LIS_TabProxy' occurrence='2' visible='true'}
+:LIS.HL7_JRadioButton	{basetype='javax.swing.JRadioButton' caption='HL7' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Host-Query_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Host-Query' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.LIS Simulator_JRadioButton	{basetype='javax.swing.JRadioButton' caption='LIS Simulator' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Production_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Production' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Training_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Training' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.Work Order Download_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Work Order Download' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.↩_JPanel	{aboveWidget=':Configuration.↩_JButton' basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS.↩_JViewport	{aboveWidget=':Configuration.↩_JButton' container=':Configuration.LIS_TabProxy' type='javax.swing.JViewport' visible='true'}
+:LIS_Box	{basetype='javax.swing.Box' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS_Box_2	{basetype='javax.swing.Box' container=':Configuration.LIS_TabProxy' occurrence='4' visible='true'}
+:LIS_Box_3	{basetype='javax.swing.Box' container=':Configuration.LIS_TabProxy' occurrence='10' visible='true'}
+:LIS_Box_4	{basetype='javax.swing.Box' container=':Configuration.LIS_TabProxy' occurrence='13' visible='true'}
+:LIS_JPanel	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='1' visible='true'}
+:LIS_JPanel_2	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='2' visible='true'}
+:LIS_JPanel_3	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='24' visible='true'}
+:LIS_JPanel_4	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='31' visible='true'}
+:LIS_JPanel_5	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='16' visible='true'}
+:LIS_JPanel_6	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='13' visible='true'}
+:LIS_JPanel_8	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='34' visible='true'}
+:LIS_JPanel_9	{basetype='javax.swing.JPanel' container=':Configuration.LIS_TabProxy' occurrence='27' visible='true'}
+:LIS_JTextField	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' visible='true'}
+:LIS_JTextField_10	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='9' visible='true'}
+:LIS_JTextField_11	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='10' visible='true'}
+:LIS_JTextField_12	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='11' visible='true'}
+:LIS_JTextField_13	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='12' visible='true'}
+:LIS_JTextField_14	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='13' visible='true'}
+:LIS_JTextField_2	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='1' visible='true'}
+:LIS_JTextField_3	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='2' visible='true'}
+:LIS_JTextField_4	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='3' visible='true'}
+:LIS_JTextField_5	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='4' visible='true'}
+:LIS_JTextField_6	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='5' visible='true'}
+:LIS_JTextField_7	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='6' visible='true'}
+:LIS_JTextField_8	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='7' visible='true'}
+:LIS_JTextField_9	{basetype='javax.swing.JTextField' container=':Configuration.LIS_TabProxy' occurrence='8' visible='true'}
+:Location_TableHeaderItemProxy	{caption='Location' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Low.+_JButton	{caption='+' container=':DigiCount™.Low_TabProxy' type='javax.swing.JButton' visible='true'}
+:Low.-_JButton	{caption='-' container=':DigiCount™.Low_TabProxy' type='javax.swing.JButton' visible='true'}
+:Low_Graph	{container=':DigiCount™.Low_TabProxy' occurrence='1' type='view.qc.Graph' visible='true'}
+:Low_GraphPanelRowHeader	{container=':DigiCount™.Low_TabProxy' type='view.qc.GraphPanelRowHeader' visible='true'}
+:Low_Graph_2	{container=':DigiCount™.Low_TabProxy' tooltiptext='<html><center>RDW: 12.1 %<br>10/4/13 6:28 AM<br>-0.3SDs</html></center>' type='view.qc.Graph' visible='true'}
+:Low_Graph_3	{container=':DigiCount™.Low_TabProxy' tooltiptext='<html><center>RDW: 12.8 %<br>9/26/13 6:13 AM<br>+1.0SDs</html></center>' type='view.qc.Graph' visible='true'}
+:Low_Graph_4	{container=':DigiCount™.Low_TabProxy' occurrence='9' type='view.qc.Graph' visible='true'}
+:Low_Graph_5	{container=':DigiCount™.Low_TabProxy' type='view.qc.Graph' visible='true'}
+:Low_JPanel	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='31' visible='true'}
+:Low_JPanel_2	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='36' visible='true'}
+:Low_JPanel_3	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='64' visible='true'}
+:Low_JPanel_4	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='93' visible='true'}
+:Low_JPanel_5	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='35' visible='true'}
+:Low_JPanel_6	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='2' visible='true'}
+:Low_JPanel_7	{basetype='javax.swing.JPanel' container=':DigiCount™.Low_TabProxy' occurrence='65' visible='true'}
+:Low_JViewport	{container=':DigiCount™.Low_TabProxy' type='javax.swing.JViewport' visible='true'}
+:Low_JViewport_2	{container=':DigiCount™.Low_TabProxy' occurrence='2' type='javax.swing.JViewport' visible='true'}
+:Maintenance.Bloodhound 1_TabProxy	{caption='Bloodhound 1' container=':Bloodhound™ Viewing Station v1.2.3.Maintenance_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Maintenance.Bootstrap Population Means_JButton	{caption='Bootstrap Population Means' container=':Bloodhound™ Viewing Station v1.2.3.Maintenance_TabProxy' type='javax.swing.JButton' visible='true'}
+:Maintenance.Close Special Sample..._JButton	{caption='Close Special Sample...' container=':Bloodhound™ Viewing Station v1.2.3.Maintenance_TabProxy' type='javax.swing.JButton' visible='true'}
+:Maintenance.New Special Sample..._JButton	{caption='New Special Sample...' container=':Bloodhound™ Viewing Station v1.2.3.Maintenance_TabProxy' type='javax.swing.JButton' visible='true'}
+:Maintenance.Run Maintenance Action..._JButton	{caption='Run Maintenance Action...' container=':Bloodhound™ Viewing Station v1.2.3.Maintenance_TabProxy' type='javax.swing.JButton' visible='true'}
+:Medical	{caption='Medical\nRecord #' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Mode_TableHeaderItemProxy	{caption='Mode' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Name_TableHeaderItemProxy	{caption='Name' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Neutrophil (2.2%)_ListWithExtras	{container=':WBC.Neutrophil (2.2%)_TabProxy' type='view.results.ListWithExtras' visible='true'}
+:Neutrophil (96.0%)_ListWithExtras	{container=':WBC.Neutrophil (96.0%)_TabProxy' type='view.results.ListWithExtras' visible='true'}
+:Normal_JPanel	{basetype='javax.swing.JPanel' container=':DigiCount™.Normal_TabProxy' occurrence='31' visible='true'}
+:Normal_JPanel_2	{basetype='javax.swing.JPanel' container=':DigiCount™.Normal_TabProxy' occurrence='2' visible='true'}
+:Normal_JPanel_3	{basetype='javax.swing.JPanel' container=':DigiCount™.Normal_TabProxy' occurrence='35' visible='true'}
+:Normal_JPanel_4	{basetype='javax.swing.JPanel' container=':DigiCount™.Normal_TabProxy' occurrence='64' visible='true'}
+:Normal_JPanel_5	{basetype='javax.swing.JPanel' container=':DigiCount™.Normal_TabProxy' occurrence='36' visible='true'}
+:Normal_JPanel_6	{basetype='javax.swing.JPanel' container=':DigiCount™.Normal_TabProxy' occurrence='65' visible='true'}
+:Normal_JViewport	{container=':DigiCount™.Normal_TabProxy' type='javax.swing.JViewport' visible='true'}
+:Normal_JViewport_2	{container=':DigiCount™.Normal_TabProxy' occurrence='2' type='javax.swing.JViewport' visible='true'}
+:Overview.(Reportable)_JLabel	{caption='(Reportable)' container=':Results.Overview_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Overview.Comments:_JLabel	{caption='Comments:' container=':Results.Overview_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Overview.Comments:_JScrollPane	{aboveWidget=':Overview.Comments:_JLabel' container=':Results.Overview_TabProxy' type='javax.swing.JScrollPane' visible='true'}
+:Overview.Fail*_JPanel	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' container=':QC.Overview_TabProxy' type='javax.swing.JPanel' visible='false'}
+:Overview.Fail*_JScrollPane	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' container=':QC.Overview_TabProxy' type='javax.swing.JScrollPane' visible='true'}
+:Overview.Fail*_JTable	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' basetype='javax.swing.JTable' container=':QC.Overview_TabProxy' visible='true'}
+:Overview.Fail*_JViewport	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' container=':QC.Overview_TabProxy' type='javax.swing.JViewport' visible='true'}
+:Overview.Print_JTable	{aboveWidget=':QC.Print_JButton' basetype='javax.swing.JTable' container=':QC.Overview_TabProxy' visible='true'}
+:Overview.Print_JViewport	{aboveWidget=':QC.Print_JButton' container=':QC.Overview_TabProxy' type='javax.swing.JViewport' visible='true'}
+:Overview_JTable	{container=':Results.Overview_TabProxy' type='javax.swing.JTable' visible='true'}
+:Overview_JTable_2	{container=':Results.Overview_TabProxy' occurrence='1' type='javax.swing.JTable' visible='true'}
+:Overview_JTextArea	{container=':Results.Overview_TabProxy' type='javax.swing.JTextArea' visible='true'}
+:Overview_PlaceholderOverlay	{container=':Results.Overview_TabProxy' type='util.PlaceholderOverlay' visible='true'}
+:PLT.Report_TabProxy	{caption='Report' container=':Results.PLT_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:PLT_ListWithExtras	{container=':Results.PLT_TabProxy' type='view.results.ListWithExtras' visible='true'}
+:Parameters.Cancel_JButton	{basetype='javax.swing.JButton' caption='Cancel' container=':Configuration.Parameters_TabProxy' visible='true'}
+:Parameters_JTable	{basetype='javax.swing.JTable' container=':Configuration.Parameters_TabProxy' visible='true'}
+:Population Means. _JComboBox	{basetype='javax.swing.JComboBox' container=':QC.Population Means_TabProxy' leftWidget=':Population Means. _JLabel' visible='true'}
+:Population Means. _JLabel	{caption=' ' container=':QC.Population Means_TabProxy' occurrence='9' type='javax.swing.JLabel' visible='true'}
+:Population Means.+_JButton	{caption='+' container=':QC.Population Means_TabProxy' type='javax.swing.JButton' visible='true'}
+:Population Means.-_JButton	{caption='-' container=':QC.Population Means_TabProxy' type='javax.swing.JButton' visible='true'}
+:Population Means.Exclude entire sample_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Exclude entire sample' container=':QC.Population Means_TabProxy' visible='true'}
+:Population Means.Exclude individual results_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Exclude individual results' container=':QC.Population Means_TabProxy' visible='true'}
+:Population Means_JTable	{basetype='javax.swing.JTable' container=':QC.Population Means_TabProxy' visible='true'}
+:Population Means_JTable_2	{basetype='javax.swing.JTable' container=':QC.Population Means_TabProxy' occurrence='1' visible='true'}
+:Population Means_JTextField	{basetype='javax.swing.JTextField' container=':QC.Population Means_TabProxy' visible='true'}
+:Population Means_JTextField_2	{basetype='javax.swing.JTextField' container=':QC.Population Means_TabProxy' occurrence='1' visible='true'}
+:Population Means_JTextField_3	{basetype='javax.swing.JTextField' container=':QC.Population Means_TabProxy' occurrence='2' visible='true'}
+:Population Means_JTextField_4	{basetype='javax.swing.JTextField' container=':QC.Population Means_TabProxy' occurrence='3' visible='true'}
+:Population.+_JButton	{caption='+' container=':QC.Population_TabProxy' type='javax.swing.JButton' visible='true'}
+:Population.-_JButton	{caption='-' container=':QC.Population_TabProxy' type='javax.swing.JButton' visible='true'}
+:Population_Graph	{container=':QC.Population_TabProxy' tooltiptext='<html><center>RBC: 4.29 ×10⁶/μL<br>2/6/14 7:03 AM<br>-1.7SDs<br><div style="background-color:#bfbfbf">Bootstrap 2 of 10</div></html></center>' type='view.qc.Graph' visible='true'}
+:Population_GraphPanelRowHeader	{container=':QC.Population_TabProxy' type='view.qc.GraphPanelRowHeader' visible='true'}
+:Population_Graph_2	{container=':QC.Population_TabProxy' tooltiptext='<html><center>WBC: 6.73 ×10³/μL<br>2/6/14 8:53 AM<br>-1.3SDs<br><div style="background-color:#bfbfbf">Bootstrap 2 of 10</div></html></center>' type='view.qc.Graph' visible='true'}
+:Population_Graph_3	{container=':QC.Population_TabProxy' occurrence='1' type='view.qc.Graph' visible='true'}
+:Population_JPanel	{basetype='javax.swing.JPanel' container=':QC.Population_TabProxy' occurrence='2' visible='true'}
+:Population_JViewport	{container=':QC.Population_TabProxy' occurrence='2' type='javax.swing.JViewport' visible='true'}
+:Print.row_0_TableRowProxy	{caption='row_0' container=':Calibration Runs.Print_QCTable' type='com.froglogic.squish.awt.TableRowProxy'}
+:Priority_TableHeaderItemProxy	{caption='Priority' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:QC.10/10/13 8:37 AM_JLabel	{caption~='d+/d+/d+s+d+:d+s+w+' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.9/25/13 9:55 PM to_JLabel	{caption~='d+.*d+.*d+.*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Activate/Edit_JButton	{caption='Activate/Edit' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Active until: AM_JLabel	{caption?='Active until*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Active: Normal_JLabel	{caption?='Active:*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Active_JLabel	{caption='Active' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Awaiting first run_JLabel	{caption='Awaiting first run' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Cancel_JButton	{caption='Cancel' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Close_JButton	{caption='Close' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Closed: 2/12/14 1:50 PM_JLabel	{caption?='Closed*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Closed_JLabel	{caption='Closed' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Control is overdue and has caused lockout._JLabel-1	{caption?='*Control is*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Control is overdue and has caused lockout._JLabel-2	{caption?='*Control Status*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.DigiCount™ Controls_TabProxy	{caption='DigiCount™ Controls' container=':Configuration.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.DigiCount™_JButton	{caption='DigiCount™' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.DigiCount™_TabProxy	{caption='DigiCount™' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Exclude_JButton	{caption='Exclude' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Export_JButton	{caption='Export' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Fail 5; Warn 34_JLabel	{caption?='fail*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.InProgress_JLabel	{caption?='In Progress*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Inactive: Inactive_JLabel	{caption?='Inactive: *' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Include History_JCheckBox	{caption='Include History' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:QC.Last Run on AM_JLabel	{caption?='Last run on*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.New control on Bloodhound 1:_JComboBox	{container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' leftWidget=':QC.New control on Bloodhound 1:_JLabel' type='javax.swing.JComboBox' visible='true'}
+:QC.New control on Bloodhound 1:_JLabel	{caption?='New control on Bloodhound*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.No runs on Bloodhound 1._JLabel	{caption='No runs on Bloodhound 1.' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.No runs on Bloodhound 1._JLabel_2	{caption='' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' leftWidget=':QC.No runs on Bloodhound 1._JLabel' type='javax.swing.JLabel' visible='true'}
+:QC.Overview_TabProxy	{caption='Overview' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Pending_JLabel	{caption='Pending' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Population Means_TabProxy	{caption='Population Means' container=':Configuration.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Population_TabProxy	{caption='Population' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Print_JButton	{caption='Print' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.QC.WholeBlood.STATUS_NO_RUNS_JLabel	{caption='QC.WholeBlood.STATUS_NO_RUNS' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Reflag all_JButton	{caption='Reflag all' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Reproducibility_JButton	{caption='Reproducibility' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Reproducibility_TabProxy	{caption='Reproducibility' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Reproducibility_TabProxy_2	{caption='Reproducibility' container=':Configuration.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Started: 2/11/14 1:50 PM_JLabel	{caption?='Started*' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Was active_JLabel	{caption='Was active' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JLabel' visible='true'}
+:QC.Whole Blood_JButton	{caption='Whole Blood' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JButton' visible='true'}
+:QC.Whole Blood_JLabel	{caption='' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' leftWidget=':QC.Whole Blood_JButton' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:QC.Whole Blood_TabProxy	{caption='Whole Blood' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.Whole Blood_TabProxy_2	{caption='Whole Blood' container=':Configuration.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:QC.↩_JTabbedPane	{aboveWidget=':Configuration.↩_JButton' container=':Configuration.QC_TabProxy' type='javax.swing.JTabbedPane' visible='true'}
+:QC_JComboBox	{container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='javax.swing.JComboBox' visible='true'}
+:QC_JComponent	{basetype='javax.swing.JComponent' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' visible='true'}
+:RBC.Report_TabProxy	{caption='Report' container=':Results.RBC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:RBC_ListWithExtras	{container=':Results.RBC_TabProxy' type='view.results.ListWithExtras' visible='true'}
+:Report_JTable	{container=':WBC.Report_TabProxy' type='javax.swing.JTable' visible='true'}
+:Report_JTable_2	{container=':WBC.Report_TabProxy' occurrence='1' type='javax.swing.JTable' visible='true'}
+:Report_JTable_3	{container=':WBC.Report_TabProxy_2' occurrence='1' type='javax.swing.JTable' visible='true'}
+:Report_JTable_4	{container=':WBC.Report_TabProxy_2' type='javax.swing.JTable' visible='true'}
+:Report_JTable_5	{container=':RBC.Report_TabProxy' type='javax.swing.JTable' visible='true'}
+:Report_JTable_6	{container=':RBC.Report_TabProxy' occurrence='1' type='javax.swing.JTable' visible='true'}
+:Report_JTable_7	{container=':RBC.Report_TabProxy' occurrence='2' type='javax.swing.JTable' visible='true'}
+:Report_JTable_8	{container=':PLT.Report_TabProxy' type='javax.swing.JTable' visible='true'}
+:Report_JTable_9	{container=':PLT.Report_TabProxy' occurrence='1' type='javax.swing.JTable' visible='true'}
+:Report_PlaceholderOverlay	{container=':WBC.Report_TabProxy' type='util.PlaceholderOverlay' visible='true'}
+:Report_PlaceholderOverlay_2	{container=':RBC.Report_TabProxy' type='util.PlaceholderOverlay' visible='true'}
+:Report_PlaceholderOverlay_3	{container=':PLT.Report_TabProxy' type='util.PlaceholderOverlay' visible='true'}
+:Reproducibility. _JComboBox	{basetype='javax.swing.JComboBox' container=':QC.Reproducibility_TabProxy_2' leftWidget=':Reproducibility. _JLabel' visible='true'}
+:Reproducibility. _JLabel	{caption=' ' container=':QC.Reproducibility_TabProxy_2' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:Reproducibility.Reproducibility Test_JLabel	{caption='Reproducibility Test' container=':QC.Reproducibility_TabProxy_2' type='javax.swing.JLabel' visible='true'}
+:Reproducibility.Whole Blood_QCTable	{aboveWidget=':QC.Whole Blood_JLabel' basetype='view.qc.QCTable' container=':QC.Reproducibility_TabProxy' visible='true'}
+:Reproducibility.Whole Blood_QCTable_2	{aboveWidget=':QC.Whole Blood_JLabel' basetype='view.qc.QCTable' container=':QC.Reproducibility_TabProxy' occurrence='1' visible='true'}
+:Reproducibility.fail*_JViewport	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' container=':QC.Reproducibility_TabProxy' type='javax.swing.JViewport' visible='true'}
+:Reproducibility.fail*_QCTable	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' basetype='view.qc.QCTable' container=':QC.Reproducibility_TabProxy' visible='true'}
+:Reproducibility.fail*_QCTable_2	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' basetype='view.qc.QCTable' container=':QC.Reproducibility_TabProxy' occurrence='1' visible='true'}
+:Reproducibility.↩_JLayeredPane	{aboveWidget=':Configuration.↩_JButton' container=':QC.Reproducibility_TabProxy_2' type='javax.swing.JLayeredPane' visible='true'}
+:Reproducibility_JPanel	{basetype='javax.swing.JPanel' container=':QC.Reproducibility_TabProxy_2' occurrence='1' visible='true'}
+:Reproducibility_JTextField	{basetype='javax.swing.JTextField' container=':QC.Reproducibility_TabProxy_2' visible='true'}
+:Result.Exclude Result_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Exclude Result' container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' visible='true'}
+:Result.Ilvolvsky, Vadim_JLabel	{caption='Ilvolvsky, Vadim' container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Result.Ilvolvsky, Vadim_JLabel_2	{caption='Ilvolvsky, Vadim' container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Result.Ilvolvsky, Vadim_JTextArea	{aboveWidget=':Result.Ilvolvsky, Vadim_JLabel' basetype='javax.swing.JTextArea' container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' visible='true'}
+:Result.Ilvolvsky, Vadim_JTextArea_2	{aboveWidget=':Result.Ilvolvsky, Vadim_JLabel_2' basetype='javax.swing.JTextArea' container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' visible='true'}
+:Result_JTextArea	{basetype='javax.swing.JTextArea' container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' visible='true'}
+:Result_PlaceholderOverlay	{container=':Bloodhound™ Viewing Station v1.2.3.Result_TabProxy' type='util.PlaceholderOverlay' visible='true'}
+:Results.Action_JButton	{caption='Action' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results.Archive_JButton	{caption='Archive' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Cancel Release_JButton	{caption='Cancel Release' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Close_JButton	{caption='Close' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results.Export Current_JButton	{caption='Export Current' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Export Raw_JButton	{caption='Export Raw' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Initial Review_JCheckBox	{caption='Initial Review' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Results.Level 1 Review_JCheckBox	{caption='Level 1 Review' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Results.Level 2 Review_JCheckBox	{caption='Level 2 Review' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Results.Level 3 Review_JCheckBox	{caption='Level 3 Review' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JCheckBox' visible='true'}
+:Results.Mark for Rerun_JButton	{caption='Mark for Rerun' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Open for Review_JButton	{caption='Open for Review' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Override Lock_JButton	{caption='Override Lock' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Overview_TabProxy	{caption='Overview' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:Results.PLT_TabProxy	{caption='PLT' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:Results.Print_JButton	{caption='Print' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.RBC_TabProxy	{caption='RBC' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:Results.Release_JButton	{caption='Release' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Release_JButton_2	{caption='Release' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results.Revert_JButton	{caption='Revert' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results.Save_JButton	{caption='Save' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results.Search:_JLabel	{caption='Search:' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Results.Search:_PlaceholderOverlay	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' leftWidget=':Results.Search:_JLabel' type='util.PlaceholderOverlay' visible='true'}
+:Results.Show All_JButton	{caption='Show All' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.Show All_JTable	{aboveWidget=':Results.Show All_JButton' basetype='javax.swing.JTable' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' visible='true'}
+:Results.Show All_JViewport	{aboveWidget=':Results.Show All_JButton' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JViewport' visible='true'}
+:Results.View Results_JButton	{caption='View Results' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JButton' visible='true'}
+:Results.WBC_TabProxy	{caption='WBC' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Results.WBC_TabProxy_2	{caption='WBC' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:Results.↩_JButton	{caption='↩' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results.↪_JButton	{caption='↪' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' type='javax.swing.JButton' visible='true'}
+:Results_JComboBox	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JComboBox' visible='true'}
+:Results_JComboBox_2	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' occurrence='1' type='javax.swing.JComboBox' visible='true'}
+:Results_JComboBox_3	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' occurrence='2' type='javax.swing.JComboBox' visible='true'}
+:Results_JComponent	{basetype='javax.swing.JComponent' container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy_2' visible='true'}
+:Results_JTable	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='javax.swing.JTable' visible='true'}
+:Results_JTable_2	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' occurrence='1' type='javax.swing.JTable' visible='true'}
+:Results_WrappingDetailsLine	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='util.WrappingDetailsLine' visible='true'}
+:Results_WrappingDetailsList	{container=':Bloodhound™ Viewing Station v1.2.3.Results_TabProxy' type='util.WrappingDetailsList' visible='true'}
+:Rules.+_JButton	{caption='+' container=':Configuration.Rules_TabProxy' type='javax.swing.JButton' visible='true'}
+:Rules.-_JButton	{caption='-' container=':Configuration.Rules_TabProxy' type='javax.swing.JButton' visible='true'}
+:Rules.Actions_TabProxy	{caption='Actions' container=':Configuration.Rules_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Rules.Deltas_TabProxy	{caption='Deltas' container=':Configuration.Rules_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Rules.Duplicate_JButton	{caption='Duplicate' container=':Configuration.Rules_TabProxy' type='javax.swing.JButton' visible='true'}
+:Rules.Flags_TabProxy	{caption='Flags' container=':Configuration.Rules_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Rules.Limits_TabProxy	{caption='Limits' container=':Configuration.Rules_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Rules.Messages_TabProxy	{caption='Messages' container=':Configuration.Rules_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Rules.Morphology_TabProxy	{caption='Morphology' container=':Configuration.Rules_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Rules.^_JButton	{caption='^' container=':Configuration.Rules_TabProxy' type='javax.swing.JButton' visible='true'}
+:Rules.v_JButton	{caption='v' container=':Configuration.Rules_TabProxy' type='javax.swing.JButton' visible='true'}
+:Rules_JComboBox	{container=':Configuration.Rules_TabProxy' tooltiptext='Rollback...' type='javax.swing.JComboBox' visible='true'}
+:Rules_JTable	{basetype='javax.swing.JTable' container=':Configuration.Rules_TabProxy' visible='true'}
+:Rules_JTable_2	{basetype='javax.swing.JTable' container=':Configuration.Rules_TabProxy' occurrence='1' visible='true'}
+:Save As:.0_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.0_1_TableItemProxy	{column='1' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.11_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='11' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.16_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='16' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.1_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='1' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.2_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='2' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.3_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='3' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.8_0_TableItemProxy	{column='0' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' row='8' type='com.froglogic.squish.awt.TableItemProxy'}
+:Save As:.row_1_TableRowProxy	{caption='row_1' container=':Bloodhound™ Viewing Station v1.2.3.Save As:_JTable' type='com.froglogic.squish.awt.TableRowProxy'}
+:Show All.0_0_TableItemProxy	{column='0' container=':Results.Show All_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Show All.0_0_TableItemProxy_2	{column='0' container=':In Process.Show All_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Show All.SL00011_TableItemProxy	{caption='SL00011' column='2' container=':In Process.Show All_JTable' row='0' type='com.froglogic.squish.awt.TableItemProxy'}
+:Status_TableHeaderItemProxy	{caption='Status' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Table.Fail*_QCTable	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' basetype='view.qc.QCTable' container=':DigiCount™.Table_TabProxy' occurrence='1' visible='true'}
+:Table.Fail*_QCTable_2	{aboveWidget=':QC.Fail 5; Warn 34_JLabel' basetype='view.qc.QCTable' container=':DigiCount™.Table_TabProxy' visible='true'}
+:Table.Reference:_JComboBox	{container=':Whole Blood.Table_TabProxy' leftWidget=':Table.Reference:_JLabel' type='javax.swing.JComboBox' visible='true'}
+:Table.Reference:_JLabel	{caption='Reference:' container=':Whole Blood.Table_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Table.Save_JButton	{caption='Save' container=':Whole Blood.Table_TabProxy' type='javax.swing.JButton' visible='true'}
+:Table_JScrollPane	{container=':Whole Blood.Table_TabProxy' type='javax.swing.JScrollPane' visible='true'}
+:Table_JTableHeader_2	{container=':Whole Blood.Table_TabProxy' type='javax.swing.table.JTableHeader' visible='true'}
+:Table_QCTable	{basetype='view.qc.QCTable' container=':Whole Blood.Table_TabProxy' visible='true'}
+:Table_QCTable_2	{basetype='view.qc.QCTable' container=':Whole Blood.Table_TabProxy' occurrence='1' visible='true'}
+:Time_TableHeaderItemProxy	{caption='Time' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Turnaround	{caption='Turnaround\nTime' container=':In Process_JTableHeader' type='com.froglogic.squish.awt.TableHeaderItemProxy'}
+:Usage History./_JLabel	{caption='/' container=':Bloodhound 1.Usage History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Usage History./_JLabel_2	{caption='/' container=':Bloodhound 1.Usage History_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Usage History./_JLabel_3	{caption='/' container=':Bloodhound 1.Usage History_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:Usage History./_JLabel_4	{caption='/' container=':Bloodhound 1.Usage History_TabProxy' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:Usage History./_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Usage History_TabProxy' leftWidget=':Usage History./_JLabel' visible='true'}
+:Usage History./_JTextField_2	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Usage History_TabProxy' leftWidget=':Usage History./_JLabel_2' visible='true'}
+:Usage History./_JTextField_3	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Usage History_TabProxy' leftWidget=':Usage History./_JLabel_3' visible='true'}
+:Usage History./_JTextField_4	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Usage History_TabProxy' leftWidget=':Usage History./_JLabel_4' visible='true'}
+:Usage History.End:_JLabel	{caption='End:' container=':Bloodhound 1.Usage History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Usage History.End:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Usage History_TabProxy' leftWidget=':Usage History.End:_JLabel' visible='true'}
+:Usage History.Export_JButton	{basetype='javax.swing.JButton' caption='Export' container=':Bloodhound 1.Usage History_TabProxy' visible='true'}
+:Usage History.Normal/Flagged in Selected Time Period: 0/0_JLabel	{caption='Normal/Flagged in Selected Time Period: 0/0' container=':Bloodhound 1.Usage History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Usage History.Print Usage History..._JButton	{basetype='javax.swing.JButton' caption='Print Usage History...' container=':Bloodhound 1.Usage History_TabProxy' visible='true'}
+:Usage History.Print_JButton	{basetype='javax.swing.JButton' caption='Print' container=':Bloodhound 1.Usage History_TabProxy' visible='true'}
+:Usage History.Search_JButton	{basetype='javax.swing.JButton' caption='Search' container=':Bloodhound 1.Usage History_TabProxy' visible='true'}
+:Usage History.Start:_JLabel	{caption='Start:' container=':Bloodhound 1.Usage History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Usage History.Start:_JTextField	{basetype='javax.swing.JTextField' container=':Bloodhound 1.Usage History_TabProxy' leftWidget=':Usage History.Start:_JLabel' visible='true'}
+:Usage History.Total Results (all time): 2_JLabel	{caption='Total Results (all time): 2' container=':Bloodhound 1.Usage History_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Usage History_JTable	{basetype='javax.swing.JTable' container=':Bloodhound 1.Usage History_TabProxy' visible='true'}
+:Usage History_PlaceholderOverlay	{container=':Bloodhound 1.Usage History_TabProxy' type='util.PlaceholderOverlay' visible='true'}
+:Users.  _JComboBox	{basetype='javax.swing.JComboBox' container=':Configuration.Users_TabProxy' leftWidget=':Users.  _JLabel' visible='true'}
+:Users.  _JLabel	{caption='  ' container=':Configuration.Users_TabProxy' occurrence='3' type='javax.swing.JLabel' visible='true'}
+:Users.  _JLabel_2	{caption='  ' container=':Configuration.Users_TabProxy' type='javax.swing.JLabel' visible='true'}
+:Users.  _JLabel_3	{caption='  ' container=':Configuration.Users_TabProxy' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Users.  _JLabel_4	{caption='  ' container=':Configuration.Users_TabProxy' occurrence='2' type='javax.swing.JLabel' visible='true'}
+:Users.  _JTextField	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' leftWidget=':Users.  _JLabel_2' visible='true'}
+:Users.  _JTextField_2	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' leftWidget=':Users.  _JLabel_3' visible='true'}
+:Users.  _JTextField_3	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' leftWidget=':Users.  _JLabel_4' visible='true'}
+:Users.Calibration_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Calibration' container=':Configuration.Users_TabProxy' visible='true'}
+:Users.Cancel_JButton	{basetype='javax.swing.JButton' caption='Cancel' container=':Configuration.Users_TabProxy' visible='true'}
+:Users.Config_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Config' container=':Configuration.Users_TabProxy' visible='true'}
+:Users.Edit User Levels_JButton	{caption='Edit User Levels' container=':Configuration.Users_TabProxy' type='javax.swing.JButton' visible='true'}
+:Users.Maintenance_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Maintenance' container=':Configuration.Users_TabProxy' visible='true'}
+:Users.Middle Initial_JLabel	{basetype='javax.swing.JLabel' caption='Middle Initial' container=':Configuration.Users_TabProxy' visible='true'}
+:Users.Middle Initial_JTextField	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' leftWidget=':Users.Middle Initial_JLabel' visible='true'}
+:Users.New User_JButton	{caption='New User' container=':Configuration.Users_TabProxy' type='javax.swing.JButton' visible='true'}
+:Users.OK_JButton	{basetype='javax.swing.JButton' caption='OK' container=':Configuration.Users_TabProxy' visible='true'}
+:Users.OK_JButton_2	{caption='OK' container=':Configuration.Users_TabProxy' type='javax.swing.JButton' visible='true'}
+:Users.Run Samples_JCheckBox	{basetype='javax.swing.JCheckBox' caption='Run Samples' container=':Configuration.Users_TabProxy' visible='true'}
+:Users_JPasswordField	{basetype='javax.swing.JPasswordField' container=':Configuration.Users_TabProxy' visible='true'}
+:Users_JPasswordField_2	{basetype='javax.swing.JPasswordField' container=':Configuration.Users_TabProxy' occurrence='1' visible='true'}
+:Users_JTable	{basetype='javax.swing.JTable' container=':Configuration.Users_TabProxy' visible='true'}
+:Users_JTextField	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' visible='true'}
+:Users_JTextField_2	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' occurrence='1' visible='true'}
+:Users_JTextField_3	{basetype='javax.swing.JTextField' container=':Configuration.Users_TabProxy' occurrence='2' visible='true'}
+:WBC.Neutrophil (2.2%)_TabProxy	{caption='Neutrophil (2.2%)' container=':Results.WBC_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:WBC.Neutrophil (96.0%)_TabProxy	{caption='Neutrophil (96.0%)' container=':Results.WBC_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:WBC.Report_TabProxy	{caption='Report' container=':Results.WBC_TabProxy_2' type='com.froglogic.squish.awt.TabProxy'}
+:WBC.Report_TabProxy_2	{caption='Report' container=':Archives.WBC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:WBC_JScrollPane	{container=':Results.WBC_TabProxy_2' occurrence='4' type='javax.swing.JScrollPane' visible='true'}
+:WBC_ScrollablePanel	{basetype='util.ScrollablePanel' container=':Results.WBC_TabProxy_2' occurrence='4' visible='true'}
+:Whole Blood. _JComboBox	{basetype='javax.swing.JComboBox' container=':QC.Whole Blood_TabProxy_2' leftWidget=':Whole Blood. _JLabel' visible='true'}
+:Whole Blood. _JComboBox_2	{basetype='javax.swing.JComboBox' container=':QC.Whole Blood_TabProxy_2' leftWidget=':Whole Blood. _JLabel_2' visible='true'}
+:Whole Blood. _JLabel	{caption=' ' container=':QC.Whole Blood_TabProxy_2' occurrence='1' type='javax.swing.JLabel' visible='true'}
+:Whole Blood. _JLabel_2	{caption=' ' container=':QC.Whole Blood_TabProxy_2' occurrence='4' type='javax.swing.JLabel' visible='true'}
+:Whole Blood.Either_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Either' container=':QC.Whole Blood_TabProxy_2' visible='true'}
+:Whole Blood.Graph_TabProxy	{caption='Graph' container=':QC.Whole Blood_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Whole Blood.Open_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Open' container=':QC.Whole Blood_TabProxy_2' visible='true'}
+:Whole Blood.Rack or STAT_JRadioButton	{basetype='javax.swing.JRadioButton' caption='Rack or STAT' container=':QC.Whole Blood_TabProxy_2' visible='true'}
+:Whole Blood.Table_TabProxy	{caption='Table' container=':QC.Whole Blood_TabProxy' type='com.froglogic.squish.awt.TabProxy'}
+:Whole Blood_JTable	{basetype='javax.swing.JTable' container=':QC.Whole Blood_TabProxy_2' visible='true'}
+:_JFrame	{caption='' type='javax.swing.JFrame' visible='true'}
+:_ListItemProxy	{caption='' container=':Bloodhound™ Viewing Station v1.2.3_JList' type='com.froglogic.squish.awt.ListItemProxy'}
+:_ListItemProxy_2	{caption='' container=':Neutrophil (96.0%)_ListWithExtras' type='com.froglogic.squish.awt.ListItemProxy'}
+:_ListItemProxy_3	{caption='' container=':RBC_ListWithExtras' type='com.froglogic.squish.awt.ListItemProxy'}
+:row_0_TableRowProxy	{caption='row_0' container=':Report_JTable_3' type='com.froglogic.squish.awt.TableRowProxy'}
+:{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_2' visible='true'}.item_0	{basetype='javax.swing.JComboBox' container=':Configuration.General_TabProxy' leftWidget=':General. _JLabel_2' visible='true'}.item_0
+:{basetype='javax.swing.JComboBox' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Format:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.item_0	{basetype='javax.swing.JComboBox' leftWidget=':Bloodhound™ Viewing Station v1.2.3.Format:_JLabel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.item_0
+:{caption='Results' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.MainTabs$MainTab.JPanel.JPanel0.JScrollPane.JViewport0.EnumTable$1.row_0	{caption='Results' type='com.froglogic.squish.awt.TabProxy' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.MainTabs$MainTab.JPanel.JPanel0.JScrollPane.JViewport0.EnumTable$1.row_0
+:{caption='Whole Blood' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}.JTabbedPane.tab_0.JLayeredPane.JPanel.GraphPanelWholeBlood$ControlPanel	{caption='Whole Blood' container=':Bloodhound™ Viewing Station v1.2.3.QC_TabProxy' type='com.froglogic.squish.awt.TabProxy'}.JTabbedPane.tab_0.JLayeredPane.JPanel.GraphPanelWholeBlood$ControlPanel
+:{container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' occurrence='2' type='javax.swing.JPanel' visible='true'}.JScrollPane.JViewport0.EnumTable$1.row_0	{container=':Bloodhound™ Viewing Station v1.2.3.Analyzers_TabProxy' occurrence='2' type='javax.swing.JPanel' visible='true'}.JScrollPane.JViewport0.EnumTable$1.row_0
+:{occurrence='6' type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.JScrollPane.JViewport0.JTable	{occurrence='6' type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.JScrollPane.JViewport0.JTable
+:{type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.JPanel.Editors$ReportingValueField1	{type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.JPanel.Editors$ReportingValueField1
+:{type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.JPanel.JLabel1	{type='javax.swing.JPanel' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.JPanel.JLabel1
+:{type='javax.swing.JTabbedPane' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.tab_0.MainTabs$MainTab.JPanel.JPanel0.JScrollPane.JViewport0.EnumTable$1.row_0.column_12	{type='javax.swing.JTabbedPane' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.tab_0.MainTabs$MainTab.JPanel.JPanel0.JScrollPane.JViewport0.EnumTable$1.row_0.column_12
+:{type='javax.swing.JTabbedPane' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.tab_2.MainTabs$MainTab.JPanel.JPanel0.JScrollPane.JViewport0.EnumTable$1.row_0	{type='javax.swing.JTabbedPane' visible='true' window=':Bloodhound™ Viewing Station v1.2.3_JFrame'}.tab_2.MainTabs$MainTab.JPanel.JPanel0.JScrollPane.JViewport0.EnumTable$1.row_0

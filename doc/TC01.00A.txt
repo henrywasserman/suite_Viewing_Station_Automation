@@ -1,0 +1,779 @@
+TC1.00A / VP0177 - Smoke Test All Permutations			
+Test Case Summary:			
+This test case is a sanity check of all the modules in the Viewing Station.			
+Functional Specs: None			
+Per CTR Functionality			
+Pre-Requisites: 			
+"1. Run 2 samples three times under Secondary Defaults rule set
+2. Run 5 samples once under Secondary Defaults again 
+3. Control Viewing Station with another Analyzer connected to the Lab Group
+4. Insert a USB flash drive to the control station
+5. DigiCount QC samples: at least 1 Low, Normal, and High (L, N, & H) - ideally all one lot
+6. DigiCount Low, Normal and High assay sheets to create new samples' assay data
+7. Register the DigiCount samples and run them on the Analyzer 
+8. Register a Reproducibility and Whole Blood in QC and run these samples
+9. Make changes to Configuration=>QC=>Population Means.
+Set ""Warn at"" to 3.0, set ""Fail at"" to 4.0, set Exclusion Criteria to ""Exclude individual results"", set the ""Batch       
+Size"" to 5 Samples
+10. Run 20 regular blood samples to generate Population graph points and data
+"			
+Steps	P/F/NA	Notes	
+QC			
+1. Log out of and exit out of the Viewing Station, bring it up again and login with a username with admin rights and navigate to the QC tab			
+Confirm the QC tab is defaulted to the "Overview" subtab			
+"Confirm there are 5 subtabs down the left hand side: 
+- ""Overview""
+- ""DigiCount™""
+- ""Population""
+- ""Reproducibility""
+- ""Whole Blood"""			
+Confirm there is an Analyzer Selector combobox in the toolbar			
+Confirm there is a "Print" button disabled in the toolbar			
+Confirm that under the "New control on <analyzer>" header in the toolbar the following buttons are displayed; "DigiCount™", "Reproducibility" and "Whole Blood"			
+"Confirm that on the right side of the toolbar is the ""Reflag all"" button
+NOTE: This button only is displayed in the QC > Overview page"			
+2. Navigate to QC > DigiCount™  subtab and view the tab across the top of the screen			
+"Confirm there are 5 tabs across the top of the DigiCount™ tab:
+-“Low”
+-“Normal”
+-“High""
+-“All” 
+-“Table”"			
+"3. Click on following tabs and view the toolbar; “Low”, “Normal”, “High”, “All”
+NOTE: The following toolbar elements listed are in addition to the ones already specified in the previous test"			
+Confirm that each tab goes to the “Low”, “Normal”, “High” and “All” graph pages			
+Confirm that the toolbar has a "Control Selector" combobox			
+Confirm that the toolbar has Control Details text under the Control selector combobox and Control Status text to the right of the combobox			
+Confirm that the toolbar has an unchecked "Include History" checkbox			
+Confirm that the toolbar has an active "Exclude" button			
+"Confirm that there are ""+"" and ""-"" zoom buttons under the graphs
+NOTE: These buttons should only appear under graphs"			
+4. In any of the graph pages click on the "Exclude" button, when the exclude dialog is displayed (with the pointer focusing on one point on the graph) click on the "Exclude Result" checkbox, enter a comment in the comment field and click on the "Save" button			
+Confirm that the exclude dialog closes and the point that was highlighted is excluded			
+5. In any of the graph pages click on the "Include History" checkbox to put a check in it and then click on the checkbox again to uncheck it			
+Confirm that, when checked, all the points for all the controls for that level are displayed in one graph			
+Confirm that when unchecked it goes back to displaying the set of points from the selected control			
+6. In any of these graph pages click on the Control Selector combobox and select a several different controls			
+Confirm that a graph is displayed for any control selected			
+"7. Click on the ""Table"" tab and view the toolbar
+NOTE: The following toolbar elements listed are in addition to the ones already specified in the previous tests"			
+Confirm that it goes to the "Table" page			
+Confirm that the toolbar has an active "Export" button			
+Confirm that the toolbar has an active "Activate/Edit" button			
+Confirm that the toolbar has an inactive "Exclude" button			
+Confirm that there are NO "+" and "-" zoom buttons under the table			
+8. In any of the DigiCount™ tabs (“Low”, “Normal”, “High”, “All” or Table) view the messages next to and below the Control Selector combobox			
+"Confirm there are existing messages on the toolbar, reporting the Active or Inactive status of the control sample and date and time of its status.
+Note: The text that appears in these places is specific to the control type."			
+Confirm that the Analyzer selector combobox list includes only all the analyzers connected to the Control Viewing Station you are logged on.			
+9. Navigate to QC > Population subtab and review the toolbar for actions that can be performed.			
+"Confirm that the following buttons/functionality (click on each button and review the result) are available on the Population tab: 
+-Analyzer selector combobox
+-""Print"" button (currently disabled)
+-""DigiCount"", ""Reproducibility"", and ""Whole Blood"" buttons
+-""Exclude"" button
+-""Zoom"" buttons at the bottom of the graph that adjusts the scrollbar when pressed"			
+Confirm that the Population graph is displayed properly by running a sample to completion and verifying the new data points on the graph.			
+Confirm that the "Exclude" button is active (disabled unless a data point is selected). Test its functionality by pressing the button to display the Exclude dialog. Check the Exclude Population Batch checkbox. Enter a reason in the text field and press the "Save" button.			
+Confirm upon reopening the Exclude dialog that the display is unchanged, the "Save" button is  disabled, and the entered reason text is uneditable. Click Cancel button in Exclude Dialog box.			
+10. Navigate to QC > Reproducibility subtab and review the toolbar for actions that can be performed.			
+"Confirm the following items are available on the toolbar:
+-Analyzer selector combobox
+-""Print"" button (currently disabled)
+-""Export"" button
+-""DigiCount"", ""Reproducibility"", and ""Whole Blood"" buttons
+-Control selector combobox
+-Control Details text under the Control selector combobox and the Control Status to the right of the combobox
+-""Cancel"" button (grayed out if the control selected is completed/canceled already)
+-""Exclude"" button ( disabled by default unless a table cell is selected)"			
+Confirm that the Reproducibility table is displayed properly (all parameters and results are displayed) by selecting each control under the Control selector combobox.			
+11. Navigate to QC > Whole Blood > Graph subtab			
+"Confirm that the following buttons/functionality (click on each button and review the result) are available on the Whole Blood graph:
+-Analyzer selector combobox
+-""Print"" button (currently disabled)
+-""DigiCount"", ""Reproducibility"", ""Whole Blood"", and ""Activate/Edit"" buttons
+-""Exclude"" button (disabled if a point is not selected; enabled if a point is selected)
+"			
+Confirm that the Whole Blood graph is displayed properly (all parameters and results are displayed).			
+"Confirm that at the bottom of the page the following buttons/functionality (click on each button and review the result) are available:
+-A checkbox for each Analyzer with its name labeled
+- A color box next to each Analyzer to indicate the color of the graph line
+-""Absolute"" and ""Percent"" radio buttons with ""Absolute"" being active by default
+-A checkbox labeled ""Separate by Mode"" (unchecked by default)
+"			
+Confirm that clicking on the buttons or checkboxes changes the graph configurations.			
+12. Navigate to QC > Whole Blood > Table tab and review the toolbar for actions that can be performed.			
+"Confirm that the following buttons/functionality (click on each button and review the result) are available on the Whole Blood > Table tab:
+-Analyzer selector combobox
+-""Print"" button (currently disabled)
+-""Export"" button
+-""DigiCount"", ""Reproducibility"", and ""Whole Blood"" buttons
+-Control selector combobox
+-Control Details text under the Control selector combobox and the Control Status to the right of the combobox
+-""Close"" button (disabled if the control selected is not active)
+-""Exclude"" button disabled by default unless a table cell is selected)"			
+"Confirm that at the bottom of the page following buttons/functionality (click on each button and review the result) are available
+-Combobox labeled ""Reference"" and defaulted to ""Mean""
+-""Save"" button (enabled when the selected control is active and disabled if otherwise)"			
+13. Below the Whole Blood Table click on the "Reference" combobox and select a different run in order to make it the Reference.			
+Confirm that clicking on the combobox displays a list of choices based on the runs included in the table above.			
+Confirm that selecting something other than "Mean" from the Reference selector list causes the values in the Target / Mean column to change to match the values from the Analyzer column selected.			
+Confirm that if the user changes the reference, the table is immediately updated based on the new reference value.			
+Processing Test			
+14. Run a sample in rack mode and observe the In Process Samples list.			
+Confirm the sample displays on the In Process Samples list with its status and runs list on the sidebar.			
+Confirm that the sample is listed as "Rack" under the "Mode" column.			
+Confirm that the sample's patient identity is populated in the patient data section in the toolbar. 			
+15. Once the all the runs are finished, click to the Results main tab and observe the sample appears under the queue.			
+16. Double-click the sample for review and view the results in the Overview, WBC, RBC and PLT subtab; observe that the cell images are loaded properly.			
+17. Click to the WBC subtab, highlight ten Neutrophils cell type, and press the spacebar key to invoke the Cell Inspector dialog.			
+18. Observe that a dialog displays with the title "Inspect 10 Cells", reclassify the cells into Blast cell type by selecting "Blast" option in the Reclassify combobox, and press the OK button to close the dialog. 			
+19. Observe once the dialog is closed a new line in the WBC gallery is created for the cell type "Blast" and a new row is created in the differential table in the sidebar with an absolute count and percentage.			
+20. Click on the Report tab in the sidebar, check a few reportables on (note which ones you update).			"(S) These two items should be separate steps.
+[VM 02.27.14] - Step 20 split into two steps."
+21. Click Save and Close buttons on the toolbar.			
+Confirm that the cell images are loaded properly in a reasonable time in Review page. 			
+Confirm Cell Inspector dialog reclassify the cells once the dialog is closed and a new line is created in the WBC cell gallery.			
+Confirm a new row is created in the differential table in the sidebar with an absolute count and percentage.			
+Confirm the sample has been reflagged in the Results Queue list. 			
+Confirm the sample has been reflagged in the Results Queue list.			"(N) I'm not aware of any such dialog; the Viewing Station doesn't ""save files"" except during export.
+[VM 02.27.14] - This must be an older version of the TC. Because I do not have this line in the TC I have. Instead, there is a different line here."
+"Confirm the provisional release (white checkmark) is no longer displayed for this sample, and the Release button on the toolbar is disabled.
+"			"(Re) Doesn't this imply that you should try logging in? How are steps 22-27 related to this requirement?
+[VM 02.27.14] - This must be an older version of the TC. Because I do not have this line in the TC I have. Instead, there is a different line here. "
+22. Reopen the sample for review. Press the "Action" button. The Release Action dialog opens. Press the "Release" button to release the sample.			
+23. Go to the Archives tab. In the Search field, type the Accession # of the sample you just released. Open the sample.			
+Under WBC > Report, confirm the corresponding changes are displayed.			
+24. Select another sample from the Results Queue list. Press the "Release" button. Double-click this sample while it is in the "Oops" delay.			
+Confirm the sample can be viewed momentarily. The released sample eventually closes out after being archived.			
+25. Open any "Ready for Release" sample for review. Press the "Action" button, and partially release some of the test orders. For example, uncheck Diff orders. It will only release CBC order.			
+26. Once the "Release" button is pressed in the Release Action dialog, press the "Action" button to reopen the Release Action dialog.			
+Confirm that only the selected orders are released. Confirm the grayed out results (in our example, CBC order) in the Release Action dialog. Click Cancel on Release Action dialog box. Click Close in Results main tab.			
+27. Open a different sample for review. Press the "Action" button. Perform the same partial release for Diff orders only; then open the Release Action dialog again to view the released parameters.			
+28. Observe the released results are grayed out and then continue to release the CBC orders.			
+Confirm that only those samples that are selected are released. Confirm the grayed out results. Continue to release unchecked cell types (if any).			
+Open Port			
+"29. Run 2 samples via Open Port mode (note down the accession numbers) and go to the In Process list once sampling has started.
+"			
+Confirm the sample is displayed in the In Process list, and it is listed as Open under the "Mode" column. There is a message on the status sidebar that reads “Open-mode sample taken by [I] at [t].”,  where [I] is the analyzer name, and [t] is the time.			
+NOTE: Confirm for Machanical ONLY -1 cadence for 1st sample, then 1 cadence gap cycle occurs between runs with no sampling, then another 1 cadence sample is run. This is an Analyzer SW Integration test if this test does not pass  open an Analyzer bug - and Note down this portion failed.		11/18/13 VI - NOT VS TEST	
+STAT Drawer			
+30. Run 3 samples in STAT drawer twice.			
+Confirm samples run without errors and results are available in the In Process and Results Queue list.			
+Confirm the Sample location, Slide Location of runs, and Sample Status are displayed correctly in the In Process sidebar.			
+Confirm results detail are displayed correctly in Results sidebar.			
+31. Double-click on one of the STAT samples in the Results Queue list for review.			
+Confirm the Review page displays.			
+Print Functionalities in Results Main Tab 			
+32. Control+command+click on the Bloodhound Infinity symbol on top of the Dashboard to minimize the Viewing Station into windowed mode and press the "X" button on the top left side of the title bar to close the Viewing Station.			"(Re) This step implies that full or partial kiosk mode is a pre-requisite.
+[VM 02.27.14] - Added a note in step 32."
+"33. Once the Viewing Station relaunches automatically (only in kiosk mode), log in as admin again and go to the Results main tab. 
+(Note: if not running in kiosk mode - log out and restart the VS from within the Eclipse) "			
+34. Observe that all the buttons in the Results Queue toolbar are disabled - Print, Export Current, Export Raw, etc.			
+35. Select a "Ready for Release" sample that has a white check mark in the Status column of the Results tab and double-click it to open for review.			
+36. In the Overview subtab, enter some text in the "Comments" text field that appears at the bottom of the page.			
+37. Go to the WBC subtab, click on the Report subtab, and check different levels checkboxes (0 or 1+ or 2+ or 3+ or 4+) for different morphologies. (Take notes on which morphology has what level)			
+38. Press the Save button, then press the Close button to go back to the Results Queue. Click on Open for Review button and press the Release button in the toolbar. Click Close button.			
+39. Immediately press on the Print button during Oops delay (15 seconds) with the sample highlighted and once the Print Report dialog opens, click and drag on the preview section to the left to preview the reportable and comments.			
+40. Observe that the reportables, comments and results matches in the table matches the released sample.			 
+41. Click on the Format combobox and observe that there are three options for format type - Chartable, Lab-only (Raw), and Lab-only (Latest).			
+Confirm the Print dialog will contain a combobox to select the type of report to print.			
+Confirm the options will be “Chartable”, “Lab-only (Raw)”, and "Lab-only (Latest)".			
+Confirm the chartable report will also contain an area labeled “Comments”.			
+Confirm this area will contain a list of all morphology, in the same format as on the Results subtab of the Review page.			
+Confirm following the morphology, any reportable comments entered by the user will also be shown.			
+42. Observe that there's a Cancel button, press the button to close the Print Report dialog, and open a sample that has multiple runs for review.			
+43. In the Overview subtab, enter some text in the "Comments" text field that appears at the bottom of the page 			
+44. Click on the WBC side tab, then click on Report. Check some or all morphology checkboxes for different levels (take notes what morphology is at what level) and press the Save and Close button respectively to back to Results Queue. 		[VM 02.27.14] - Added step.	
+45. Press the Print button while the sample is highlighted in the Results Queue and select the "Lab-only (Raw)" option from the Format combobox Note: It should be defaulted to "Lab-only (Raw)".			
+46. Observe that the "Lab-only (Raw)" contains only the raw results without any morphology.			
+47. Select the "Lab-only (Latest)" format and observe that comments and morphology are displayed in the results table in the preview. 			
+48. Close out the Print Report dialog, go back to the Results tab, and select 5 samples, with one sample having multiple results.			
+49. Press the Print button and then press the “→”  button at the bottom to page to the next results set.			
+50. Press the “←” to go to the previous page; press the “ ⇥ ” to move to the last page; Click on the " ⇤ " to move to the first page.			
+51. Click on the Printer combobox, observe that it list all of the printers that are connected to the Viewing Station, and close the print dialog. 			
+Confirm pressing the Cancel button will close the dialog.			
+Confirm buttons will appear under the preview to navigate between pages of the preview.			
+Confirm the buttons will be labeled “ ⇤ ” (first page), “←” (previous page), “→” (next page), and “ ⇥ ” (last page). Note: Only the symbols are part of the name here, not the text in parentheses.			
+Confirm for each sample being printed, the lab report will contain one page for each run that has results.			
+Confirm the “Lab-only” report type will be selectable for any sample.			
+Confirm a combobox in the dialog will list all the printers that are connected to the Viewing Station.			
+52. Observe that there is an editable text field that is defaulted to 1.			
+53.  Next, there is checkbox that is titled "Collated"; observe that this checkbox is checked by default and appears after copies field.			
+54. Next, click on the Paper Source combobox to see the options that can be selected. Note: Only certain printer has the Paper Source option, so you need to select various connected printers.			
+55. Press the Print button and observe immediately at the bottom left of the Viewing Station for an overlay saying "Printing Report: Page [n] of [total].			
+56. Observe that once the Print button is pressed inside the dialog, the Print dialog will close immediately.			
+57. Obtain the printout from the printer and observe that pressing the Print button will print out the report, where [n] is the page being printed and [total] is the total number of pages that will be printed.			
+Confirm the default value in the copies field will be 1.			
+Confirm a checkbox marked “Collated” will appear under the copies field.			
+Confirm the "Collated" checkbox will be checked by default.			
+Confirm that there is Paper Source combobox after the collated checkbox. 			
+Confirm pressing the Print button will print the report.			
+Confirm the Print dialog will close immediately.			
+"Confirm a status messages will appear at the bottom left of the screen saying “Printing Report: Page [n] of [total],” where [n] is the page being printed and [total] is the total number of pages that will be printed.
+NOTE: The status message appears only for a brief moment. To catch that message, user is recommended to select multiple samples and/or samples with multiple runs. That way, the message stays on the screen for a little longer. Also, to avoid wasting ink, it is recommended for a user to print to PDF instead of an actual printer for this particular step."			
+Export Functionalities in Results Main Tab 			
+58. Once printing is done and while the sample is still highlighted, observe that next to the Print button there are two export buttons in the Results Queue toolbar labeled as "Export Current" and "Export Raw" that are enabled.			
+59. In the Search text field, type in an accession that does not exist in the Results  Queue, note that the export buttons are now disabled with no sample selected, and then press the Show All button to clear search field.			
+60. Reselect the previously highlighted sample, press the Export Current button first, and observe that a dialog displays with the title "Export All Runs to File".			
+61. Observe that at the top of the dialog there is a File Name text field labeled as "Save As" and starts out with "export.txt" being filled by default.			
+62. Delete the text from the File Name text field and observe the Export button gets disabled.			
+Confirm that the export dialog displays with the title "Export All Runs to File" when Export Current is pressed.			
+Confirm at the top of the dialog will be the File Name text field, with the label “Save As”.			
+Confirm this text field will start out displaying “export.txt”.			
+Confirm the Export button will be disabled if the File Name text field is empty.			
+63. Observe the next row of the Export dialog is the Folder Selector combobox, labeled "Where".			
+64. Observe "Where" combobox says “<No devices found>” if no writable, removable drives are connected (in kiosk mode), otherwise, "Where" combobox should have a local drive selected (e.g. Macintosh HD)		[VM 03.13.14]	
+65. Next, observe beneath the Where combobox that there is a File View table that two columns - Name and Date.			
+66. Observe that when the dialog is first opened, the Name column will be sorted in ascending order.			
+67. Click on the Name column and observe that it sorts by file name in descending order; click it again and observe that it reverse the order of the sort.			
+68. Observe that the Date column shows the last-modified date of each file			
+69.  Click on the Date column header to sort the files by date in descending order with latest files first; click on the Date column header again to reverse the order of the sort - oldest time first.			
+"70. Now drill to down to Users>[user name]>Desktop, if not in kiosk mode, by double-clicking the folder icon appear in the File View table and note that the Folder Selector combobox displays the current open folder. 
+If in kiosk mode, drill down to <USB_drive> => <folder_name>  "		[VM 03.13.14]	
+71. Click on the Folder Selector combobox to get the popup and see that the enclosing folders and the whole hierarchy of containing folders are shown for that navigated folder. 			
+72. Select a different folder in the combobox to display the folder name in the file view.			
+73. Click on the Where combobox again to reopen the popup and observe that the previous navigated path has been removed.			
+Confirm in the next row will be the Folder Selector combobox, labeled “Where”.			
+Confirming clicking Name column header will sort by file name in descending order.			
+Confirm when the dialog is first opened, Name column will be sorted in ascending order.			
+Confirm Date column will display the last-modified date of each file.			
+Confirm if the file view is currently navigated to a folder other than the root of one of these drives (or USB drive if in kiosk mode), then that folder and its ancestors will also be shown in the Where combobox.		[VM 03.13.14]	
+Confirm selecting another folder in the combobox will display that folder in the file view, and will remove from the combobox any folder entries that do not represent either a drive, or the selected folder, or one of its ancestors.			
+Confirm each entry will display its name and its icon, as it would appear in the standard Mac dialog.			
+74. Open up a different folder the File View and drill down as far as you can in that folder. 			
+75. Observe that the a button labeled with an Up Arrow becomes enabled to the right of the combobox.			
+76. Observe that the up button is currently enabled since the folder is not a drive.			
+77. Press the up button till it gets disabled and see that this button will navigate to the parent folder.			
+Confirm this button will be enabled if the current folder is not a drive.			
+Confirm a button labeled with an Up Arrow will become enabled to the right of the combobox.			
+Confirm pressing this button will navigate to the parent of the current folder.			
+78. Once you navigate up to a current folder, observe that the button labeled with a Down Arrow becomes enabled on the right of the up button.			
+79. Observe that Down Arrow button is enabled if a folder is selected in the file view, click on a file such as .txt, see that the button is disabled, and then select the current folder.			
+80. Press the down button to navigate into the folder selected in the file view (highlighted in purple).			
+Confirm a button labeled with a Down Arrow will becomes enabled to the right of the up button.			
+Confirm this button will be enabled if a folder is selected in the file view.			
+Confirm pressing this button will navigate into the folder selected in the file view.			
+81. Next beneath the File view table observe that there is a Filter Selector Combobox  next to the label "Files of type"			
+82. Click the Filter Selector combobox and observe the options - "All files" and "Tab delimited (.txt)" 			
+"83. Select ""Tab delimited (.txt)"" in the combobox and observe that only "".txt"" file are shown
+NOTE: Assuming there are different type of files available in currently selected folder. If there aren't any, navigate to a folder where there are different types of files and test it from within that folder. "			
+84. Switch the files type back to "All files" in the combobox and observe that all files are shown in the table			
+Confirm under the File View will appear the Filter Selector combobox.			
+Confirm the options will be “Tab delimited (.txt)” and “All files”.			
+Confirm files will only be shown if they match the current filter.			
+Confirm if “Tab delimited (.txt)” is selected, only files ending in “.txt” will be shown in the file view.			
+Confirm if “All files” is selected, all files will be shown in the file view.			
+85. Next, observe that the Filter Selector combobox is a checkbox titled "Safely remove "[name]" after export" and select the USB flash drive option in the folder selector combobox. 			
+86. Observe that if removable flash drive is plugged in, the checkbox will be enabled and its name will change to say "Safely remove "[name]" after export" with the checkbox being checked. Note [name] is the name of the device.			
+87. Change the file name to "Test" and press the Export button to export the file to the USB flash drive.			
+88. Observe that the device gets ejected with the confirmation message that the device was safely removed.			
+89. Once the device is ejected, remove the USB flash drive from the iMac and open the file on a separate station with Excel; verify that the exported data has the correct amount runs by counting the rows and verify that the export data has the correct patient data and results that are shown on the Results sidebar.			
+90. Observe that "Export Current" exports the comments and morphology changes of the current state of the results,  not the original results. 			
+Confirm under the Filter Selector will appear a checkbox titled “Safely remove device after export.”			
+Confirm if the current folder is on a removable device, this checkbox will be enabled and its name will change to “Safely remove “[name]” after export,” where [name] is the name of the device.			
+Confirm that exporting to a removable device with "safely remove" checked will export the data first to the device and then ejects with a confirmation message.			
+Confirm that "Export Current" exports all of the runs and current results of that sample(s).			
+Confirm that the exported file matches the results and patient data.			
+91. Remove the USB flash drive from the work station and reinsert it in the control station. 			
+92. Select 5 samples from the Results Queue and press the Export Current button from the Results Queue toolbar.			
+93. Navigate from the File View table to Users> Shared (or <USB_drive> => <folder_name> if in kiosk mode) and observe that a Plus Sign button next to the down button gets enabled.		[VM 03.13.14]	
+94. Click the plus button and observe that a dialog appear with the title "Create Folder" and a text field labeled "Name:"			
+95. Observe that under the "Name" field there are two buttons - "Cancel" and "Create". 			
+96. Observe inside the "Name" field that there is a pre-filled text with the name "New Folder".			
+97. Press the Cancel button to close the dialog, press the "+" button to reopen the Create Folder dialog, and rename the folder name.			
+98. Press the Create button to create the new folder into the selected destination and observe that the folder gets generated. 			
+Confirm a button labeled with a Plus Sign will appear next to the Down Arrow.			
+Confirm when this button is pressed, a dialog will appear with the title “Create Folder” and a text field labeled “Name:”.			
+Confirm buttons titled “Cancel” and “Create” will appear under this.			
+Confirm the text field will start with the name “New Folder”.			
+99. Press the Cancel button to close the Export dialog, select the sample that has comments and morphology entered in the results, and press the Export Raw button. 			
+100. Observe that Export Raw dialog contains the same GUI as the Export Current dialog.			
+101. Select the USB flash drive in the Where combobox, press the Export button, and observe once the data is exported the removable flash drive gets ejected with a confirmation message.			
+102. Open the exported file at a separate work station in Excel and observe that the raw export only exports the original data, no comments or morphology recorded.			
+Confirm the file is exported successfully and data exported is in its raw form.			
+Print/Export in Archives Tab			
+103. Click on the Archives main tab. Check the state of the buttons in the toolbar, and then press the "Search Archives" button with the current default date range filled.			
+Confirm archived records are displayed.			
+Confirm that until a row is selected, the "Export", "Print", "Export Raw", "Export Current", and "View Results" buttons are disabled.		[VM 02.27.14]	
+104. Click on Results tab. Select a sample with multiple runs. Type a comment and update the morphology by turning on a reportable in its the Review page.		[VM 12.16.13] - I think there is a missed step here.We should navigate to the Results main tab before Step 102.	"(Re) The comment here is correct; there should be an additional step: ""Click on the Results tab.""
+[VM 02.27.14] - Added"
+105. In the Review page, press the "Release" button to release and archive the sample.			
+106. Go to Archives main tab, search for the archived sample by entering the accession number, and then press the "Export" button.			
+"Confirm the following: 
+-""Export Data to File"" dialog displays with ""Save As"" field filled in with default ""export.txt"" 
+-""Where"" combobox says “<No devices found>” if no writable, removable drives are connected (in kiosk mode), otherwise, ""Where"" combobox should have a local drive selected (e.g. Macintosh HD)
+-“↑” and “↓” buttons
+- ""+"" button
+- File View table with Name and Date column headers
+- ""Files of Type"" combobox is set to ""All files"" as default
+-""Cancel"" and ""Export"" buttons
+-The text ""Safely remove [device_name] after export"" and checkbox are grayed out"		[VM 12.16.13] - "Where" combobox does not say "<No devices found>" because there will be at least "Macintoch HD" device that will show up in there.	"(N) In Kiosk mode, the dialog will show ""<No devices found>"", but in normal mode you can see ""Macintosh HD""
+[VM 02.27.14] - Clarification added."
+107. Insert flash drive into the iMac computer.			
+108. Change the text under "Save As" to a different name.			
+109. Under the "Where" combobox, select the USB flash drive as the location to export the file.			
+110. Make sure that the "Safely remove "[flash drive]" after export" checkbox is checked. Press the "Export" button, and wait until the "Device Ejected" dialog opens.			
+111. Press the "OK" button. Take the flash drive to another station.			
+Confirm a file has been saved on the flash drive.			
+Confirm the file opens in Excel with the exported data matching the results from the Archives table.			
+112. Repeat previous exporting step without inserting a USB flash drive. The "Safely remove "[flash drive] after export" is grayed out with the checkbox unchecked. Under "Where", the flash drive location is not an option			
+113. Select the same sample with multiple runs, press on the "Export Current" button, and export it to the USB drive, if in Kiosk mode, otherwise export it to Users > … > Desktop.		[VM 03.13.14]	
+Confirm the file opens in Excel with the exported data matching the results from the Archives table			
+114. Select the sample with multiple runs and click on the "Print" button.			
+"Confirm that the Print Report dialog displays and the multiple results (unless Chartable is selected) reflected in the preview section are accurate.
+"			
+115. Preview the results by clicking and dragging on the preview section of the dialog. Review the entire preview section.			
+Confirm the preview section displays accurate results.			
+Confirm the print preview dialog has a "Print" and "Cancel" button, Paper Source, Printer and Format combobox, Number of Copies text field, and a checkbox labeled "Collated".			
+Confirm zooming works when clicking and dragging on the preview section.			
+Confirm there arrow buttons at the bottom used for next page, previous page, first page and last page.			
+116. Observe that the Print Report is defaulted to Chartable format. Select 'Lab Only (Raw)' or 'Lab Only (Latest)' format and page through the results by pressing the arrow buttons; then press the "Cancel" button and reopen the Print Report dialog		[VM 12.16.13] - If one sample with multiple runs is selected, the Chartable option will only allows to see one page, so going through the results can not take place. However, it could take place if "Lab - Only (Raw)" or "Lab - Only (Latest)" is selected.	"(N) You could page back-and-forth if there were multiple results selected, but only one sample is selected in step 112.  This step needs to be clarified.
+[VM 02.27.14] - Added permutations (Steps 117-121). 
+1. If sample has multiple runs and gets released, then Print Report defaults to 'Chartable' and there are no back-and-forth unless 'Lab Only (Raw)' or 'Lab Only (Latest)' is selected.
+2. If sample has multiple runs and archived, then Print Report default to 'Lab Only (Raw)' and it is possible to back-and-forth between the runs. 'Chartable' does not appear to be ab option."
+Confirm proper paging works as expected, Print Report is defaulted to Chartable. The dialog can be close and reopen without a problem			
+117. Click on the "Print" button in the dialog to print the results.			
+Confirm the printing occurs on the selected printer.			
+118. Navigate back to Results page and find a sample with multiple runs. Select that sample.			
+119. Click Archive button. Enter your login credentials. Click on Archive button in the Unreleased Tests dialog box.			
+120. Navigate back to Archives. Enter the accession number in search text box and click Search Archives button.			
+Confirm the sample is found and appears in the table. 			
+121. Select the sample and click on Print button.			
+Confirm the Print Report dialog box appears. Format is defaulted to 'Lab-only (Raw)'.			
+Confirm user can scroll through the runs by clicking left and right arrow buttons			
+122. Click Cancel button in Print Report dialog box			
+123. Clear out the Search field. Press the "Search Archives" button to do a complete record search. Select about 5 samples and press the "Print" button.			
+"Confirm a status messages appears at the bottom left of the screen saying “Printing Report: Page [n] of [total]"".
+NOTE: The status message appears only for a brief moment. To catch that message, user is recommended to select multiple samples and/or samples with multiple runs. That way, the message stays on the screen for a little longer. Print to printer the first time. However, to avoid ink waste, it is recommended to print to PDF thereafter. 
+NOTE: if not running in kiosk mode, the printer icon will appear in the dashboard indicating printer receiving the print job."			"(N) If the Viewing Station is running in windowed mode (not kiosk), the user can observe a printer icon appearing and disappearing multiple times in the dashboard on the bottom of the screen.
+[VM 02.27.14] - Altered. "
+Confirm Printing occurs and that the print out matches the Preview display including each run printed on its own page.			"(Re) Real print-outs should be verified, not just PDFs as suggested in the note on line 252 above.
+[VM 02.27.14] - Altered."
+124. Click the "Print" button and select "Lab-only (Raw)" option. Page through the results by pressing the arrow buttons; then press the "Cancel" button. Reopen the print preview dialog			
+Confirm Print Report dialog displays only the raw results (no morphology changes), proper paging and preview zooming work as expected.			
+Confirm after closing and reopening, original results data is still displayed without discrepancy.			
+125. Click the "Print" button.			
+Confirm printout matches the Print Report dialog			
+126. Once again, reopen the Print Report dialog and select "Lab-only (Latest)" option, page through the results by pressing the arrow buttons; then press the "Cancel" button and reopen the Print Report dialog			
+Confirm Print Report dialog displays only the current results and proper paging and preview zooming all works			
+In Process and Results Main Tab			
+127. Go to the In Process main tab.			
+128. Under Filter by Analyzer combobox, select each one of the connected Analyzer options in the popup menu.			
+129. Select option "All" in the Filter by Analyzer combo box to filter all Analyzers.			
+"130. Click on the “'Create Work Order” button and review all the contents in the Create Work Order dialog:
+-Accession Number field
+-Recognize sample by location checkbox and its section (Analyzer combo box, Mode combo box, Rack and Position fields)
+-Save custom slides checkbox and its section (Reviewable, Stained and Unstained fields)
+-Normal, Retic, and Pair radio buttons under Stained and Unstained
+-Isolate sample checkbox 
+-Undo and Redo buttons
+-Cancel, Edit and Save buttons"			"(N) 'Dilution' has been removed from this dialog (per spec). It is now only possible to set a dilution factor when running in open mode; the steps that follow will need to be re-worked.
+[VM 02.27.14] - Altered steps to accommodate for the changes."
+Confirm that all those components exist in each of the sections under the Create Work Order dialog.			
+131. Press Open Port button on the Analyzer and observe the 'Open Mode - <Analyzer_name>' dialog box appears. Confirm there is checkbox titled "Dilution: 1:".			
+132. 'Type in a barcode number that has already had its results filled in the Results Queue, check the "Dilution: 1:" checkbox, and type in "2" for the dilution text box.			
+133. Press the Proceed button, and proceed running the sample in Open Port mode.			
+134. Once the sample finished processing, open the sample up for review and observe that under the Current results column all the # results for (WBC, RBC, PLT, #nRBC, #RET, HGB, HCT) are tripled and that the dilution factor for this sample has been changed.			
+135. Now rerun the same sample again on the Analyzer.			
+136. Observe that the third set of results in the Review page is not affected by the dilution factor '2' entered previously. Observe, the results are almost identical to original ones.			
+Confirm the Open Mode dialog box has a checkbox labeled 'Dilution: 1:'			
+Confirm if this checkbox is checked, then the dilution factor for this sample will be changed when this sample is run on Analyzer.			
+Confirm that dilution factor will affect all runs for which it was specified.			
+137. Press the Create Work Order button in toolbar again and observe that in the "Save custom slides" section there is checkbox titled "Isolate sample".			
+138. Note that the "Isolate sample" checkbox is unchecked when first start off.			
+139. Scan/type in a barcode in the barcode field and turn on the "Save custom slides" 			
+140. Turn on the "Isolate sample" checkbox, set the reviewable text field to "2", and press the Save button.			
+141. Create another second similar work order as in step 136-139, place the first work order in position 1 of the rack and the second work order on position 2, and run the rack on the Analyzer.			
+142. When the final run of the first work order reaches the low imager, block the imager so it triggers a imaging failure and then triggers an automatic rerun.			
+143. Observe that if the "Isolate sample" checkbox is turned on, the failed sample tube will stay on the rocker until all the necessary auto reruns have started.			
+144. Observe that once auto-rerun occurs the first work order sample is placed back into position 1 and the next work order will start running immediately; let the second work order pass with no rerun and see that the tube is placed back immediately to the rack.			
+145. Go back to the In Process main tab and create a work order with the same reviewable slides, but this time leave the "Isolate sample" unchecked.			
+146. Place the work order in position 1 of the rack and another sample on position 2 and run the rack on the Analyzer.			
+147. When the final run of the work order reaches the low imager, block the imager so it triggers a imaging failure.			
+148. Observe that this failure has no effect on the normal cadence of the Analyzer as it places the work order tube back into the rack and move onto the sample.			
+149. Observe if the "Isolated sample" checkbox is checked, then once a run of this sample begins, until there are known to be no more reruns of this sample possible, no other sample will run.			
+Confirm under the fields a checkbox titled “Isolate sample” will appear.			
+Confirm this checkbox will start off unchecked.			
+Confirm if this checkbox is checked, then once a run of this sample begins, until there are known to be no more reruns of this sample possible, no other sample will run.			
+150. Select a patient sample. Press the "Delete Sample" button. Press the "Cancel" button to close the Delete Sample dialog.			
+151. Select another patient sample and press the "Edit Patient" button. Press the "Check" then "Cancel" buttons to close the Patient Information dialog.			
+152. In the Search text field, enter the accession number of the sample.			
+153. Click "Show All". To sort the samples by category, click on the Status, Name, Accession #, Medical Record #, Location, Date, Time, Turnaround time, Priority, Instrument and Mode column headers.			
+154. Go to the Results main tab.			
+155. Deselect and reselect all the review levels: Initial review, Level 1, Level 2 and Level 3 for one sample.			
+Confirm that the Results Queue Samples List displays the review level(s) accordingly to what is selected in the "Filter by review level" section.			
+156. Open the review page for a sample. In the Review combobox, select "Level 1 Review". Press the "Save" then "Close" buttons. A dark green flag with the value of 1 is displayed next to the Status icon for the selected sample.			
+157. Open the review page for the selected sample. In the Review combobox, select "Level 2 Review". Press the "Save" then "Close" buttons. A light green flag with the value of 2 is displayed next to the Status icon for the selected sample.			
+158. Open the review page for the selected sample. In the Review combobox, select "Level 3 Review". Press the "Save" then "Close" buttons. A orange flag with the value of 3 is displayed next to the Status icon for the selected sample.			
+159. Open the review page for the selected sample. In the Review combobox, select "Initial Review". Press the "Save" then "Close" buttons. No flags are displayed next to the Status icon for the selected sample. The Status is the original one.			
+Confirm that all the appropriate review levels are displayed accordingly.			
+160. Select a patient sample that is "Ready for Release". Click the "Release" button, note the that sample is marked as "Released" under the Status column and in the sidebar, and then press the "Cancel Release" button in the toolbar.			
+Confirm that the sample is marked as "Released" in the Status column while in 'Oops' state.			
+161. Click the "Print" button then the "Cancel" button to cancel out of the dialog. Click the "Print" button again to open the Print Report dialog. Press the "Print" button in the Print Report dialog.			
+Confirm that actual printing occurs and the printout matches what was displayed in the print preview section.			
+162. Select another sample from the Results Queue list and click the "Mark for Rerun" button.			
+Confirm the sample is marked with a manual rerun icon under the Status column.			
+163. Select another sample from the Results Queue list. Click the "Open for Review" button then click the "Close" button.			
+Confirm the Review page displays as expected and closes after the Close button is pressed (assuming there're no changes).			
+164. Select another sample from the Results Queue list. Click the "View Results" button, attempt to make edits, and close out of the Review page.			
+Confirm in "View Only" mode the Review page cannot be edited.			
+165. Double-click another sample from the Results Queue list to open for review and click the "Close" button.			
+Confirm double-clicking another sample from the Results Queue Samples list is the same as pressing the Open for Review button.			
+Archives and Analyzers Main Tab			
+166. Place an empty tube with no barcode in position 1 of the rack			
+167. Place a whole blood (normal) sample and barcode in position 2 of the same rack.			
+168. Place an empty tube without the cap in position 3 of the same rack			
+169. Click on the Analyzers main tab and run the two samples on the Analyzer.			
+Confirm the empty tube with no barcode generates a Barcode misread and imaging failure notifications on the control Viewing Station.			
+Confirm the Status Animation section on the Analyzers tab becomes active.			
+Confirm that during processing a question mark is displayed over the blank tube in the rack animation.			
+Confirm the Stain Pack and Slide Input items decrease by one in the Consumable Volumes section.			"(S) The Analyzer should correctly identify a tube with a missing cap, which will be represented in the rack status animation with a red-orange circle. I suggest placing an empty tube without a cap in position three of the rack, and observing that the Analyzer does not pick up the tube and that the Viewing Station displays it correctly.
+[VM 02.27.14] - Added steps for testing with a tube that does not have a cap."
+Confirm the Analyzer does not pick up the tube with missing cap			
+Confirm that rack animation on Analyzers tab renders that tube in red color			
+170. When the second blood sample has finished processing, rerun the same sample through the Analyzer.			
+171. After the run has finished, go to the Results main tab. Select the last run of the patient sample noted above, open it for Review and press the "Release" button to release the sample.			
+172. Select the Archives main tab and enter the accession number into the Search text field.			
+173. Press the "Search Archives" button			
+Confirm the correct archived sample is displayed in the Archives table.			
+174. Log out of the Viewing Station and then log back in.			
+175. Click to the Archives main tab and note that the archives table has a count of 0 number of sample in the table after the search text field.			
+176. Go to the Results Queue, highlight 3 samples from the queue, and press the Archive button in the toolbar  to force archive.			
+177. Authenticate the "Archive samples" dialog, press the Archive button, and click over to the Archives main tab. 			
+178. Set the search date fields to the current date, press the Search Archives button, and observe that a text after the  search field will say "[n] samples", where [n] is the total number of samples that are in the sample list. (Note: The total here is not necessarily 3 if additional archiving had been done on the same date.)			
+179. Click and highlight one sample first and then press Command+A to highlight all of the samples in the list while noting the changes in the label.			
+180. Observe that if a sample is selected in the list, the text will instead display  “Selected [m] out of [n] samples”, where [m] is the number of sample(s) selected and [n] is the total number of samples.			
+181. Highlight only 1 sample in the table and observe the text will change to display "Selected 1 out of [n] samples".			
+182. Now delete the search field and type in a non-existing barcode into the field.			
+183. Press the Search Archives button and observe that the text now displays as "0 samples".			
+184. In the search text field, type in a valid barcode that was not highlighted in the archives table and press the Search Archives button.			
+185. Observe that when a row is not selected in the sample list and a valid barcode is queried then the text will display as "1 sample".			
+Confirm the total number of samples will be shown at the top right of the table, in the form “[n] samples.”			
+Confirm if lines of the table are selected, this will change to say “Selected [m] out of [n] samples.”			
+Configuration Smoke Test			
+186. Click on Configuration main tab. The General subtab is the default display (only when you first log on to the Control Viewing Station)			
+"Confirm Configuration tab is displayed with the following subtabs:
+-General
+-Users
+-Parameters
+-QC
+-Rules
+-Analyzers
+-LIS
+"			
+"Confirm the following sections exist under the General tab:
+-Region
+-System
+-Results
+-Upgrade Differential Level
+-Slides
+-Print Reports"			
+187. Review the default settings under the Region section			
+"Confirm each parameters in the Region section are defaulted as so: 
+-Language: English
+-Date Format: 6/15/11 - English (United States)
+-Time Format: AM/PM
+-Daylight Savings Time: (checked)
+-Number Format: 1,234.56"		[VM 02.27.14]	
+188. Review the default settings under the System section			
+"Confirm each parameters in the System section are defaulted as so: 
+-Auto Logout Time: 0 Minutes
+-LIS Release Delay: 15 Seconds
+-Screensaver Timeout: 0 Minutes
+-Turn-around Time Warning: 999 Minutes"		[VM 02.27.14]	
+189. Review the default settings under the Results section			
+"Confirm each parameters in the Results section are defaulted as so: 
+-Show Unordered Results checkbox: (unchecked)
+-Auto-release Unflagged Samples combobox: None
+-Allow Viewing Unreportable Results checkbox: (unchecked) Enabled
+-For Samples with many unclassified cells, require the reviewers to classify...: All (selected by default)
+                              -Partial (shown in uneditable box): 200 Cells
+-Discard Images from Unflagged Samples After: 730 Days
+-Discard Images from Flagged Samples After: 730 Days
+-Maximum Number of Historic Results Displayed: 2 Results
+-Require Authentication for Release false checkbox: (unchecked) Enabled"		03/03-KK-Updated	
+190. Review the default settings under the Upgrade Differential Level section			
+"Confirm each parameters in the Upgrade Differential Level section are defaulted as so: 
+-When Cells are Viewed: None
+-When Morphology is Entered: None"			
+191. Review the default settings under the Slides section			
+"Confirm each parameters in the Slides section are defaulted as so: 
+-Slide Text combobox 1: Accession Number selected by default
+-Slide Text combobox 2: Slide ID selected by default
+-Slide Text combobox 3: Test Date/Time selected by default
+-Slide Text combobox 4: (Blank) selected by default
+-Retain Slides radio button group: All Samples (selected by default), Only Flagged Samples
+-Slides Per Sample: 1
+-Print Slide Index Sheet checkbox: (unchecked)
+-Display slide label corrections checkbox: (unchecked)"			
+192. Review the default settings under the Print Reports section			
+"Confirm each parameters in the Print Reports section are defaulted as so: 
+-Lab Report: Print None
+-Patient Report: Print None
+-Daily QC Report: Print None"			
+193. Click on the QC subtab, open the DigiCount Controls sub-subtab, and look at the first table on the left side.			
+"Confirm the table contains the following:
+-The first section in the first table is labeled as ""Flagging warnings""
+- ""On failure"" combobox with the options ""Ignore"", ""Attention"", and ""Lockout"", with ""Ignore"" selected by default.
+-Next, there is a section labeled in here as ""Run interval warnings"" with three  checkboxes for ""Time to run control"", ""Control run overdue"", and ""Ready to activate"" 
+-All the checkboxes in ""Run interval warnings"" section are checked and ""Time to run control after"" has ""7"" filled in the hours edit field, ""Control run overdue after"" has ""8"" filled in the hours edit field, and ""Ready to activate after"" has ""20"" filled in the runs edit field
+-Next, there is a section labeled ""Review"" with the checkbox ""Hold results for approval"" that is unchecked
+-The last section in this table is labeled ""Measured statistics"" with ""Mean"", ""SD"", ""CV"", ""%RMSD"", and ""n"" checkbox that are all unchecked
+"			
+"194. The middle section of the DigiCount subtab should be labeled ""Flagging Ranges"".
+"			
+"Confirm the section contains the following:
+-""Lab target range type:"" combobox with ""SD"" selected by default.
+-""Lab target range type:"" combobox contains the following values: ""SD"", ""CV"", and ""%RMSD""
+-""Outside manufacturer's range:"" combobox with ""Ignore"" selected by default.
+-""Outside manufacturer's range:"" combobox contains the following values: ""Ignore"", ""Warning"", and ""Failure"".
+-Table ""Westgard Rules"" underneath the comboboxes.
+-Table ""Westgard Rules"" contains ""Symbol"", ""Description"", and ""Level"" columns.
+-The ""Symbol"" column has the following values from top to bottom: ""13s"", ""22s"", ""12s""
+-The ""Description"" column has the following values from top to bottom: ""1 at 3 times target SD"", ""2 at 2 times target SD"", and ""1 at 2 times target SD""
+-The ""Level"" column has the following values from top to bottom: ""Failure"", ""Failure"", and ""Warning""
+-There are ""+"" and ""-"" buttons under the table.
+-The ""+"" button is enabled and the ""-"" button is disabled."			
+195. The section on the right should be labeled "Historical SD Specification:"			
+"Confirm this section has the following:
+-Level combobox with ""Default"" selection as default value
+-Level combobox contans values: ""Default"", ""Low"", ""Normal"", and ""High""
+-Analyzer combobox with ""Default"" selection as default value
+-Analyzer combobox contains values ""<Analyzer_name_1>"", ""<Analyzer_name_2>""
+-Calculate button to the right of comboboxes
+-Table with two columns: ""Parameter"" and ""Historical SD"" "			
+196. Change the value in "Lab target range type" combobox from "SD" to "CV" in Flagging Ranges section			
+Confirm the "Historical SD Specification:" label changes to "Historical CV Specification:"			
+Confirm the "Historical SD" column changes to "Historical CV"			
+Confirm the "Description" column entries change to "1 at 3 times target CV", "2 at 2 times target CV", and "1 at 2 times target CV"			
+197. Change the value in "Lab target range type" to "%RMSD"			
+"Confirm the Flagging ranges section gets the following changes:
+-Another section with multiple controls appears
+-Outside lab range combobox with ""Ignore"" selection as default value
+-Outside lab range combobox has the following values: ""Ignore"", ""Warning"", and ""Failure""
+-Outside <editable field> % of lab range: combobox with ""Warning"" selection as default value
+-<editable field> has ""200"" as default value
+-Outside <editable field> % of lab range: combobox has the following values: ""Ignore"", ""Warning"", and ""Failure""
+-Retrospective %RMSD check: combobox has ""Ignore"" selection as default value
+- Retrospective %RMSD check: combobox has the following values ""Attention"", ""Ignore"", and ""Lockout""
+-Lab observed specification range size: <editable field> SDs
+-<editable field> is defaulted to 3.0
+"		03/03-KK- 0.0 Changed to 3.0	
+Confirm the Wetgard Rules table now has one fewer row			
+Confirm the section on the right changes to "Standardized %RMSD Specification:"			
+"Confirm the table in that section also changes and has now the following columns:
+-Parameter
+-Low
+-Normal
+-High"			
+Confirm all fields in that table except "Parameter" are editable			
+Confirm the Description column entries in Westgard Rules table changed to '1 at 2 times target %RMSD' and '2 at 3 times target %RMSD'			
+198.Navigate to Population Means sub-subtab			
+"Confirm the table on the left contains the following columns for each Parameter type:
+-Exclude (contains checkboxes for each listed parameter)
+-Drift Control (contains checkboxes for each listed parameter)
+-Parameter
+-Exclude Low
+-Exclude High
+-Mean
+-SD"			
+"Confirm the table at the top right contains the following columns:
+ -% Change
+-Consecutive
+-Level"			
+"Confirm that below the table the following is displayed:
+-'+' and  '-' buttons (""-"" button inactive)"			
+"Confirm the table at the bottom right corner contains the following Population settings:
+-Warn at [value] SDs text field (set to NULL)
+-Fail at [value] SDs text field (set to NULL)
+-Exclusion Criteria section has two radio buttons
+    -Exclude individual results 
+    -Exclude entire sample (with Exclude entire sample selected)
+-Batch Size text field where it is set to 20 sample
+-Days to Average [value] text field (set to NULL)
+-Alert Level set to ""Ignore""
+-Alert Level has ""Lockout"", ""Attention"", ""Ignore"" options
+Note: Those values are displayed if the Factory + Defaults have been selected. If another setting has been selected or manual updated have been done, these values might be different
+
+"			
+199. Navigate to Reproducibility tab			
+Confirm there is a Reproducibility Test section			
+"Confirm this section has the following controls:
+-Number of runs in Reproducibility test <editable field> Runs
+-<editable field> defaults to 20
+-Alert Level combobox has ""Ignore"" selection as default
+-Alert Level combobox has the following values: ""Lockout"", ""Attention"", and ""Ignore"""			
+200. Navigate to Whole Blood tab			
+"Confirm the table contains the following columns:
+-Parameter
+-Absolute
+-Percent"			
+"Confirm the Preferred Reference table contains the following:
+-Analyzer combobox with ""Mean"" as the default
+-Analyzer combobox has the following values: ""Mean"", ""Analyzer name""
+-Mode has 3 radio buttons ""Open"", ""Rack or STAT"", and ""Either"" (where ""Either"" is the default)"			
+"Confirm the Alert Level table contains the following options in the combobox:
+-""Lockout""
+-""Attention"" 
+-""Ignore"" (default)"			
+201. Click on the Rules sub tab			
+"Confirm the table at the left corner contains the following columns:
+-ID
+-Description
+-Modified"			
+"Confirm that below the table the following is displayed:
+-Duplicate button"			
+"Confirm the table at the left corner contains the following columns:
+-ID
+-Condition"			
+"Confirm that below the table the following is displayed:
+-“↑” and “↓” buttons to move the selected rule set up or down
+-""+"" and ""-"" buttons"			
+"Confirm the section on right side of the Rules tab contains the following sub tabs: 
+-Messages
+-Flags
+-Morphology
+-Deltas
+-Limits 
+-Actions"			
+Confirm the tab bar will also contain a combobox whose text displays “Rollback…”.			
+202. Click on the Analyzers subtab			
+"Confirm the table contains the following columns:
+-Analyzer Name
+-Control Viewing Station
+-LIS Viewing Station"			
+"Confirm that below the table the following is displayed:
+-""Delete"" button (inactive)
+-""Viewing Station's name"" text field"			
+203. Click on the LIS sub tab			
+"Confirm that the following sections are displayed:
+-LIS General
+-LIS ASTM
+-LIS HL7
+-LIS TCP / IP Connection"			
+204. Review the default settings under the LIS General section			
+"Confirm each parameters in the LIS General section are defaulted as so: 
+-LIS Enabled checkbox: (checked)
+-LIS Encoding combobox: NONE (selected by default)
+-LIS Encoding combobox has the following values: NONE, ASTM, HL7
+-LIS Download Mode checkbox: ORDER_ DOWNLOAD
+-LIS Download Mode checkbox has the following values: ORDER_DOWNLOAD, HOST_QUERY
+-LIS Historical Lookup checkbox: (checked)
+-Purge Pending Orders text field: 999 days
+-Sender ID text field: Bloodhound
+-Receiver ID text field: LIS
+-Mode combobox: DEBUG
+-Mode combobox has the following values: DEBUG, PRODUCTION, TRAINING
+"			
+205. Review the default settings under the LIS ASTM section			
+"Confirm each parameters in the LIS ASTM section are defaulted as so: 
+-Query Wait Time text field: 30000 milliseconds (disabled)
+-Message Retry Count text field: 6 (disabled)
+-Message Retry Delay text field: 1000 milliseconds (disabled)
+-Socket Retry Count text field: 6 (disabled)
+-Socket Retry Delay text field: 3000 milliseconds (disabled)"			
+206. Review the default settings under the LIS HL7 section			
+"Confirm each parameters in the LIS HL7 section are defaulted as so: 
+-Reverse AE and AR Meanings checkbox: (checked and disabled)
+-Retransmit on Receiver Reject checkbox: (checked and disabled)
+-Retry Count text field: 1 (disabled)
+-Retry Delay text field: 5000 milliseconds (disabled)
+"			
+207. Review the default settings under the LIS TCP/IP Connection section			
+"Confirm each parameters in the LIS TCP/IP Connection section are defaulted as so: 
+-Remote address text field: local host
+-Port text field: 3000
+-Listen on Port text field: 2000
+-Timeout text field: 60000 milliseconds"			
+Maintenance Main Tab			
+208. Go to the Maintenance main tab.			
+209. Press the New Special Sample button on the toolbar and view the options on the Profile selector combobox.			
+210. Observe that the complete list of possible profiles will be: Default, DigiCount™, Apheresis, Unstained, and Stained.		[VM 02.27.14]	"(Re) Supravital is out; Apheresis is in. If the tester observes profiles named ""Custom A"" or similar, the Viewing Station has been misconfigured.
+[VM 02.27.14] - Adjusted."
+211. Minimize the Viewing Station to windowed mode by control+command+clicking on the Bloodhound Infinity Symbol, log out of the current Kiosk user, and log in to the other station where the ViewingStation.jar file is stored in Applications folder.			
+212. Right-click on the ViewingStation.jar file, select "Show Package Contents" in the popup menu, and go to Contents>Resources>Java.			
+213. Open the bloodhound.properties file in TextEdit and type in the command line: "display.control.debug=true in bloodhound.properties".			
+214. Save the changes and relogin to the kiosk user in order to run the Viewing Station.			
+215. Relogin to the Viewing Station, go to the Maintenance main tab, and press the New Special Sample button.			
+216. Scan in a barcode, press the Save button with the current "Default" profile selected, place this registered sample in Rack position 1 and set it aside.			
+217. Press the New Special Sample button again, scan a different barcode, select "DigiCount™" profile in the Profile combobox, press the Save button, and place this registered sample in Rack position 2 and set it aside.		[VM 12.16.13] - We need to scan the barcode here. Otherwise it will not save. Also, do we scan the same bar code as in previous step or new one?	"(N) The tester should scan a different tube (with a different barcode) for steps 216 and 217 here.
+[VM 02.27.14] - Added."
+218. Run the rack on the Analyzer, click to the In Process main tab, and each time the sample is scanned for the first time, select the sample in the In Process Samples List and look at the  sidebar.			
+"219. Note down the accession number and time and observe that a line displays for each profile saying 
+""Special sample with the ""<profile_name>"" profile.""."		[VM 02.27.14]	
+Confirm each run of a sample will use a particular profile.			
+Confirm New Special Sample dialog displays when pressing New Special Sample button.			
+Confirm the sample profiles will be defined as those which a user may select to run from a sample tube, through the Special Sample dialog.			
+220. Go back to the Maintenance main tab, press the Close Special Sample button, and click on the Barcode combobox. 			
+221. Select a registered special sample barcode in the Close Special Sample dialog and press the Close Sample.			
+222. Once the Close Special Sample dialog is closed, press the Run Maintenance Action button in the toolbar and observe the Profile combobox displaying "Prime Stainer" selected by default.			
+223. Press the Run button to initiate prime staining and click to the In Process main tab to look at the sample.			
+224. Select the "(Prime Stainer)" in the In Process Samples list, press the Edit Patient button, and observe that the Patient Information dialog displays "Special sample with 2 repetitions of the "Prime Stainer" profile."			
+225. Go back to the Maintenance main tab, press the Bootstrap Population Means button in the toolbar, and observe a dialog displays with the title "Bootstrap Population Means".			
+226. Observe the dialog has a Analyzer selector combobox, a "Number of batches" text field with "10" filled by default, and a Reason comment box on the left section of the dialog.			
+227. Observe on the right section there is a list of checkboxes that is labeled with a parameter; check the WBC checkbox on. 			
+228. Type in a comment in the comment box and observe the Bootstrap button gets enabled.			
+229. Press the Cancel button to close the Bootstrap Population Means dialog.			
+230. Click to the Calibration sub-subtab and observe that at the left is a table of the current calibration factors with the Calibration Factor column set to "1" by default for WBC, RBC, HGB, MCV, PLT, and MPV parameter.			
+231. Observe that there is Save, Revert, Undo and Redo button that are disabled by default unless the calibration factor is changed.			
+232. Observe that at the right of the Calibration tab is a table showing the history of how these calibration factors have been updated with the column "Date/Time", "Lot number", "Tech ID", "WBC", "RBC", "HGB", "MCV", "PLT", and "MPV".			
+233. Observe that at the far right of the table there is an Export and Print button.			
+Confirm the special sample marked for closing is no longer in the Close Special Sample dialog. 			
+Confirm the prime stainer runs with a "Special sample" type  with a "Prime Stainer" profile."			
+Confirm Bootstrap Population Means dialog displays when the Bootstrap Population Means button is pressed. 			
+Confirm the dialog has a Analyzer selector combobox, a "Number of batches" text field with "10" filled by default, and a Reason comment box on the left section of the dialog.			
+Confirm that the Bootstrap Population Means dialog has a list of checkboxes that is labeled with a parameter on the right section.			
+Confirm the Calibration sub-subtab has a table of the current calibration factors with the Calibration Factor column set to "1" by default for WBC, RBC, HGB, MCV, PLT, and MPV parameter.			
+Confirm that the Calibration sub-subtab has a Save, Revert, Undo and Redo button that are disabled by default unless the calibration factor is changed.			
+Confirm that the Calibration sub-subtab has a table showing the history of how these calibration factors have been updated with the column "Date/Time", "Lot number", "Tech ID", "WBC", "RBC", "HGB", "MCV", "PLT", and "MPV".			
+         Confirm that at the far right of the table there is an Export and Print button.			
+234. Click to the Calibration Runs sub-subtab and observe a combobox appears at the top left of the page listing the barcode and date of every calibrator run on this Analyzer, including the active run if there is one. Note: If there is no run, the combobox is grayed out.			
+235. Observe that under the run selector the Print and Export buttons.			
+236. Observe that there are buttons labeled “Save and Close” and “Discard” on the right side of the Calibration Runs sub-subtab, which are disabled if there are no calibrator run. If there are no previous calibration runs, the run selector will be disabled and "Save and Close" button would be "Apply and Close".		[VM 02.27.14]	
+237. Observe that there are buttons labeled “Set up run...” and “Exclude” will appear at the right also with "Exclude" being disabled out if there are no calibrator run. 			
+238. Observe that there is a runs table at the bottom of this tab with the first column, titled “Parameter”, listing the same calabratable parameters that are in the Calibration tab.  			
+239. Observe the next two columns are labeled "Target Mean" and “Measured”, where "Measured" is consisted of a set of columns “Mean”, “SD”, and “CV”.			
+240. Observe the last three columns are titled “Old Factor”, "New Factor", and "Applied".			
+Confirm that a combobox appears at the top left of the Calibration Runs page, listing the barcode and date of every calibrator run on this Analyzer, including the active run if there is one.			
+Confirm that under the run selector the Print and Export buttons.			
+Confirm that there are buttons labeled "Apply and Close" and “Discard” on the right side of the Calibration Runs sub-subtab, which are disabled if there are no calibrator run.			
+Confirm that there are buttons labeled “Set up run...” and “Exclude” will appear at the right also with "Exclude" being grayed out if there are no calibrator run. 			
+Confirm that there is a runs table at the bottom of this tab with the first column, titled “Parameter”, listing the same calabratable parameters that are in the Calibration tab.  			
+Confirm the next two columns are labeled "Target Mean" and “Measured”, where "Measured" is consisted of a set of columns “Mean”, “SD”, and “CV”.			
+Confirm the last three columns are titled “Old Factor”, "New Factor", and "Applied".			
+241. Eject the fluidics drawer and observe that the Analyzers tab is toggled automatically with the Consumable/Waste Management dialog open.	1/14/14 HT - Amended step 241 - 249		
+242. Remove the stain pack (DigiMAC3) and wash solution (DigiWash) from the fluidics drawer first. 			
+243. Observe that the Consumable/Waste Management dialog highlights the two consumable rows in red.			
+244. Scan in a stain pack barcode, replace them in the fluidics drawer, and perform this same step for the wash solution.			
+245. Once replacements are performed, close the fluidics drawer and press the "OK" button to close the Consumable/Waste Management dialog.			
+246. While in the Analyzers main tab, press the Cleaning Solution button in the toolbar and scan in a new cleaning solution barcode.			
+247. Press the Replace button in the cleaning solution dialog, run the cleaning solution via rack mode, and wait for the new bleach to be replaced into the bleach pocket.			
+248. Next, click to the Consumable History sub-subtab under Maintenance main tab and observe the first section in the tab contains a date widget that allows the consumable history report to search and display the consumable record in that time period.			
+249. Press the Search button with the defaulted current date filled and observe that all the logged data that were recorded on the system during that search time period are filled in the DigiMAC, DigiWash, DigiClean, and DigiMAC3 Reticulocyte Stain table.		[VM 02.27.14]	
+250. Observe that the consumable replacement is recorded into the five column headers, starting from left to right - "Install Date", "Lot Number", "Exp Date (Open)", "Exp Date (Closed)", and "Tech ID" in each one of the four tables.			
+251. Verify that the reported consumable records are correct and then press the Consumable History Report button to open the "Consumable History Log" print dialog.			
+252. Click and drag in the preview section as you would on any other print preview dialog and see that information here matches what was shown in the consumable history table precisely.			
+253. Press the Print button in the dialog to proceed with printing.			
+Confirm the first top two items under the Consumable History tab will display the consumable records (DigiMAC™ and DigiWash™) that were logged on the system, as specified by the date range, and will match the consumable history report precisely. 			
+Confirm the bottom two tables in the consumable history tab will be the DigiClean™ Solution; this section will behave like the two other consumable tables.			
+Confirm Consumable History Report button will bring up the consumable report dialog, titled "Consumable History Log" and has the same functionalities as any other print preview dialog.			
+Confirm the date widget in the consumable history table allows the consumable history report to search and display the consumable record in that specified date range.			
+254. Click to the next sub-subtab - Event Logs.			
+255. Observe the Event Logs tab has text fields to set the date range and a button to search for all logs in that range. 			
+256. Observe that the  data range is defaulted to the current day. 			
+257. Observe that there are three buttons at the top right corner, after the date range, "Search", "Export" and "Print Event Log" button.			
+258. Press the Search button with the default date listed and observe that upon searching, the table will fill in with log data. 			
+259. Observe that the filled columns in the table are: Code, Name, Message, Timestamp, Severity, and Details.			
+Confirm the Event Logs tab has text fields to set the date range and a button to search for all logs in that range. 			
+Confirm that the  data range is defaulted to the current day. 			
+Confirm that there are three buttons at the top right corner, after the date range, "Search", "Export" and "Print Event Log" button.			
+Confirm that upon searching, the table will fill in with log data. 			
+Confirm that the filled columns in the table are: Code, Name, Message, Timestamp, Severity, and Details.			
+260. Click to the next sub-subtab - Usage History.			
+261. Observe the Usage History tab has text field to search the usage history recorded by the username.			
+262. Observe the Usage History tab has a text fields to set the date range and a button to search for all logs in that range. 			
+263. Observe that the  data range is defaulted to the current day. 			
+264. Observe that there are three buttons at the top right corner, after the date range, "Search", "Export" and "Print Usage History" button.			
+265. Type in your username in the Username text field and press the Search button with the default date listed.			
+5 
